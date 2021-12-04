@@ -1,7 +1,7 @@
 ﻿var sapins_config = {
     "pins": [{
             "shape": "square", //either "circle" or "square"
-            "hover": "<b><u>SÃO PAULO</u></b><br>Write any text and load images<br><img src='../../img/flags/flag_brazil.jpg' style='width: 60px'>", //info of the popup
+            "hover": "<b><u>SÃO PAULO</u></b><br>Brazil Half Marathon<br><img src='../../../img/flags/flag_brazil.jpg' style='width: 60px'>", //info of the popup
             "pos_X": 582, //check the X, Y coordinates guide in the documentation
             "pos_Y": 346,
             "size": 20, //size of the pin

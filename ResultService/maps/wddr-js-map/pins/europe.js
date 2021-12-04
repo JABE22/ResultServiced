@@ -1,7 +1,7 @@
 ﻿var eupins_config = {
     "pins": [{
             "shape": "square", //either "circle" or "square"
-            "hover": "<b><u>LONDON</u></b><br>Write any text and load images<br><img src='../../img/flags/flag_uk.jpg' style='width: 60px'>", //info of the popup
+            "hover": "<b><u>LONDON</u></b><br>London City Run<br><img src='../../../img/flags/flag_uk.jpg' style='width: 60px'>", //info of the popup
             "pos_X": 306, //check the X, Y coordinates guide in the documentation
             "pos_Y": 338,
             "size": 18, //size of the pin
