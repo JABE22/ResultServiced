@@ -1,0 +1,111 @@
+/* IMAGE styles */
+
+.gallery {
+    height: 600px;
+}
+
+.gallery:hover {
+    cursor: pointer;
+}
+
+#lion_coat {
+    animation-name: opacity;
+    animation-duration: 2s;
+    max-height: 100px;
+    width: auto;
+    margin-right: 20px;
+}
+
+#jamasoft {
+    animation-name: opacity;
+    animation-duration: 2s;
+    height: 100px;
+    width: auto;
+}
+
+#urfu {
+    height: 70px;
+}
+
+.page_logo {
+    animation-name: opacity;
+    animation-duration: 1.5s;
+    height: 80px;
+    margin: 20px;
+}
+
+#heartbeat {
+    height: 70%;
+    transform: scaleX(-1);
+    margin-right: 40px;
+}
+
+
+/* PAST EVENT PAGE */
+
+.upcom_eventbox_infobackg {
+    /* border: solid black; */
+    color: var(--main-text-color);
+    opacity: 1.0;
+    height: 100%;
+    margin: 0px;
+    width: 60%;
+    overflow: hidden;
+    padding: 10px;
+    background-image: url('../img/suunnikas.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.arrow_show {
+    display: block;
+}
+
+.arrow_hide {
+    display: none;
+}
+
+.arrow_container {
+    align-self: center;
+    margin-right: 30px;
+}
+
+
+/* CONTACT PAGE */
+
+.skitrack {
+    height: auto;
+    width: 250px;
+    margin-left: 40px;
+}
+
+.contact_details img {
+    width: 45%;
+}
+
+#aboutgirl {
+    margin-right: 40px;
+    min-height: 100%;
+    width: 40%;
+}
+
+#aboutgirl2 {
+    margin-left: 40px;
+    min-height: 100%;
+    width: 40%;
+}
+
+#page_img {
+    width: 15%;
+    height: 100%;
+    background-image: url('../img/flags/flag_fin_vino.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: right;
+}
+
+.opacity_filter {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, var(--site-subcolor-first) 5%, transparent 100%);
+}

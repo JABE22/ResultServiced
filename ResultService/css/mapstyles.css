@@ -1,0 +1,20 @@
+#map_world {
+    position: relative;
+    border-top: 1px solid black;
+    width: 1400px;
+    height: 900px;
+}
+
+#map_usa {
+    position: relative;
+    border-top: 1px solid black;
+    width: 1400px;
+    height: 900px;
+}
+
+#map_world_ort {
+    position: relative;
+    border-top: 1px solid black;
+    width: 1400px;
+    height: 900px;
+}

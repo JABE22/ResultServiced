@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RS - Contact</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/globalvariables.css">
+    <link rel="stylesheet" type="text/css" href="css/imgstyle.css">
+    <link rel="stylesheet" type="text/css" href="css/textstyles.css">
+    <link rel="stylesheet" type="text/css" href="css/buttonstyles.css">
+    <link rel="stylesheet" type="text/css" href="css/animations.css">
+    <link rel="stylesheet" type="text/css" href="css/formstyles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body class="sp">
+
+    <div class="header main_container">
+        <div class="site_brand">
+            <img class="page_logo" alt="page_logo" src="./img/pngegg.png">
+            <h1 class="site_name">Result Service</h1>
+        </div>
+        <div id="page_img">
+            <div class="opacity_filter"></div>
+        </div>
+    </div>
+    <!---->
+    <div class="topnav main_container sp">
+        <div>
+            <a href="home.html">Home</a>
+            <a href="index.html">Upcoming</a>
+            <a href="past.html">Past</a>
+            <a href="search.html">Search</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="map.html">Map</a>
+            <a href="maps/tests/mapdemo.html">MapDemo</a>
+        </div>
+        <div>
+            <p id="date"></p>
+        </div>
+    </div>
+
+    <div class="content_header main_container">
+        <h2 class="page_name">-Contact us-</h2>
+    </div>
+
+    <div class="form_container main_container sp">
+        <form id="contact_form" class="sp">
+            <label for="your_name">Your Name</label>
+            <input type="text" class="form-control" id="your_name" placeholder="Firstname Lastname">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" id="email" placeholder="youraddress@email.com">
+            <label for="subject">Subject</label>
+            <select name="subjects" id="subject" class="form-control">
+                    <option value="">Select...</option>
+                    <option value="new_event">New sport event</option>
+                    <option value="subject3">Result service application</option>
+                    <option value="subject4">Request for a membership of result service team</option>
+                    <option value="subject5">Incorrect information notification</option>
+                    <option value="subject6">Service feedback and development ideas</option>
+                    <option value="subject6">Other service request</option>
+                    <option value="Other">Other</option>
+                </select>
+            <label for="comment">Message</label>
+            <textarea class="form-control" rows="5" id="message" placeholder="Please, write here..."></textarea>
+            <div class="submission">
+                <button class="submit_button zoom" id="submit" type="submit">Submit</button>
+                <p id="log"></p>
+            </div>
+        </form>
+        <div class="contact_details">
+            <img src="img/2head_eagle.png" alt="2head_eagle">
+            <h3 class="contact_header">Result service Ltd.</h3>
+            <p class="contact_info_text">result.service@yeka.ru</p>
+            <p class="contact_info_text">Komsomolskaya Str., 70 <br>Sverdlovskaya Oblast <br>Yekaterinburg 620078</p>
+            <p class="contact_info_text">+7(991)945-96-47</p>
+        </div>
+    </div>
+
+    <div class="vara main_container sp"></div>
+
+    <div class="default_footer main_container sp">
+        <img id="lion_coat" alt="lion_coat" src="./img/lion_fin_gray.png">
+        <footer class="sp">
+            <img id="urfu" src="./img/logo_urfu_nobg.png" alt="UrFU">
+        </footer>
+        <img id="jamasoft" alt="jama_logo" src="./img/logo_jamasoft1_nostroke.png">
+    </div>
+
+    <script src="js/form.js"></script>
+    <script src="./js/time.js"></script>
+
+</body>
+
+</html>

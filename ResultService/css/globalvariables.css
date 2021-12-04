@@ -1,0 +1,20 @@
+/* Site properties */
+
+.sp {
+    /* Site colors */
+    --main-site-color: #445463;
+    --site-subcolor-first: #4D4D4D;
+    --site-subcolor-second: #333;
+    --site-subcolor-third: goldenrod;
+    --site-bg-color: white;
+    /* Map colors */
+    --map-border-color: gold;
+    /* #0e90d2; */
+    --main-text-color: whitesmoke;
+    --button-text-color: white;
+    --container-bg-color: transparent;
+    --pagename-text-size: 34px;
+    /* Common element sizes */
+    --navbar-height: 90px;
+    --global-padding: 20px;
+}

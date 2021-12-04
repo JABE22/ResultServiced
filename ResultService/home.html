@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>RS - Home</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/globalvariables.css">
+    <link rel="stylesheet" type="text/css" href="css/imgstyle.css">
+    <link rel="stylesheet" type="text/css" href="css/textstyles.css">
+    <link rel="stylesheet" type="text/css" href="css/buttonstyles.css">
+    <link rel="stylesheet" type="text/css" href="css/animations.css">
+    <link rel="stylesheet" type="text/css" href="css/formstyles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body class="sp" onload="updateClock(); setInterval('updateClock()', 1000 )">
+
+    <div class="header main_container">
+        <div class="site_brand">
+            <img class="page_logo" alt="page_logo" src="./img/pngegg.png">
+            <h1 class="site_name">Result Service</h1>
+        </div>
+        <div id="page_img">
+            <div class="opacity_filter"></div>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="topnav main_container sp">
+        <div>
+            <a href="home.html" class="active">Home</a>
+            <a href="index.html">Upcoming</a>
+            <a href="past.html">Past</a>
+            <a href="search.html">Search</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="map.html">Map</a>
+            <a href="maps/tests/mapdemo.html">MapDemo</a>
+        </div>
+        <div>
+            <p id="date"></p>
+        </div>
+    </div>
+
+    <div class="content_header main_container">
+        <div class="homeslogan">
+            <h1 id="welcome1" class="sp">I don't run to win races.</h1>
+            <h1 id="welcome2" class="sp">Nor do I run to get places.</h1>
+        </div>
+        <div class="fading sp">
+            <h2 class="motivate">Motivate to get &nbsp;</h2>
+            <h2 class="resulted">&reg;Result Service</h2>
+            <h2 class="motivate">d!</h2>
+        </div>
+    </div>
+
+    <div class="homecontainer main_container sp">
+        <img class="gallery zoom_big" src="./img/runphotos/RunningMotivation/vertical/back1.jfif">
+        <img class="gallery zoom_big" src="./img/runphotos/RunningMotivation/vertical/g1_believe2.jfif">
+        <img class="gallery zoom_big" src="./img/runphotos/RunningMotivation/vertical/g1_proud.jfif">
+        <img class="gallery zoom_big" src="./img/runphotos/RunningMotivation/vertical/g1_believe.jfif">
+        <img class="gallery zoom_big" src="./img/runphotos/RunningMotivation/vertical/g1_excuses.jfif">
+        <img class="gallery zoom_big" src="./img/runphotos/RunningMotivation/vertical/g1_getgive.jfif">
+    </div>
+
+    <div class="default_footer main_container sp">
+        <img id="lion_coat" alt="lion_coat" src="./img/lion_fin_gray.png">
+        <footer class="sp">
+            <img id="urfu" src="./img/logo_urfu_nobg.png" alt="UrFU">
+        </footer>
+        <img id="jamasoft" alt="jama_logo" src="./img/logo_jamasoft1.png">
+    </div>
+
+    <script src="./js/time.js"></script>
+
+</body>
+
+</html>

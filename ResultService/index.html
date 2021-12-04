@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RS - Upcoming events</title>
+</head>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/layout.css">
+<link rel="stylesheet" type="text/css" href="css/globalvariables.css">
+<link rel="stylesheet" type="text/css" href="css/imgstyle.css">
+<link rel="stylesheet" type="text/css" href="css/textstyles.css">
+<link rel="stylesheet" type="text/css" href="css/buttonstyles.css">
+<link rel="stylesheet" type="text/css" href="css/animations.css">
+<link rel="stylesheet" type="text/css" href="css/formstyles.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<script src="js/main.js"></script>
+
+<body class="sp">
+
+    <div class="header main_container ">
+        <div class="site_brand">
+            <img class="page_logo" alt="page_logo" src="./img/pngegg.png">
+            <h1 class="site_name">Result Service</h1>
+        </div>
+        <div id="page_img">
+            <div class="opacity_filter"></div>
+        </div>
+    </div>
+
+    <div class="topnav main_container sp">
+        <div>
+            <a href="home.html">Home</a>
+            <a href="index.html" class="active">Upcoming</a>
+            <a href="past.html">Past</a>
+            <a href="search.html">Search</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="map.html">Map</a>
+            <a href="maps/tests/mapdemo.html">MapDemo</a>
+        </div>
+        <div>
+            <p id="date"></p>
+        </div>
+    </div>
+
+    <div class="content_header main_container">
+        <h2 class="page_name">-Upcoming events-</h2>
+    </div>
+
+    <div id="eventcontainer" class="sp"></div>
+
+    <div class="vara main_container sp ">
+        <p><a class="btn btn-primary " href="# " role="button ">Learn more &raquo;</a></p>
+    </div>
+
+    <div class="default_footer main_container sp ">
+        <img id="lion_coat" alt="lion_coat" src="./img/lion_fin_gray.png">
+        <footer class="sp">
+            <img id="urfu" src="./img/logo_urfu_nobg.png" alt="UrFU">
+        </footer>
+        <img id="jamasoft" alt="jama_logo" src="./img/logo_jamasoft1.png">
+    </div>
+
+    <script>
+        constructUpcomingEvents('eventcontainer');
+    </script>
+    <script src="./js/time.js"></script>
+
+
+</body>
+
+</html>

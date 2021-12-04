@@ -1,0 +1,423 @@
+body {
+    display: grid;
+    grid-template: auto auto auto auto auto auto / 20% 60% 20%;
+    /* 6 x 5 grid */
+    background-color: var(--site-bg-color);
+    background-image: url('../img/backgr/bg1.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: scroll;
+    min-height: 100%;
+    margin: 0px;
+    /* Congruent font family style for whole site */
+    font-family: Teko;
+    /* var(--site-font); /* Tahoma, "Trebuchet MS", Helvetica, sans-serif; */
+}
+
+body.about {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.main_container {
+    border: none;
+}
+
+
+/* (1) First row of Grid for header and site branding logo */
+
+.header {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    width: auto;
+    background-color: var(--site-subcolor-first);
+}
+
+.site_brand {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* (2) Second row of Grid for forms and navigation buttons */
+
+.topnav {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    background-color: var(--site-subcolor-second);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+
+/* (3) Third row of the grid */
+
+.content_header {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: auto;
+}
+
+.homeslogan {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* (4) Fourth row of the grid */
+
+.homecontainer {
+    grid-column: 1 / span 3;
+    grid-row: 4;
+    justify-self: center;
+    font-size: 50px;
+    min-height: calc(100vh - 700px);
+    height: auto;
+    width: auto;
+    padding: 40px;
+    margin-bottom: 40px;
+    /*background-image: url('../img/trail-running.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;*/
+    background-color: var(--container-bg-color);
+    display: grid;
+    grid-gap: 60px;
+    grid-template-columns: auto auto auto;
+}
+
+#eventcontainer {
+    grid-column: 1 / span 3;
+    grid-row: 4;
+    justify-self: center;
+    width: fit-content;
+    min-width: 50%;
+    max-width: 100%;
+    min-height: calc(100vh - 700px);
+    padding: 40px;
+    display: grid;
+    grid-gap: 60px;
+    grid-template-columns: auto auto auto;
+    background-color: var(--container-bg-color);
+}
+
+.past_eventcontainer {
+    grid-column: 2;
+    grid-row: 4;
+    width: 50vw;
+    min-width: 50%;
+    max-width: 100%;
+    min-height: calc(100vh - 700px);
+    justify-self: center;
+    padding: 40px;
+    background-color: var(--container-bg-color);
+}
+
+.search_eventcontainer {
+    grid-column: 2;
+    grid-row: 4;
+    width: 50vw;
+    min-width: 50%;
+    max-width: 100%;
+    min-height: calc(100vh - 700px);
+    justify-self: center;
+    padding: 10px 40px 40px 40px;
+    background-color: var(--container-bg-color);
+}
+
+.mapcontainer {
+    grid-column: 1 / span 3;
+    grid-row: 4;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    justify-content: center;
+    font-size: 50px;
+    min-height: calc(100vh - 650px);
+    height: auto;
+    width: auto;
+    padding: 40px;
+    margin-bottom: 40px;
+    background-color: rgb(22, 22, 22, 0.6);
+}
+
+.eventbox {
+    box-sizing: content-box;
+    border: 0px solid gray;
+    border-radius: 5px;
+    width: 22vw;
+    height: 16vw;
+    overflow: hidden;
+    background-image: url("../img/flags/flag_group_a_fin.jpg");
+    background-size: cover;
+    box-shadow: 0px 0px 5px black;
+    padding: 0px;
+}
+
+.eventbox:hover {
+    cursor: pointer;
+    /* background-image: none; */
+    background-color: rgba(255, 255, 255, .7);
+}
+
+
+/* CONTACT FORM container */
+
+.form_container {
+    grid-column: 2;
+    grid-row: 4;
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 60% 40%;
+    overflow: hidden;
+    border-radius: 5px;
+    width: 100%;
+    min-width: min-content;
+    min-height: calc(100vh - 700px);
+    justify-self: center;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.contact_details {
+    align-self: center;
+    justify-content: center;
+    border-left: solid 1px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 0px 50px;
+    margin-left: 0px;
+    height: 100%;
+    min-width: 180px;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+
+/* ABOUT US container */
+
+.about_container {
+    grid-column: 1 / span 3;
+    grid-row: 4;
+    min-width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mission_container {
+    display: flex;
+    overflow: hidden;
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    min-width: 1000px;
+    min-height: calc(100vh - 700px);
+    padding: 0px 40px 0px 0px;
+    background-color: rgba(0, 0, 0, .2);
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.vision_container {
+    display: flex;
+    overflow: hidden;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    width: 70%;
+    min-width: 1000px;
+    min-height: calc(100vh - 700px);
+    padding: 0px 0px 0px 40px;
+    background-color: rgba(0, 0, 0, .2);
+    border-top: solid 2px black;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+/* SEARCH container styles */
+
+.search-container {
+    min-height: calc(100vh - 700px);
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    float: right;
+}
+
+.search-container label {
+    border-radius: 3px;
+    margin-right: 1rem;
+}
+
+.searchbox {
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color: #d7e7f7;
+    padding: 20px;
+}
+
+
+/* Past event components */
+
+.event_compo {
+    width: 100%;
+    display: block;
+}
+
+.inforow {
+    color: white;
+    font-size: 18px;
+    display: grid;
+    grid-template: auto / 80px auto auto 40px;
+    border-radius: 2px;
+    min-width: 320px;
+    width: 100%;
+    height: 2.5rem;
+    align-content: center;
+    align-items: center;
+    background-color: var(--main-site-color);
+}
+
+.eventrow {
+    display: grid;
+    grid-template: auto auto / 80px auto auto 40px;
+    border-bottom: 1px solid gray;
+    border-radius: 2px;
+    min-width: 20vw;
+    width: 99.5%;
+    min-width: 320px;
+    height: 4rem;
+    align-content: center;
+    align-items: center;
+    background-color: #d7e7f7;
+}
+
+.eventrow:hover {
+    border: 4px solid var(--main-site-color);
+    cursor: pointer;
+    background-color: white;
+}
+
+.eventgrid {
+    display: grid;
+    grid-template-columns: 25rem 25rem 25rem 25rem;
+    grid-template-rows: 25vw 25vw;
+    grid-gap: 10px;
+    background-color: var(--container-bg-color);
+    padding: 10px;
+}
+
+
+/* (5) Fifth row of the grid*/
+
+.vara {
+    padding: var(--global-padding);
+    grid-column: 2;
+    grid-row: 5;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+/* (6) Sixth row of the grid*/
+
+.default_footer {
+    grid-column: 1 / span 5;
+    grid-row: 6;
+    min-height: 150px;
+    max-height: 20vw;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: var(--global-padding);
+    color: var(--main-text-color);
+    background-color: var(--main-site-color);
+    margin-bottom: 0;
+}
+
+
+/* Style the footer */
+
+footer {
+    max-height: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: var(--global-padding);
+    color: var(--main-text-color);
+}
+
+
+/* PAST EVENT row 
+ * Header row "Event name" tag for past events */
+
+.event {
+    width: auto;
+}
+
+.event_name {
+    font-size: 22px;
+    width: auto;
+}
+
+.country {
+    margin-left: 5px;
+    float: left;
+    height: 20px;
+    width: 30px;
+}
+
+.date {
+    float: left;
+    width: 5rem;
+    margin-left: 10px;
+}
+
+
+/* COMPETITOR row */
+
+.place {
+    margin-left: 10px;
+}
+
+.athlete_name {
+    float: left;
+}
+
+.nationality {
+    height: 20px;
+    width: 30px;
+    float: left;
+}
+
+.result_time {
+    float: right;
+    margin-right: 20px;
+}
