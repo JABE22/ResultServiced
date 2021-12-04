@@ -12,8 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/buttonstyles.css">
     <link rel="stylesheet" type="text/css" href="css/animations.css">
     <link rel="stylesheet" type="text/css" href="css/formstyles.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/navstyles.css">
 
     <!-- Map Import 3 -->
     <link rel="stylesheet" type="text/css" href="maps/wddr-js-map/map-style.css" />
@@ -48,8 +47,8 @@
         </div>
     </div>
     <!-- Menu -->
-    <div class="topnav main_container sp">
-        <div>
+    <div class="navcontainer main_container sp">
+        <div class="topnav" id="respnav">
             <a href="home.html">Home</a>
             <a href="index.html">Upcoming</a>
             <a href="past.html">Past</a>
@@ -57,9 +56,12 @@
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
             <a href="map.html" class="active">Map</a>
-            <a href="maps/tests/mapdemo.html">Map Demo</a>
+            <a href="maps/tests/mapdemo.html">MapDemo</a>
+            <a href="javascript:void(0);" class="icon" onclick="compnavitems()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
-        <div>
+        <div class="date_container">
             <p id="date"></p>
         </div>
     </div>

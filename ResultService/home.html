@@ -13,10 +13,12 @@
     <link rel="stylesheet" type="text/css" href="css/buttonstyles.css">
     <link rel="stylesheet" type="text/css" href="css/animations.css">
     <link rel="stylesheet" type="text/css" href="css/formstyles.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/navstyles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body class="sp" onload="updateClock(); setInterval('updateClock()', 1000 )">
+<body class="sp">
 
     <div class="header main_container">
         <div class="site_brand">
@@ -30,8 +32,8 @@
 
     </div>
 
-    <div class="topnav main_container sp">
-        <div>
+    <div class="navcontainer main_container sp">
+        <div class="topnav" id="respnav">
             <a href="home.html" class="active">Home</a>
             <a href="index.html">Upcoming</a>
             <a href="past.html">Past</a>
@@ -40,16 +42,24 @@
             <a href="contact.html">Contact</a>
             <a href="map.html">Map</a>
             <a href="maps/tests/mapdemo.html">MapDemo</a>
+            <a href="javascript:void(0);" class="icon" onclick="compnavitems()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
-        <div>
+        <div class="date_container">
             <p id="date"></p>
         </div>
     </div>
 
+
     <div class="content_header main_container">
         <div class="homeslogan">
-            <h1 id="welcome1" class="sp">I don't run to win races.</h1>
-            <h1 id="welcome2" class="sp">Nor do I run to get places.</h1>
+            <nobr>
+                <h1 id="welcome1" class="sp">I don't run to win races.</h1>
+            </nobr>
+            <nobr>
+                <h1 id="welcome2" class="sp">Nor do I run to get places.</h1>
+            </nobr>
         </div>
         <div class="fading sp">
             <h2 class="motivate">Motivate to get &nbsp;</h2>

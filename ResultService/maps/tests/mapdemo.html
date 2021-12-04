@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/buttonstyles.css">
     <link rel="stylesheet" type="text/css" href="../../css/animations.css">
     <link rel="stylesheet" type="text/css" href="../../css/formstyles.css">
-    <link rel="stylesheet" type="text/css" href="../../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../../css/navstyles.css">
     <link rel="stylesheet" type="text/css" href="../../css/mapstyles.css">
     <!-- Map import -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
@@ -49,8 +49,8 @@
         </div>
     </div>
     <!--Menu-->
-    <div class="topnav main_container sp">
-        <div>
+    <div class="navcontainer main_container sp">
+        <div class="topnav" id="respnav">
             <a href="../../home.html">Home</a>
             <a href="../../index.html">Upcoming</a>
             <a href="../../past.html">Past</a>
@@ -59,6 +59,9 @@
             <a href="../../contact.html">Contact</a>
             <a href="../../map.html">Map</a>
             <a href="mapdemo.html" class="active">MapDemo</a>
+            <a href="javascript:void(0);" class="icon" onclick="compnavitems()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
         <div>
             <p id="date"></p>

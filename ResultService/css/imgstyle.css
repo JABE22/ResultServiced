@@ -109,3 +109,7 @@
     height: 100%;
     background: linear-gradient(to right, var(--site-subcolor-first) 5%, transparent 100%);
 }
+
+.opacity_filter2 {
+    background-color: rgba(100, 100, 100, 0.8);
+}

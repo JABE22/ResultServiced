@@ -1,47 +1,3 @@
-/* NAV styles */
-
-.topnav a {
-    float: left;
-    width: 4rem;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.topnav a.active {
-    background-color: var(--main-site-color);
-    color: white;
-}
-
-nav a {
-    box-sizing: border-box;
-    text-align: center;
-    border: 1px solid;
-    border-radius: 2px;
-    -o-border-radius: 3px 3px 3px;
-    -webkit-border-radius: 3px 3px 3px;
-    -moz-border-radius: 3px 3px 3px;
-    background-color: var(--main-site-color);
-    cursor: pointer;
-}
-
-.nav_button {
-    width: 150px;
-    height: 45px;
-    color: var(--button-text-color);
-    padding: 10px;
-    font-size: 20px;
-    margin: 10px;
-    opacity: 0.8;
-}
-
 .search_button {
     border: none;
     float: right;
@@ -71,10 +27,6 @@ nav a {
     font-size: 20px;
     color: white;
     cursor: pointer;
-}
-
-.nav_button:visited {
-    color: whitesmoke;
 }
 
 

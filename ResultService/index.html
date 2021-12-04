@@ -14,7 +14,7 @@
 <link rel="stylesheet" type="text/css" href="css/buttonstyles.css">
 <link rel="stylesheet" type="text/css" href="css/animations.css">
 <link rel="stylesheet" type="text/css" href="css/formstyles.css">
-<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/navstyles.css">
 <script src="js/main.js"></script>
 
 <body class="sp">
@@ -29,8 +29,8 @@
         </div>
     </div>
 
-    <div class="topnav main_container sp">
-        <div>
+    <div class="navcontainer main_container sp">
+        <div class="topnav" id="respnav">
             <a href="home.html">Home</a>
             <a href="index.html" class="active">Upcoming</a>
             <a href="past.html">Past</a>
@@ -39,8 +39,11 @@
             <a href="contact.html">Contact</a>
             <a href="map.html">Map</a>
             <a href="maps/tests/mapdemo.html">MapDemo</a>
+            <a href="javascript:void(0);" class="icon" onclick="compnavitems()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
-        <div>
+        <div class="date_container">
             <p id="date"></p>
         </div>
     </div>

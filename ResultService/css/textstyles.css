@@ -19,8 +19,12 @@ h3 {
     margin-top: 20px;
 }
 
+.homeslogan {
+    display: flex;
+}
+
 #welcome1 {
-    font-size: 56px;
+    font-size: 3rem;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 0px;
@@ -32,7 +36,7 @@ h3 {
 }
 
 #welcome2 {
-    font-size: 56px;
+    font-size: 3rem;
     text-align: center;
     margin-top: 50px;
     margin-left: 20px;
@@ -144,10 +148,19 @@ h3 {
     text-justify: inter-word;
 }
 
+.date_container {
+    display: flex;
+    width: 280px;
+    flex-direction: column;
+    justify-content: center;
+}
+
 #date {
-    font-weight: lighter;
     margin: 0px;
-    padding: 0px 30px 0px 0px;
-    font-size: 26px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: left;
+    padding: 0px 10px 0px 10px;
+    font-size: 20px;
     color: var(--main-text-color);
 }
