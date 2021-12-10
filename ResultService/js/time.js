@@ -25,7 +25,7 @@ let options2 = {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
-    timeZone: 'UTC',
+    timeZone: 'CET',
     timeZoneName: 'short'
 };
 
