@@ -14,6 +14,9 @@
     <link rel="stylesheet" type="text/css" href="css/animations.css">
     <link rel="stylesheet" type="text/css" href="css/formstyles.css">
     <link rel="stylesheet" type="text/css" href="css/navstyles.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <!-- This for responsive navbar -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body class="sp">
@@ -37,8 +40,8 @@
             <a href="about.html">About</a>
             <a href="contact.html" class="active">Contact</a>
             <a href="map.html">Map</a>
-            <a href="maps/tests/mapdemo.html">MapDemo</a>
-            <a href="javascript:void(0);" class="icon" onclick="compnavitems()">
+            <!-- <a href="maps/tests/mapdemo.html">MapDemo</a> -->
+            <a href="javascript:void(0);" class="icon" onclick="setresponsive()">
                 <i class="fa fa-bars"></i>
             </a>
         </div>
@@ -76,8 +79,10 @@
             </div>
         </form>
         <div class="contact_details">
-            <img src="img/2head_eagle.png" alt="2head_eagle">
-            <h3 class="contact_header">Result service Ltd.</h3>
+            <img src="img/pngegg.png" alt="pngegg">
+            <nobr>
+                <h3 class="contact_header">Result service Ltd.</h3>
+            </nobr>
             <p class="contact_info_text">result.service@yeka.ru</p>
             <p class="contact_info_text">Komsomolskaya Str., 70 <br>Sverdlovskaya Oblast <br>Yekaterinburg 620078</p>
             <p class="contact_info_text">+7(991)945-96-47</p>
@@ -86,12 +91,10 @@
 
     <div class="vara main_container sp"></div>
 
-    <div class="default_footer main_container sp">
+    <div class="default_footer main_container">
         <img id="lion_coat" alt="lion_coat" src="./img/lion_fin_gray.png">
-        <footer class="sp">
-            <img id="urfu" src="./img/logo_urfu_nobg.png" alt="UrFU">
-        </footer>
-        <img id="jamasoft" alt="jama_logo" src="./img/logo_jamasoft1_nostroke.png">
+        <img id="urfu" src="./img/logo_urfu_nobg.png" alt="UrFU">
+        <img id="jamasoft" alt="jama_logo" src="./img/logo_jamasoft1.png">
     </div>
 
     <script src="js/form.js"></script>

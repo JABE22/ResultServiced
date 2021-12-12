@@ -14,19 +14,48 @@ h3 {
     margin-top: 0px;
 }
 
-.mis-vis {
-    font-size: 4vh;
+.site_name {
+    color: white;
+    font-size: 5vh;
+    white-space: nowrap;
+}
+
+.page_name {
+    color: black;
+    font-size: 3.5vh !important;
+}
+
+.mission_text,
+.vision_text {
+    display: flex;
+    flex-direction: column;
+    width: 54%;
+    justify-content: center;
+}
+
+.mission_text {
+    margin-right: 40px;
+}
+
+.vision_text {
+    margin-left: 40px;
+}
+
+#mission_h3,
+#vision_h3 {
+    font-size: 2.5rem;
     margin-top: 20px;
 }
 
 .homeslogan {
     display: flex;
+    border-bottom: solid 3px var(--main-site-color);
 }
 
 #welcome1 {
     font-size: 3rem;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 0px;
     width: auto;
     animation: opacity 2s;
@@ -38,7 +67,7 @@ h3 {
 #welcome2 {
     font-size: 3rem;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 20px;
     margin-bottom: 0px;
     width: auto;
@@ -48,16 +77,6 @@ h3 {
     -webkit-text-fill-color: var(--main-text-color);
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: var(--main-site-color);
-}
-
-.site_name {
-    color: white;
-    font-size: 48px;
-}
-
-.page_name {
-    color: black;
-    font-size: 34px !important;
 }
 
 .event_text {
@@ -74,7 +93,7 @@ h3 {
 }
 
 .contact_header {
-    font-size: 4.5vh;
+    font-size: 4vh;
     grid-row: 1;
     grid-column: 1 / span 2;
     margin-top: 0px;
@@ -114,7 +133,6 @@ h3 {
     animation: opacity 2s;
     animation-timing-function: ease;
     justify-content: center;
-    background: linear-gradient(transparent, whitesmoke 50%, transparent), linear-gradient(to right, transparent, whitesmoke 50%, transparent);
 }
 
 .motivate {

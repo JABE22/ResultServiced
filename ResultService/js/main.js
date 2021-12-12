@@ -16,7 +16,7 @@ function constructUpcomingEvents(id) {
         opacity_filter.className = "upcom_eventbox_infobackg";
         event_name.innerText = "EVENT NAME";
         event_name.id = "event_name";
-        event_description.innerText = "Event description will appear here. Event date, trips, and other general details.";
+        event_description.innerText = "Location\nDate\nTrips\nGeneral details";
         event_description.className = "event_text"
             // Setting elements
         opacity_filter.append(event_name, event_description);

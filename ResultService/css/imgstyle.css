@@ -1,5 +1,9 @@
 /* IMAGE styles */
 
+img {
+    border: none;
+}
+
 .gallery {
     height: 600px;
 }
@@ -11,20 +15,20 @@
 #lion_coat {
     animation-name: opacity;
     animation-duration: 2s;
-    max-height: 100px;
+    max-height: 80px;
     width: auto;
-    margin-right: 20px;
 }
 
 #jamasoft {
     animation-name: opacity;
     animation-duration: 2s;
-    height: 100px;
+    height: 80px;
     width: auto;
 }
 
 #urfu {
-    height: 70px;
+    height: 60px;
+    justify-self: center;
 }
 
 .page_logo {
@@ -46,14 +50,12 @@
 .upcom_eventbox_infobackg {
     /* border: solid black; */
     color: var(--main-text-color);
-    opacity: 1.0;
     height: 100%;
     margin: 0px;
-    width: 60%;
+    width: 70%;
     overflow: hidden;
     padding: 10px;
-    background-image: url('../img/suunnikas.png');
-    background-size: contain;
+    background: linear-gradient(to right, var(--site-subcolor-first) 50%, transparent 100%);
     background-repeat: no-repeat;
 }
 
@@ -70,29 +72,35 @@
     margin-right: 30px;
 }
 
+#menu_icon {
+    border: solid black 1px;
+}
+
+.micon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+}
+
 
 /* CONTACT PAGE */
 
-.skitrack {
-    height: auto;
-    width: 250px;
-    margin-left: 40px;
-}
-
 .contact_details img {
-    width: 45%;
+    width: 150px;
 }
 
 #aboutgirl {
-    margin-right: 40px;
-    min-height: 100%;
     width: 40%;
 }
 
 #aboutgirl2 {
-    margin-left: 40px;
-    min-height: 100%;
     width: 40%;
+}
+
+#aboutgirl2_mobile {
+    display: none;
 }
 
 #page_img {

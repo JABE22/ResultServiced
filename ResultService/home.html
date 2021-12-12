@@ -14,8 +14,10 @@
     <link rel="stylesheet" type="text/css" href="css/animations.css">
     <link rel="stylesheet" type="text/css" href="css/formstyles.css">
     <link rel="stylesheet" type="text/css" href="css/navstyles.css">
-
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <!-- This for responsive navbar -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="sp">
@@ -41,8 +43,8 @@
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
             <a href="map.html">Map</a>
-            <a href="maps/tests/mapdemo.html">MapDemo</a>
-            <a href="javascript:void(0);" class="icon" onclick="compnavitems()">
+            <!-- <a href="maps/tests/mapdemo.html">MapDemo</a> -->
+            <a href="javascript:void(0);" class="icon" onclick="setresponsive()">
                 <i class="fa fa-bars"></i>
             </a>
         </div>
@@ -52,23 +54,19 @@
     </div>
 
 
-    <div class="content_header main_container">
+    <div class="content_header main_container ad">
         <div class="homeslogan">
-            <nobr>
-                <h1 id="welcome1" class="sp">I don't run to win races.</h1>
-            </nobr>
-            <nobr>
-                <h1 id="welcome2" class="sp">Nor do I run to get places.</h1>
-            </nobr>
+            <h1 id="welcome1">I don't run to win races.</h1>
+            <h1 id="welcome2">Nor do I run to get places.</h1>
         </div>
-        <div class="fading sp">
+        <div class="fading">
             <h2 class="motivate">Motivate to get &nbsp;</h2>
             <h2 class="resulted">&reg;Result Service</h2>
             <h2 class="motivate">d!</h2>
         </div>
     </div>
 
-    <div class="homecontainer main_container sp">
+    <div class="homecontainer main_container">
         <img class="gallery zoom_big" src="./img/runphotos/RunningMotivation/vertical/back1.jfif">
         <img class="gallery zoom_big" src="./img/runphotos/RunningMotivation/vertical/g1_believe2.jfif">
         <img class="gallery zoom_big" src="./img/runphotos/RunningMotivation/vertical/g1_proud.jfif">
@@ -77,11 +75,9 @@
         <img class="gallery zoom_big" src="./img/runphotos/RunningMotivation/vertical/g1_getgive.jfif">
     </div>
 
-    <div class="default_footer main_container sp">
+    <div class="default_footer main_container">
         <img id="lion_coat" alt="lion_coat" src="./img/lion_fin_gray.png">
-        <footer class="sp">
-            <img id="urfu" src="./img/logo_urfu_nobg.png" alt="UrFU">
-        </footer>
+        <img id="urfu" src="./img/logo_urfu_nobg.png" alt="UrFU">
         <img id="jamasoft" alt="jama_logo" src="./img/logo_jamasoft1.png">
     </div>
 
