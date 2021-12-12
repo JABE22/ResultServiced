@@ -16,12 +16,12 @@
     cursor: pointer;
 }
 
-#submit {
-    border: none;
-    padding: 5px;
-    margin: 5px;
+#submit_contact,
+#submit_event {
+    border: solid 1px var(--site-subcolor-third);
+    padding: 8px;
+    margin: 0px;
     width: 150px;
-    height: 35px;
     background: var(--main-site-color);
     font-family: Teko;
     font-size: 20px;

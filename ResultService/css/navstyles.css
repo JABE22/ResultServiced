@@ -41,3 +41,11 @@
     padding: 16px;
     background-color: transparent;
 }
+
+.topnav a.admin_menu {
+    color: var(--site-subcolor-third);
+}
+
+.topnav a.admin_menu.active {
+    color: var(--site-subcolor-third);
+}

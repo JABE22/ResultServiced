@@ -44,6 +44,7 @@
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
             <a href="map.html">Map</a>
+            <a href="eventnotif.html" class="admin_menu">Notification</a>
             <!-- <a href="maps/tests/mapdemo.html">MapDemo</a> -->
             <a href="javascript:void(0);" class="icon" onclick="setresponsive()">
                 <i class="fa fa-bars"></i>
@@ -59,6 +60,7 @@
     </div>
 
     <div id="past_eventcontainer" class="past_eventcontainer main_container sp">
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for events..." title="Type in a name">
         <div class="inforow sp">
             <label class='date'>Date</label>
             <label class="event">Event name</label>
@@ -68,6 +70,27 @@
 
     <script>
         createEventComboBoxes("past_eventcontainer");
+    </script>
+
+    <script>
+        function myFunction() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
     </script>
 
     <div class="vara main_container sp">

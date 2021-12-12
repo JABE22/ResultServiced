@@ -38,9 +38,9 @@
             <a href="past.html">Past</a>
             <a href="search.html">Search</a>
             <a href="about.html">About</a>
-            <a href="contact.html" class="active">Contact</a>
+            <a href="contact.html">Contact</a>
             <a href="map.html">Map</a>
-            <a href="eventnotif.html" class="admin_menu">Notification</a>
+            <a href="eventnotif.html" class="active admin_menu">Notification</a>
             <!-- <a href="maps/tests/mapdemo.html">MapDemo</a> -->
             <a href="javascript:void(0);" class="icon" onclick="setresponsive()">
                 <i class="fa fa-bars"></i>
@@ -52,30 +52,58 @@
     </div>
 
     <div class="content_header main_container">
-        <h2 class="page_name">-Contact us-</h2>
+        <h2 class="page_name">-Event notification-</h2>
     </div>
 
     <div class="form_container main_container sp">
-        <form id="contact_form" class="sp">
-            <label for="your_name">Your Name</label>
-            <input type="text" class="form-control" id="your_name" placeholder="Firstname Lastname">
-            <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="youraddress@email.com">
-            <label for="subject">Subject</label>
+        <form id="addevent_form" class="sp">
+            <label for="your_name">Event organizer info</label>
+            <div>
+                <input type="text" class="form-control" id="organiz_name" placeholder="Organization name">
+                <input type="text" list="cities" name="city" id="city" class="form-control" placeholder="City">
+                <datalist id="cities">
+                <option value="Helsinki">
+                <option value="Moskova">
+                <option value="Tukholma">
+                <option value="Pariisi">
+                <option value="New York">
+            </datalist>
+                <input type="text" list="countries" name="country" id="country" class="form-control" placeholder="Country">
+                <datalist id="countries">
+                <option value="Finland">
+                <option value="Russia">
+                <option value="Sweden">
+                <option value="France">
+                <option value="The United States of America">
+            </datalist>
+                <input type="text" class="form-control" id="organiz_address" placeholder="Address">
+            </div>
+            <label for="dest">Event info</label>
+            <input type="text" class="form-control" id="ename" name="eventname" placeholder="Event name">
+            <div>
+                <label for="date">Date and Start time</label>
+                <input type="date" class="form-control" id="date" name="date">
+                <input type="time" class="form-control" id="time" name="time">
+            </div>
             <select name="subjects" id="subject" class="form-control">
-                    <option value="">Select Subject...</option>
-                    <option value="subject1">New sport event</option>
-                    <option value="subject2">Result service application</option>
-                    <option value="subject3">Request for a membership of result service team</option>
-                    <option value="subject5">Incorrect information notification</option>
-                    <option value="subject6">Service feedback and development ideas</option>
-                    <option value="subject6">Other service request</option>
-                    <option value="Other">Other</option>
-                </select>
-            <label for="comment">Message</label>
+                <option value="">Select competition distance</option>
+                <option value="subject1">5 km</option>
+                <option value="subject2">10 km</option>
+                <option value="subject3">15 km</option>
+                <option value="subject5">Half Marathon (21 km)</option>
+                <option value="subject6">Marathon (42 km)</option>
+                <option value="subject6">Other distance</option>
+            </select>
+            <label for="fname">Person in charge of the event</label>
+            <input type="text" class="form-control" id="fname" name="firstname" placeholder="Firstname">
+            <input type="text" class="form-control" id="lname" name="lastname" placeholder="Lastname">
+            <input type="email" class="form-control" id="email" placeholder="Email">
+            <input type="tel" class="form-control" id="phone" placeholder="Phone number" name="phone">
+
+            <label for="comment">Additional info</label>
             <textarea class="form-control" rows="5" id="message" placeholder="Please, write here..."></textarea>
             <div class="submission">
-                <button class="submit_button zoom" id="submit_contact" type="submit">Submit</button>
+                <button class="submit_button zoom" id="submit_event" type="submit">Submit Event</button>
                 <div id="validation_info"></div>
             </div>
         </form>
@@ -84,9 +112,8 @@
             <nobr>
                 <h3 class="contact_header">Result service Ltd.</h3>
             </nobr>
-            <p class="contact_info_text">result.service@yeka.ru</p>
-            <p class="contact_info_text">Komsomolskaya Str., 70 <br>Sverdlovskaya Oblast <br>Yekaterinburg 620078</p>
-            <p class="contact_info_text">+7(991)945-96-47</p>
+            <p class="contact_info_text">ADMINISTRATOR PORTAL</p>
+            <p class="contact_info_text">Here you can insert new event into the database</p>
         </div>
     </div>
 
@@ -98,7 +125,7 @@
         <img id="jamasoft" alt="jama_logo" src="./img/logo_jamasoft1.png">
     </div>
 
-    <script src="js/formcon.js"></script>
+    <script src="js/formevent.js"></script>
     <script src="./js/time.js"></script>
     <script src="./js/responsive.js"></script>
 
