@@ -18,7 +18,7 @@
     animation-timing-function: ease-in;
 }
 
-#competitors {
+.competitors {
     table-layout: auto;
     margin-left: 1rem;
     text-align: left;
@@ -27,12 +27,12 @@
     width: 96%;
 }
 
-#competitors th {
+.competitors th {
     background-color: var(--main-site-color);
     color: white;
 }
 
-#competitors tr,
+.competitors tr,
 td,
 th {
     padding: 5px auto;
@@ -40,38 +40,38 @@ th {
     max-height: 50px;
 }
 
-#competitors tr:nth-child(2) {
+.competitors tr:nth-child(2) {
     font-size: 23px;
 }
 
-#competitors tr:nth-child(3) {
+.competitors tr:nth-child(3) {
     font-size: 22px;
 }
 
-#competitors tr:nth-child(4) {
+.competitors tr:nth-child(4) {
     font-size: 21px;
 }
 
-#competitors tr:nth-child(even) {
+.competitors tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-#competitors tr:nth-child(odd) {
+.competitors tr:nth-child(odd) {
     background-color: #c8e4ff6d;
 }
 
-#competitors tr:not(.table_header):hover {
+.competitors tr:not(.table_header):hover {
     transition: font-size 500ms;
     box-shadow: 0px 0px 1px 1px goldenrod;
     font-size: 23px;
     cursor: pointer;
 }
 
-#competitors td:nth-child(1) {
+.competitors td:nth-child(1) {
     width: 50px;
     min-width: 50px;
 }
 
-#competitors td:nth-child(2) {
+.competitors td:nth-child(2) {
     width: auto;
 }

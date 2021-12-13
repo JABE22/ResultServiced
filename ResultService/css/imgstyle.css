@@ -68,8 +68,18 @@ img {
 }
 
 .arrow_container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
     align-self: center;
     margin-right: 30px;
+    margin-left: 10px;
+    height: 100%;
+    width: 50%;
+}
+
+.country {
+    margin-right: 10px;
 }
 
 #menu_icon {

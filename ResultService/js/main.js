@@ -26,12 +26,12 @@ function constructUpcomingEvents(id) {
     }
 }
 
-function createResultTable(id) {
-    var table_container = document.createElement('div');
+function createResultTable(id, results) {
+    const table_container = document.createElement('div');
     table_container.className = "table_container hide";
     table_container.id = id;
     var table = document.createElement('table');
-    table.id = "competitors";
+    table.className = "competitors";
     var row_number = 12;
     // Table header row
     table_hr = document.createElement('tr');
@@ -64,7 +64,7 @@ function createResultTable(id) {
 
 
     // Table content row
-    for (let i = 0; i < row_number; i++) {
+    for (let i = 0; i < results.length; i++) {
         table_tr = document.createElement('tr');
         table_tr.className = "sp";
         // Content columns
@@ -80,14 +80,14 @@ function createResultTable(id) {
         // Setting class names
         label_1.className = "place";
         label_2.className = "athlete_name";
-        img_3.className = "country";
+        img_3.className = "country zoom_ultra";
         label_4.className = "result_time";
         // Setting content of labels
-        label_1.innerText = "XX.";
-        label_2.innerText = "Athlete name";
-        img_3.src = "img/flags/flag_group_a_russia.jpg";
-        img_3.alt = "RUS";
-        label_4.innerText = "00:00,0";
+        label_1.innerText = results[i]['Place (Overall)'];
+        label_2.innerText = results[i]['Name'];
+        img_3.src = "img/Nationals/flag_" + results[i]['Nationality'] + ".jpg";
+        img_3.alt = results[i]['Nationality'];
+        label_4.innerText = results[i]['Finish'];
         // Appending components
         td_place.appendChild(label_1);
         td_name.appendChild(label_2);
@@ -115,7 +115,7 @@ function createResultTable(id) {
 </tr>
  */
 
-function createEventRow(eventId, tableId) {
+function createEventRow(eventId, tableId, event) {
     // Creating elements to add past event container
     var event_row = document.createElement('div');
     event_row.id = eventId;
@@ -123,23 +123,23 @@ function createEventRow(eventId, tableId) {
 
     // Creating event accordion rows
     label_1 = document.createElement('label');
-    label_2 = document.createElement('label');
-    img_3 = document.createElement('img');
+    img_2 = document.createElement('img');
+    label_3 = document.createElement('label');
     img_4 = document.createElement('img');
     img_5 = document.createElement('img');
     // Setting class names
     label_1.className = "date";
-    label_2.className = "event_name";
-    img_3.className = "country";
+    img_2.className = "country zoom_ultra";
+    label_3.className = "event_name";
     img_4.id = "arrow_down" + tableId.substring(5);
     img_5.id = "arrow_up" + tableId.substring(5);
     img_4.className = "arrow_show";
     img_5.className = "arrow_hide";
     // Setting content of labels and images
-    label_1.innerText = "01.01.2022";
-    label_2.innerText = "Event name";
-    img_3.src = "img/flags/flag_group_b_russia.jpg";
-    img_3.alt = "RUS";
+    label_1.innerText = event['date'];
+    img_2.src = "img/Nationals/flag_" + event['ccode'] + ".jpg";
+    label_3.innerText = event['ename'];
+    img_3.alt = event['country'];
     img_4.src = "icons/chevron-double-down.svg";
     img_5.src = "icons/chevron-double-up.svg";
     // Container for accordion arrows
@@ -147,7 +147,7 @@ function createEventRow(eventId, tableId) {
     arrow_container.className = 'arrow_container';
     arrow_container.append(img_4, img_5)
         // Adding components
-    event_row.append(label_1, label_2, img_3, arrow_container);
+    event_row.append(label_1, img_2, label_3, arrow_container);
     event_row.onclick = function(event) {
         event.preventDefault;
         hideElement(tableId);
@@ -155,16 +155,16 @@ function createEventRow(eventId, tableId) {
     return event_row;
 }
 
-function createEventComboBoxes(parent_element_id) {
-    var event_number = 12;
+function createEventComboBoxes(parent_element_id, events, results) {
+    //var event_number = 12;
 
-    for (let i = 0; i < event_number; i++) {
+    for (let i = 0; i < events.length; i++) {
         // Outermost frame div
         var compo = document.createElement('div');
         compo.className = "event_compo";
         // Creating compo box content
-        content = createResultTable('table' + i);
-        event_row = createEventRow('event' + i, 'table' + i);
+        content = createResultTable('table' + i, results);
+        event_row = createEventRow('event' + i, 'table' + i, events[i]);
         compo.append(event_row, content);
         console.log(event_row.id);
         document.getElementById(parent_element_id).appendChild(compo);
@@ -218,3 +218,50 @@ function filterFunction() {
         }
     }
 }
+
+function filter() {
+    var input, filter, tablerows;
+    const compos = document.getElementsByClassName('event_compo');
+    const eventrows = document.getElementsByClassName('eventrow');
+    const tables = document.getElementsByClassName('competitors');
+    input = document.getElementById("filter_input");
+    filter = input.value.toUpperCase();
+    var event_match;
+    var table_match;
+
+    for (var i = 0; i < eventrows.length; i++) {
+        event_match = false;
+        table_match = false;
+        eventrow = eventrows[i];
+        elabels = eventrow.getElementsByTagName('label');
+        //console.log(elabels[0], elabels[1]);
+        var edetails = elabels[0].innerText + " " + elabels[1].innerText;
+        if (edetails.toUpperCase().indexOf(filter) > -1) {
+            event_match = true;
+        }
+        // Filtering event result rows in tables
+        tablerows = tables[i].getElementsByTagName("tr");
+        for (var j = 1; j < tablerows.length; j++) {
+            // Filtering only athlete name
+            var name = tablerows[j].getElementsByTagName("td")[1].innerText;
+            if (name.toUpperCase().indexOf(filter) > -1) {
+                table_match = true;
+            }
+        }
+        //console.log(event_match, table_match);
+        if (event_match || table_match) {
+            compos[i].style.display = "";
+        } else {
+            compos[i].style.display = "none";
+        }
+    }
+
+}
+
+(async() => {
+    const events = await getJSON('../data/past_events.json');
+    const results = await fetch('../data/raceresults/GB-VLM.csv')
+        .then(response => response.text())
+        .then(text => JSON.parse(csvJSON(text)));
+    createEventComboBoxes("past_eventcontainer", events, results);
+})();

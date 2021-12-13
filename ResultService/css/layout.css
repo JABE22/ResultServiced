@@ -125,7 +125,7 @@ div {
 .past_eventcontainer {
     grid-column: 1 / span 3;
     grid-row: 4;
-    max-width: 90%;
+    max-width: 95%;
     min-width: 50%;
     min-height: calc(100vh - 700px);
     justify-self: center;
@@ -304,15 +304,17 @@ div {
 .eventrow {
     display: grid;
     grid-template: auto auto / 80px auto auto 40px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
     border-bottom: 1px solid gray;
     border-radius: 2px;
-    min-width: 20vw;
-    width: 99.5%;
-    min-width: 320px;
+    min-width: 25vw;
+    width: 99.6%;
     height: 4rem;
     align-content: center;
     align-items: center;
-    background-color: #d7e7f7;
+    background-color: var(--eventrow-bg-color);
 }
 
 .eventrow:hover {
@@ -377,6 +379,7 @@ div {
 .event_name {
     font-size: 22px;
     width: auto;
+    overflow: hidden;
 }
 
 .country {

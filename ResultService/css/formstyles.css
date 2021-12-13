@@ -1,8 +1,8 @@
 input[type=text],
 input[type=email],
-input[type="tel"],
-input[type="date"],
-input[type="time"],
+input[type=tel],
+input[type=date],
+input[type=time],
 select,
 textarea,
 datalist {
@@ -105,21 +105,20 @@ textarea.invalid {
 
 /* The search field */
 
-#myInput {
+#filter_input {
     box-sizing: border-box;
-    background-image: url('searchicon.png');
-    background-position: 14px 12px;
+    background-image: url('../icons/micons/search.PNG');
+    background-position: left;
+    background-size: contain;
     background-repeat: no-repeat;
-    font-size: 16px;
-    padding: 14px 20px 12px 45px;
+    padding: 10px 20px 10px 60px;
     border: none;
-    border-bottom: 1px solid #ddd;
 }
 
 
 /* The search field when it gets focus/clicked on */
 
-#myInput:focus {
+#filter_input:focus {
     outline: 3px solid #ddd;
 }
 

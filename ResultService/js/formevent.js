@@ -1,3 +1,4 @@
+document.cookie = "SameSite=None; Secure";
 // SETTING EVENT LISTENERS for form elements
 var input_components = document.getElementsByClassName('form-control');
 for (i = 0; i < input_components.length; i++) {
