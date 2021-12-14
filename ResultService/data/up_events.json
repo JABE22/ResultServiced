@@ -2,6 +2,7 @@
         "date": "2022-12-19",
         "ename": "Taipei International Marathon",
         "country": "Taiwan",
+        "ccode": "TWN",
         "city": "Taipei",
         "dist": [42, 21]
     },
@@ -9,6 +10,7 @@
         "date": "2022-01-01",
         "ename": "Texas Marathon",
         "country": "United States of America",
+        "ccode": "USA",
         "city": "Kingwood",
         "dist": [42, 21]
     },
@@ -16,6 +18,7 @@
         "date": "2022-10-09",
         "ename": "Schwarzwald Marathon",
         "country": "Germany",
+        "ccode": "GER",
         "city": "Bräulingen",
         "dist": [21]
     },
@@ -23,6 +26,7 @@
         "date": "2022-10-22",
         "ename": "Reykjavik Autumn Marathon",
         "country": "Iceland",
+        "ccode": "ICL",
         "city": "Reykjavik",
         "dist": [42]
     },
@@ -30,6 +34,7 @@
         "date": "2022-06-11",
         "ename": "Helsinki Half Marathon",
         "country": "Finland",
+        "ccode": "FIN",
         "city": "Helsinki",
         "dist": [21]
     },
@@ -37,6 +42,7 @@
         "date": "2022-09-11",
         "ename": "Rimi Vilnius Marathon",
         "country": "Lithuania",
+        "ccode": "LTH",
         "city": "Vilnius",
         "dist": [42, 21, 10, 5]
     },
@@ -44,6 +50,7 @@
         "date": "2022-10-09",
         "ename": "Yeti Marathon Nepal - Run in the Himalayas",
         "country": "Nepal",
+        "ccode": "NPL",
         "city": "Khangsar",
         "dist": [42, 21, 10, 1]
     },
@@ -51,6 +58,7 @@
         "date": "2022-01-08",
         "ename": "Athens Big Fork Trail Marathon",
         "country": "United States of America",
+        "ccode": "USA",
         "city": "Big Fork",
         "dist": [42.20, 27.36]
     },
@@ -58,6 +66,7 @@
         "date": "2022-07-24",
         "ename": "Königsschlösser Marathon",
         "country": "German",
+        "ccode": "GER",
         "city": "Fussen",
         "dist": [42, 21, 10]
     },
@@ -65,6 +74,7 @@
         "date": "2022-04-03",
         "ename": "Actic Marathon Finland",
         "country": "Finland",
+        "ccode": "FIN",
         "city": "Rovaniemi",
         "dist": [42, 21, 10, 1]
 
@@ -73,6 +83,7 @@
         "date": "2022-07-31",
         "ename": "Kilimasai Marathon and Safari",
         "country": "Tanzania",
+        "ccode": "TZN",
         "city": "Marangu",
         "dist": [42, 21, 10, 1]
     },
@@ -80,6 +91,7 @@
         "date": "2022-03-20",
         "ename": "EDP Lisbon Half Marathon",
         "country": "Portugal",
+        "ccode": "PRG",
         "city": "Lisboa",
         "dist": [21, 10, 7]
     },
@@ -87,6 +99,7 @@
         "date": "2022-02-04",
         "ename": "Dead Sea Marathon Israel",
         "country": "Israel",
+        "ccode": "ISR",
         "city": "Ein Bokek",
         "dist": [50, 21, 10, 5]
     }

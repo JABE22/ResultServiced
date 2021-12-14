@@ -20,7 +20,6 @@
 <!-- This for responsive navbar -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<script src="js/style.js"></script>
 <script src="js/data.js"></script>
 <script src="js/main.js"></script>
 
@@ -64,8 +63,8 @@
         <input type="text" id="filter_input" onkeyup="filter()" placeholder="Search for events..." title="Type in a name">
         <div class="inforow sp">
             <label class='date'>Date</label>
-            <label class="event">Event name</label>
             <label class='country'>Country</label>
+            <label class='event'>Event name</label>
         </div>
     </div>
 
@@ -81,6 +80,15 @@
 
     <script src="./js/time.js"></script>
     <script src="./js/responsive.js"></script>
+    <script>
+        (async() => {
+            const events = await getJSON('../data/past_events.json');
+            const results = await fetch('../data/raceresults/GB-VLM.csv')
+                .then(response => response.text())
+                .then(text => JSON.parse(csvJSON(text)));
+            createEventComboBoxes("past_eventcontainer", events, results);
+        })();
+    </script>
 
 </body>
 

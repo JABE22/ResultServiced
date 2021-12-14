@@ -19,6 +19,7 @@
 <!-- This for responsive navbar -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<script src="js/data.js"></script>
 <script src="js/main.js"></script>
 
 <body class="sp">
@@ -69,11 +70,14 @@
         <img id="jamasoft" alt="jama_logo" src="./img/logo_jamasoft1.png">
     </div>
 
-    <script>
-        constructUpcomingEvents('eventcontainer');
-    </script>
     <script src="./js/time.js"></script>
     <script src="./js/responsive.js"></script>
+    <script>
+        (async() => {
+            const upevents = await getJSON('../data/up_events.json');
+            constructUpcomingEvents('eventcontainer', upevents);
+        })();
+    </script>
 
 </body>
 

@@ -1,22 +1,31 @@
-function constructUpcomingEvents(id) {
-    var eventbox_number = 9;
+function constructUpcomingEvents(id, events) {
+    /* First of all, we need to sort events by date, the most recent first.
+     * Also, we do not want to show "upcoming" events already passed.
+     */
+    events.sort((a, b) => (a.date > b.date) ? 1 : -1);
+
+
+    var eventbox_number = events.length // Math.min(events.length, 9);
     var eventcontainer = document.getElementById(id);
     // Creating and setting up eventbox
 
     for (let i = 0; i < eventbox_number; i++) {
         var href = document.createElement("a");
         var eventbox = document.createElement("div");
-        href.onclick = "https://www.biathlonworld.com/calendar";
+        //href.onclick = "https://www.biathlonworld.com/calendar";
         eventbox.className = "eventbox zoom_big sp";
-        //eventbox.style.backgroundImage = "url('../img/suunnikas.png')";
+        eventbox.style.backgroundImage = "url('../img/Nationals/flag_" + events[i]['ccode'] + ".jpg')";
         // Creating and setting up eventbox components
         var opacity_filter = document.createElement("div");
         var event_name = document.createElement("h2");
         var event_description = document.createElement("p");
         opacity_filter.className = "upcom_eventbox_infobackg";
-        event_name.innerText = "EVENT NAME";
+        event_name.innerText = events[i]['ename'];
         event_name.id = "event_name";
-        event_description.innerText = "Location\nDate\nTrips\nGeneral details";
+        const edate = new Date(events[i]['date']);
+        styledate = edate.toLocaleString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+        event_description.innerText = events[i]['country'] + ", " + events[i]['city'] + "\n" +
+            styledate + "\n" + styledist(events[i]['dist']);
         event_description.className = "event_text"
             // Setting elements
         opacity_filter.append(event_name, event_description);
@@ -24,6 +33,25 @@ function constructUpcomingEvents(id) {
         href.appendChild(eventbox);
         eventcontainer.append(href);
     }
+}
+
+function styledist(numlist) {
+    var str = "______________\n";
+    for (var i = 0; i < numlist.length; i++) {
+        dist = numlist[i];
+        if (dist > 30) {
+            str += "Marathon (" + dist + " km)\n";
+        } else if (dist <= 30 && dist > 19) {
+            str += "Half Marathon (" + dist + " km)\n";
+        } else {
+            str += dist + " km";
+            // After last line we do not want comma
+            if (i < numlist.length - 1) {
+                str += ", "
+            }
+        }
+    }
+    return str;
 }
 
 function createResultTable(id, results) {
@@ -61,10 +89,13 @@ function createResultTable(id, results) {
     table_hr.append(th_place, th_name, th_country, th_time);
     // Setting header row to the table
     table.appendChild(table_hr);
-
-
+    // For now, we select 12 athletes randomly from the results;
+    const indexes = getRandomSet12(0, 19, 12);
+    //console.log(indexes);
     // Table content row
-    for (let i = 0; i < results.length; i++) {
+    for (let i = 0; i < indexes.length; i++) {
+        index = indexes[i];
+        //console.log("Index set: " + index);
         table_tr = document.createElement('tr');
         table_tr.className = "sp";
         // Content columns
@@ -82,11 +113,12 @@ function createResultTable(id, results) {
         label_2.className = "athlete_name";
         img_3.className = "country zoom_ultra";
         label_4.className = "result_time";
-        // Setting content of labels
-        label_1.innerText = results[i]['Place (Overall)'];
-        label_2.innerText = results[i]['Name'];
-        img_3.src = "img/Nationals/flag_" + results[i]['Nationality'] + ".jpg";
-        img_3.alt = results[i]['Nationality'];
+        // Setting content of labels 
+        // NOTICE: FOR NOW, SOMETHING WEIRD IS HAPPENING TO GENERATE FUN DATA COMPINATION
+        label_1.innerText = i + 1 // results[index]['Place (Overall)'];
+        label_2.innerText = results[index]['Name'];
+        img_3.src = "img/Nationals/flag_" + results[index]['Nationality'] + ".jpg";
+        img_3.alt = results[index]['Nationality'];
         label_4.innerText = results[i]['Finish'];
         // Appending components
         td_place.appendChild(label_1);
@@ -166,7 +198,7 @@ function createEventComboBoxes(parent_element_id, events, results) {
         content = createResultTable('table' + i, results);
         event_row = createEventRow('event' + i, 'table' + i, events[i]);
         compo.append(event_row, content);
-        console.log(event_row.id);
+        //console.log(event_row.id);
         document.getElementById(parent_element_id).appendChild(compo);
     }
 }
@@ -258,10 +290,22 @@ function filter() {
 
 }
 
-(async() => {
-    const events = await getJSON('../data/past_events.json');
-    const results = await fetch('../data/raceresults/GB-VLM.csv')
-        .then(response => response.text())
-        .then(text => JSON.parse(csvJSON(text)));
-    createEventComboBoxes("past_eventcontainer", events, results);
-})();
+function range(start, end) {
+    return Array(end - start + 1).fill().map((_, idx) => start + idx)
+}
+
+function getRandomSet12(from = 1, to = 20, count = 12) {
+    // Between any two numbers
+    var numbers = range(from, to);
+    var selected = [];
+    var max = numbers.length;
+
+    while (selected.length < count) {
+        var index = (Math.floor(Math.random() * max));
+        var number = numbers.splice(index, 1)[0];
+        selected.push(number);
+        max = numbers.length;
+    }
+    //numbers.sort(function(a, b) { return a - b });
+    return selected;
+}

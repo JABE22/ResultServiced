@@ -52,10 +52,10 @@ img {
     color: var(--main-text-color);
     height: 100%;
     margin: 0px;
-    width: 70%;
+    width: 90%;
     overflow: hidden;
     padding: 10px;
-    background: linear-gradient(to right, var(--site-subcolor-first) 50%, transparent 100%);
+    background: linear-gradient(to right, var(--site-subcolor-first) 40%, transparent 100%);
     background-repeat: no-repeat;
 }
 
