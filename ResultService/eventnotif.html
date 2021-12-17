@@ -56,52 +56,52 @@
     </div>
 
     <div class="form_container main_container sp">
+
         <form id="addevent_form" class="sp">
             <label for="your_name">Event organizer info</label>
             <div>
+                <div style="margin-top: 20px;">
+                    <img class="sb-title-icon" src="https://fonts.gstatic.com/s/i/googlematerialicons/location_pin/v5/24px.svg" alt="">
+                    <span class="sb-title">Address Selection</span>
+                </div>
                 <input type="text" class="form-control" id="organiz_name" placeholder="Organization name">
-                <input type="text" list="cities" name="city" id="city" class="form-control" placeholder="City">
-                <datalist id="cities">
-                <option value="Helsinki">
-                <option value="Moskova">
-                <option value="Tukholma">
-                <option value="Pariisi">
-                <option value="New York">
-            </datalist>
-                <input type="text" list="countries" name="country" id="country" class="form-control" placeholder="Country">
-                <datalist id="countries">
-                <option value="Finland">
-                <option value="Russia">
-                <option value="Sweden">
-                <option value="France">
-                <option value="The United States of America">
-            </datalist>
-                <input type="text" class="form-control" id="organiz_address" placeholder="Address">
+                <input type="text" placeholder="Address" id="location" />
+                <div class="map-container">
+                    <div class="map" id="map"></div>
+                </div>
+                <input type="text" placeholder="City" id="locality" />
+                <input type="text" placeholder="State or Province" id="administrative_area_level_1" />
+                <input type="text" placeholder="Zip or Postal code" id="postal_code" />
+                <input list="countries" type="text" placeholder="Country" id="country" />
+                <datalist id="countries"></datalist>
             </div>
+            <hr>
             <label for="dest">Event info</label>
             <input type="text" class="form-control" id="ename" name="eventname" placeholder="Event name">
-            <div>
+            <div class="datetime_compo">
                 <label for="date">Date and Start time</label>
                 <input type="date" class="form-control" id="date" name="date">
                 <input type="time" class="form-control" id="time" name="time">
             </div>
-            <select name="subjects" id="subject" class="form-control">
-                <option value="">Select competition distance</option>
-                <option value="subject1">5 km</option>
-                <option value="subject2">10 km</option>
-                <option value="subject3">15 km</option>
-                <option value="subject5">Half Marathon (21 km)</option>
-                <option value="subject6">Marathon (42 km)</option>
-                <option value="subject6">Other distance</option>
+            <select name="dists" id="dists" class="select-options">
+                <option value="0" selected disabled>Select distance</option>
+                <option value="5">5 km</option>
+                <option value="10">10 km</option>
+                <option value="15">15 km</option>
+                <option value="21">Half Marathon (21 km)</option>
+                <option value="42">Marathon (42 km)</option>
+                <option value="-1">Custom</option>
             </select>
+            <hr>
             <label for="fname">Person in charge of the event</label>
             <input type="text" class="form-control" id="fname" name="firstname" placeholder="Firstname">
             <input type="text" class="form-control" id="lname" name="lastname" placeholder="Lastname">
             <input type="email" class="form-control" id="email" placeholder="Email">
             <input type="tel" class="form-control" id="phone" placeholder="Phone number" name="phone">
-
+            <hr>
             <label for="comment">Additional info</label>
             <textarea class="form-control" rows="5" id="message" placeholder="Please, write here..."></textarea>
+            <hr>
             <div class="submission">
                 <button class="submit_button zoom" id="submit_event" type="submit">Submit Event</button>
                 <div id="validation_info"></div>
@@ -110,9 +110,8 @@
         <div class="contact_details">
             <img src="img/pngegg.png" alt="pngegg">
             <nobr>
-                <h3 class="contact_header">Result service Ltd.</h3>
+                <h3 class="contact_header">ADMINISTRATOR PORTAL</h3>
             </nobr>
-            <p class="contact_info_text">ADMINISTRATOR PORTAL</p>
             <p class="contact_info_text">Here you can insert new event into the database</p>
         </div>
     </div>
@@ -124,10 +123,11 @@
         <img id="urfu" src="./img/logo_urfu_nobg.png" alt="UrFU">
         <img id="jamasoft" alt="jama_logo" src="./img/logo_jamasoft1.png">
     </div>
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEzv4wGM64Y-Q1l-cKtP2qNR2_LnNGniE&libraries=places&callback=initMap&solution_channel=GMP_QB_addressselection_v1_cAB" async defer></script>
     <script src="js/formevent.js"></script>
     <script src="js/time.js"></script>
     <script src="js/responsive.js"></script>
+    <script src="js/datalist.js"></script>
 
 
 </body>

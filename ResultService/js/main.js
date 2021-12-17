@@ -86,7 +86,7 @@ function createResultTable(id, results) {
     th_name.appendChild(label_2);
     th_country.appendChild(label_3);
     th_time.appendChild(label_4);
-    table_hr.append(th_place, th_name, th_country, th_time);
+    table_hr.append(th_place, th_country, th_name, th_time);
     // Setting header row to the table
     table.appendChild(table_hr);
     // For now, we select 12 athletes randomly from the results;
@@ -125,7 +125,7 @@ function createResultTable(id, results) {
         td_name.appendChild(label_2);
         td_country.appendChild(img_3);
         td_time.appendChild(label_4);
-        table_tr.append(td_place, td_name, td_country, td_time);
+        table_tr.append(td_place, td_country, td_name, td_time);
         table.appendChild(table_tr);
     }
 

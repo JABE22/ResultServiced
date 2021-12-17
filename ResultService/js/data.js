@@ -118,7 +118,7 @@ function filter() {
         tablerows = tables[i].getElementsByTagName("tr");
         for (var j = 1; j < tablerows.length; j++) {
             // Filtering only athlete name
-            var name = tablerows[j].getElementsByTagName("td")[1].innerText;
+            var name = tablerows[j].getElementsByTagName("td")[2].innerText;
             if (name.toUpperCase().indexOf(filter) > -1) {
                 table_match = true;
             }

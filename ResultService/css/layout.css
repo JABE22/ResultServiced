@@ -193,7 +193,7 @@ div {
     grid-column: 1 / span 3;
     grid-row: 4;
     display: grid;
-    grid-template-rows: 1;
+    grid-template-rows: auto;
     grid-template-columns: 60% 40%;
     overflow: hidden;
     border-radius: 5px;
@@ -219,7 +219,6 @@ div {
     height: 100%;
     font-size: 18px;
     background-color: var(--site-subcolor-first);
-    ;
 }
 
 
