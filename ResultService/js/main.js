@@ -14,7 +14,7 @@ function constructUpcomingEvents(id, events) {
         var eventbox = document.createElement("div");
         //href.onclick = "https://www.biathlonworld.com/calendar";
         eventbox.className = "eventbox zoom_big sp";
-        eventbox.style.backgroundImage = "url('../img/Nationals/flag_" + events[i]['ccode'] + ".jpg')";
+        eventbox.style.backgroundImage = "url('img/Nationals/flag_" + events[i]['ccode'] + ".jpg')";
         // Creating and setting up eventbox components
         var opacity_filter = document.createElement("div");
         var event_name = document.createElement("h2");
