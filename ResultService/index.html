@@ -74,7 +74,7 @@
     <script src="./js/responsive.js"></script>
     <script>
         (async() => {
-            const upevents = await getJSON('../data/up_events.json');
+            const upevents = await getJSON('/ResultService/data/up_events.json');
             constructUpcomingEvents('eventcontainer', upevents);
         })();
     </script>
