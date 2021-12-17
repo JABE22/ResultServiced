@@ -1,7 +1,7 @@
-input[type=text],
+input[type=text]:not(.date_period, #search_input),
 input[type=email],
 input[type=tel],
-input[type=date],
+input[type=date]:not(.date_period),
 input[type=time],
 select,
 textarea,
@@ -19,17 +19,104 @@ datalist {
     margin-bottom: 10px;
 }
 
+.date_period {
+    width: 90%;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid var(--main-site-color);
+    border-radius: 0px;
+    box-sizing: border-box;
+    margin: 10px;
+    resize: vertical;
+    font-size: 20px;
+    font-family: Teko;
+    margin-bottom: 10px;
+}
+
+#filter_input {
+    background-image: url('../icons/micons/filter.png');
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 10px 20px 10px 60px !important;
+    border: none;
+}
+
+#search_input {
+    height: 30px;
+    width: 100%;
+    background-image: url('../icons/micons/searchwhite.jpg');
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 10px 20px 10px 60px;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid var(--main-site-color);
+    font-size: 22px;
+    font-family: Teko;
+}
+
+#filter_input:focus {
+    outline: 3px solid #ddd;
+}
+
+.date_period:active {
+    box-shadow: 0px 0px 2px 2px #1b8ed1;
+}
+
+.date_period:hover {
+    box-shadow: 0px 0px 2px 2px #1b8ed1;
+}
+
 #message {
     height: 200px;
     min-height: 100px;
 }
 
 .search_form {
+    display: flex;
+    flex-direction: column;
     justify-self: center;
     align-self: center;
-    width: 20rem;
-    height: 3rem;
+    width: 450px;
+    min-width: 300px;
+}
+
+#search_basic {
+    border: solid 1px black;
     display: flex;
+}
+
+#search_filters {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    height: auto;
+    overflow: hidden;
+}
+
+.show_flex {
+    display: flex !important;
+    animation: height 0.5s;
+    animation-timing-function: ease-in;
+}
+
+.hide {
+    animation: height 0.5s;
+    animation-timing-function: ease-out;
+    animation-direction: reverse;
+}
+
+#checkboxes {
+    display: flex;
+    justify-content: center;
+}
+
+#date_range {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #contact_form {
@@ -82,56 +169,10 @@ textarea.invalid {
     font-size: 18px;
 }
 
-
-/* Dropdown Button */
-
-.dropbtn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-
-/* Dropdown button on hover & focus */
-
-.dropbtn:hover,
-.dropbtn:focus {
-    background-color: #3e8e41;
-}
-
-
-/* The search field */
-
-#filter_input {
-    box-sizing: border-box;
-    background-image: url('../icons/micons/search.PNG');
-    background-position: left;
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding: 10px 20px 10px 60px;
-    border: none;
-}
-
-
-/* The search field when it gets focus/clicked on */
-
-#filter_input:focus {
-    outline: 3px solid #ddd;
-}
-
-
-/* The container <div> - needed to position the dropdown content */
-
 .dropdown {
     position: relative;
     display: inline-block;
 }
-
-
-/* Dropdown Content (Hidden by Default) */
 
 .dropdown-content {
     display: none;
@@ -142,9 +183,6 @@ textarea.invalid {
     z-index: 1;
 }
 
-
-/* Links inside the dropdown */
-
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -152,16 +190,143 @@ textarea.invalid {
     display: block;
 }
 
-
-/* Change color of dropdown links on hover */
-
 .dropdown-content a:hover {
     background-color: #f1f1f1
 }
 
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-
 .show {
     display: block;
+}
+
+
+/* CHECKBOX STYLES */
+
+
+/* Custom properties (AKA css variables) */
+
+.si {
+    --color-label: black;
+    --color-default: var(--main-site-color);
+    --color-active: #0069ff;
+    --rotate-default: 180deg;
+    --rotate-active: 40deg;
+    --border-size-checkmark: 2px;
+    --border-size-box: 2px;
+    --input-size: 20px;
+    --guter: 30px;
+}
+
+
+/* Basic reset */
+
+.si,
+.si *,
+.si *::before,
+.si *::after {
+    box-sizing: border-box;
+}
+
+
+/* Label */
+
+.si {
+    cursor: pointer;
+    position: relative;
+    margin: 10px;
+}
+
+.si .si-label {
+    display: inline-block;
+    padding-left: var(--guter);
+    color: var(--color-label);
+    vertical-align: text-top;
+}
+
+span {
+    font-size: 20px;
+}
+
+
+/* Checkbox square */
+
+.si.si-checkbox .si-label::before {
+    margin-top: 5px;
+    border-radius: var(--border-size-checkmark);
+    box-shadow: 0px 0px 1px 1px black;
+}
+
+.si.si-checkbox>input:checked+.si-label::before {
+    transform: rotate(var(--rotate-active)) scale(0);
+}
+
+
+/* Checkbox checkmark */
+
+.si.si-checkbox .si-label::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 18px;
+    border-width: 0 var(--border-size-checkmark) var(--border-size-checkmark) 0;
+    border-style: solid;
+    border-color: transparent var(--color-active) var(--color-active) transparent;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    transform: rotate(var(--rotate-default)) scale(0);
+}
+
+.si.si-checkbox>input:checked+.si-label::after {
+    left: 8px;
+    transform: rotate(var(--rotate-active)) scale(1);
+}
+
+.si>input:disabled+.si-label.line-across {
+    text-decoration: line-through;
+    color: rgb(199, 199, 199);
+}
+
+
+/* Change property values smoothly */
+
+.si .si-label::before,
+.si .si-label::after {
+    transition: all 0.2s ease-in-out;
+}
+
+
+/* An element for checkbox */
+
+.si .si-label::before {
+    content: '';
+    display: block;
+    width: var(--input-size);
+    height: var(--input-size);
+    border: var(--border-size-box) solid var(--color-default);
+    position: absolute;
+    top: -3px;
+    left: 0;
+    transform: rotate(0deg) scale(1);
+}
+
+
+/* Feedback when the user interacts with an element */
+
+.si .si-label:hover::before {
+    box-shadow: 0px 0px 2px 3px #1b8ed1;
+}
+
+.si.si-checkbox .disabled::before {
+    box-shadow: 0px 0px 0px 0px #1b8ed1;
+    margin-top: 5px;
+    border-radius: var(--border-size-checkmark);
+    border-color: rgb(199, 199, 199);
+}
+
+.si>input {
+    display: none;
+}
+
+.si>input[type="checkbox"] {
+    clip-path: polygon(0 0);
 }

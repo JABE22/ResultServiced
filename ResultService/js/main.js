@@ -132,6 +132,8 @@ function createResultTable(id, results) {
     table_container.appendChild(table);
     return table_container;
 }
+
+// THIS IS THE APPROXIMATE STRUCTURE OF THE PAST EVENT TABLE
 /** 
  <tr>
     <th><label class="place">Place</label></th>
@@ -182,7 +184,7 @@ function createEventRow(eventId, tableId, event) {
     event_row.append(label_1, img_2, label_3, arrow_container);
     event_row.onclick = function(event) {
         event.preventDefault;
-        hideElement(tableId);
+        hideTable(tableId);
     }
     return event_row;
 }
@@ -212,7 +214,7 @@ function createEventComboBoxes(parent_element_id, events, results) {
 </div>
  */
 
-function hideElement(tableId) {
+function hideTable(tableId) {
     var tbl = document.getElementById(tableId);
     var arrowUp = document.getElementById("arrow_up" + tableId.substring(5));
     var arrowDown = document.getElementById("arrow_down" + tableId.substring(5))
@@ -227,67 +229,6 @@ function hideElement(tableId) {
         arrowDown.className = arrowDown.className.replace('arrow_show', 'arrow_hide');
     }
     console.log("Table container under " + tbl.id + " has now class names: " + tbl.className);
-}
-
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-function filterFunction() {
-    var input, filter, ul, li, a, i;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    div = document.getElementById("myDropdown");
-    a = div.getElementsByTagName("a");
-    for (i = 0; i < a.length; i++) {
-        txtValue = a[i].textContent || a[i].innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            a[i].style.display = "";
-        } else {
-            a[i].style.display = "none";
-        }
-    }
-}
-
-function filter() {
-    var input, filter, tablerows;
-    const compos = document.getElementsByClassName('event_compo');
-    const eventrows = document.getElementsByClassName('eventrow');
-    const tables = document.getElementsByClassName('competitors');
-    input = document.getElementById("filter_input");
-    filter = input.value.toUpperCase();
-    var event_match;
-    var table_match;
-
-    for (var i = 0; i < eventrows.length; i++) {
-        event_match = false;
-        table_match = false;
-        eventrow = eventrows[i];
-        elabels = eventrow.getElementsByTagName('label');
-        //console.log(elabels[0], elabels[1]);
-        var edetails = elabels[0].innerText + " " + elabels[1].innerText;
-        if (edetails.toUpperCase().indexOf(filter) > -1) {
-            event_match = true;
-        }
-        // Filtering event result rows in tables
-        tablerows = tables[i].getElementsByTagName("tr");
-        for (var j = 1; j < tablerows.length; j++) {
-            // Filtering only athlete name
-            var name = tablerows[j].getElementsByTagName("td")[1].innerText;
-            if (name.toUpperCase().indexOf(filter) > -1) {
-                table_match = true;
-            }
-        }
-        //console.log(event_match, table_match);
-        if (event_match || table_match) {
-            compos[i].style.display = "";
-        } else {
-            compos[i].style.display = "none";
-        }
-    }
-
 }
 
 function range(start, end) {

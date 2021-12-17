@@ -1,7 +1,7 @@
 /* Table styles */
 
 .table_container {
-    overflow: auto;
+    overflow: hidden;
     display: none;
     min-width: 300px;
 }

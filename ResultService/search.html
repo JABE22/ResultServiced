@@ -15,9 +15,13 @@
 <link rel="stylesheet" type="text/css" href="css/animations.css">
 <link rel="stylesheet" type="text/css" href="css/formstyles.css">
 <link rel="stylesheet" type="text/css" href="css/navstyles.css">
+<link rel="stylesheet" type="text/css" href="css/tablestyles.css">
 <link rel="stylesheet" type="text/css" href="css/responsive.css">
 <!-- This for responsive navbar -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
 
 <body class="sp">
 
@@ -54,18 +58,42 @@
     <div class="content_header main_container">
         <h2 class="page_name">-Search events and athletes-</h2>
         <form class="search_form" action="#">
-            <input id="search_event" type="text" placeholder="Event name.." name="search">
-            <button class="search_button sp zoom" type="submit"></button>
+            <div id="search_basic">
+                <input id="search_input" type="text" placeholder="Type and hit Enter" name="search" autocomplete="off">
+                <button id="filtermenu_button" class="sp zoom"></button>
+            </div>
+            <div id="search_filters" class="hide">
+                <div id="checkboxes">
+                    <label for="spast_event" class="si si-checkbox">
+                        <input type="checkbox" id="spast_event" name="spast_event" value="Past Events">
+                        <span class="si-label line-across">Upcoming events</span>
+                    </label>
+                    <label for="sup_event" class="si si-checkbox">
+                        <input type="checkbox" id="sup_event" name="sup_event" value="Upcoming Events">
+                        <span class="si-label line-across">Past events</span>
+                    </label>
+                    <label for="sathlete" class="si si-checkbox">
+                        <input type="checkbox" id="sathlete" name="sathlete" value="Ahtletes" disabled>
+                        <span class="si-label line-across disabled">Athletes</span>
+                    </label>
+                </div>
+                <div id="date_range">
+                    <input type="text" class="date_period" id="date_from" name="date_from" placeholder="From" onfocus="(this.type='date')">
+                    <input type="text" class="date_period" id="date_to" name="date_to" placeholder="Until" onfocus="(this.type='date')">
+                </div>
+            </div>
         </form>
     </div>
 
-    <div class="search_eventcontainer main_container sp">
-        <h3>Search results will appear here</h3>
-        <div class="searchbox sp"></div>
+    <div id="search_eventcontainer" class="search_eventcontainer main_container sp">
+        <!--<div class="searchbox sp"><h3>Ups! Nothing found!</h3></div>-->
+        <div id="eventcontainer"></div>
+        <div id="past_eventcontainer"></div>
+        <div id="athletecontainer"></div>
     </div>
 
     <div class="vara main_container sp">
-        <p><a class="btn btn-primary" href="#" role="button">Learn more &raquo;</a></p>
+        <p><a class="btn btn-primary" href="#" role="button" style="color:goldenrod">Back to Top &raquo;</a></p>
     </div>
 
     <div class="default_footer main_container">
@@ -76,6 +104,7 @@
 
     <script src="./js/time.js"></script>
     <script src="./js/responsive.js"></script>
+    <script src="./js/search.js"></script>
 
 </body>
 

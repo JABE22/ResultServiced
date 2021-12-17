@@ -83,6 +83,15 @@
     }
 }
 
+@keyframes height {
+    from {
+        height: 0%;
+    }
+    to {
+        height: 100%;
+    }
+}
+
 @keyframes hidetext {
     from {
         width: 0%
