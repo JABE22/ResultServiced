@@ -3,6 +3,7 @@
 
 <head>
     <title>RS - Upcoming events</title>
+    <base href="/ResultService/">
 </head>
 
 <meta name="description" content="">
@@ -74,7 +75,7 @@
     <script src="./js/responsive.js"></script>
     <script>
         (async() => {
-            const upevents = await getJSON('/ResultService/data/up_events.json');
+            const upevents = await getJSON('data/up_events.json');
             constructUpcomingEvents('eventcontainer', upevents);
         })();
     </script>
