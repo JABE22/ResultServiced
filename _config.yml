@@ -1,6 +1,6 @@
 lsi: false
 safe: true
-source: https://jabe22.github.io/ResultService/
+source: https://www.jabe22.github.io/
 incremental: false
 highlighter: rouge
 gist:
