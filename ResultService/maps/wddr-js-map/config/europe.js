@@ -1,7 +1,7 @@
 ﻿var wdeujsconfig = {
     "wdeujs1": {
         "hover": "ALBANIA", //info of the popup
-        "url": "https://www.html5interactivemaps.com/", //link to any webpage
+        "url": "", //link to any webpage
         "target": "same_window", // use "new_window", "same_window", "modal", or "none"
         "upColor": "#FFFFF3", //default color
         "overColor": "var(--site-subcolor-third)", //highlight color
@@ -9,8 +9,8 @@
         "active": true //true/false to activate/deactivate
     },
     "wdeujs2": {
-        "hover": "<b><u>ANDORRA</u></b><br>Write any text and load images<br><img src='example.png'>",
-        "url": "https://www.html5interactivemaps.com/",
+        "hover": "<b><u>ANDORRA</u></b>",
+        "url": "",
         "target": "same_window",
         "upColor": "#f1ffc8",
         "overColor": "#d9ff66",
@@ -18,8 +18,8 @@
         "active": true
     },
     "wdeujs3": {
-        "hover": "<b><u>AUSTRIA</u></b><br><span style='color: #bcbcbc;'>Street Address:</span><br>&nbsp;321 Example, Address 54321<br><span style='color: #bcbcbc;'>Telephone:</span><br>&nbsp;(256) 555-4321 / (256) 555-1234",
-        "url": "https://www.html5interactivemaps.com/",
+        "hover": "<b><u>AUSTRIA</u></b><br>Austria heaven marathons<br><img class='mapimg' src='img/Nationals/flag_AUS.jpg'>",
+        "url": "https://worldsmarathons.com/c/marathon/austria",
         "target": "same_window",
         "upColor": "#d7f57a",
         "overColor": "#beef2a",
@@ -27,8 +27,8 @@
         "active": true
     },
     "wdeujs4": {
-        "hover": "<b><u>BELARUS</u></b><br><span style='color: #999;'>*Click to open a webpage*</span>",
-        "url": "https://www.html5interactivemaps.com/",
+        "hover": "<b><u>BELARUS</u></b><br>Belarus exotic events<br><img class='mapimg' src='img/Nationals/flag_BLR.jpg'>",
+        "url": "https://worldsmarathons.com/c/marathon/belarus",
         "target": "same_window",
         "upColor": "#f1ffc8",
         "overColor": "#d9ff66",
@@ -37,7 +37,7 @@
     },
     "wdeujs5": {
         "hover": "BELGIUM",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -46,7 +46,7 @@
     },
     "wdeujs6": {
         "hover": "BOSNIA AND HERZEGOVINA",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#E0E2E2",
         "overColor": "#ECFFB3",
@@ -55,7 +55,7 @@
     },
     "wdeujs7": {
         "hover": "BULGARIA",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -64,7 +64,7 @@
     },
     "wdeujs8": {
         "hover": "CROATIA",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -73,7 +73,7 @@
     },
     "wdeujs9": {
         "hover": "CYPRUS",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -82,7 +82,7 @@
     },
     "wdeujs10": {
         "hover": "CZECH REPUBLIC",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -91,7 +91,7 @@
     },
     "wdeujs11": {
         "hover": "DENMARK",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -100,7 +100,7 @@
     },
     "wdeujs12": {
         "hover": "ESTONIA",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -108,8 +108,8 @@
         "active": true
     },
     "wdeujs13": {
-        "hover": "<b><u>FINLAND</u></b><br>Write any text and load images<br><img src='example.png'>",
-        "url": "https://www.html5interactivemaps.com/",
+        "hover": "<b><u>FINLAND</u></b><br>Events in Finland<br><img class='mapimg' src='img/Nationals/flag_FIN.jpg'>",
+        "url": "https://worldsmarathons.com/c/marathon/finland",
         "target": "same_window",
         "upColor": "#f1ffc8",
         "overColor": "#d9ff66",
@@ -117,8 +117,8 @@
         "active": true
     },
     "wdeujs14": {
-        "hover": "<b><u>FRANCE</u></b><br>Write any text and load images<br><img src='example.png'>",
-        "url": "https://www.html5interactivemaps.com/",
+        "hover": "<b><u>FRANCE</u></b><br>Events in France<br><img class='mapimg' src='img/Nationals/flag_FRA.jpg'>",
+        "url": "https://worldsmarathons.com/c/marathon/france",
         "target": "same_window",
         "upColor": "#f1ffc8",
         "overColor": "#d9ff66",
@@ -126,8 +126,8 @@
         "active": true
     },
     "wdeujs15": {
-        "hover": "<b><u>GERMANY</u></b><br><span style='color: #999;'>Click to open a modal window!</span><br><span style='color: #ff6666;'><b>Modal Window Option is Compatible<br> with Bootstrap Only.</b></span>",
-        "url": "#mymodal",
+        "hover": "<b><u>GERMANY</u></b><br>Great events in Germany<br><img class='mapimg' src='img/Nationals/flag_GER.jpg'>",
+        "url": "https://worldsmarathons.com/c/marathon/germany",
         "target": "modal",
         "upColor": "#edff66",
         "overColor": "#cbe600",
@@ -136,7 +136,7 @@
     },
     "wdeujs16": {
         "hover": "GREECE",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -145,7 +145,7 @@
     },
     "wdeujs17": {
         "hover": "HUNGARY",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -153,8 +153,8 @@
         "active": true
     },
     "wdeujs18": {
-        "hover": "ICELAND",
-        "url": "https://www.html5interactivemaps.com/",
+        "hover": "<b><u>ICELAND</u></b><br>Iceland Marathons<br><img class='mapimg' src='img/Nationals/flag_ICL.jpg'>",
+        "url": "https://worldsmarathons.com/c/marathon/iceland",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -163,7 +163,7 @@
     },
     "wdeujs19": {
         "hover": "<b><u>IRELAND</u></b><br><span style='color: #999;'>*Click to open a webpage*</span>",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "https://worldsmarathons.com/c/marathon/ireland",
         "target": "same_window",
         "upColor": "#f1ffc8",
         "overColor": "#d9ff66",
@@ -171,8 +171,8 @@
         "active": true
     },
     "wdeujs20": {
-        "hover": "<b><u>ITALY</u></b><br><span style='color: #999;'>*Click to open a webpage*</span>",
-        "url": "https://www.html5interactivemaps.com/",
+        "hover": "<b><u>ITALY</u></b><br>Italy events<br><img class='mapimg' src='img/Nationals/flag_ITA.jpg'>",
+        "url": "https://worldsmarathons.com/c/marathon/italy",
         "target": "same_window",
         "upColor": "#f1ffc8",
         "overColor": "#d9ff66",
@@ -181,7 +181,7 @@
     },
     "wdeujs21": {
         "hover": "KOSOVO",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -190,7 +190,7 @@
     },
     "wdeujs22": {
         "hover": "LATVIA",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -199,7 +199,7 @@
     },
     "wdeujs23": {
         "hover": "LIECHTENSTEIN",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -207,8 +207,8 @@
         "active": true
     },
     "wdeujs24": {
-        "hover": "LITHUANIA",
-        "url": "https://www.html5interactivemaps.com/",
+        "hover": "<b><u>LITHUANIA</u></b><br>Events in Lithuania<br><img class='mapimg' src='img/Nationals/flag_LTH.jpg'>",
+        "url": "https://worldsmarathons.com/c/marathon/ireland",
         "target": "same_window",
         "upColor": "#E0E2E2",
         "overColor": "#ECFFB3",
@@ -216,8 +216,8 @@
         "active": true
     },
     "wdeujs25": {
-        "hover": "<b><u>LUXEMBOURG</u></b><br>Write any text and load images<br><img src='example.png'>",
-        "url": "https://www.html5interactivemaps.com/",
+        "hover": "<b><u>LUXEMBOURG</u></b>",
+        "url": "",
         "target": "same_window",
         "upColor": "#f1ffc8",
         "overColor": "#d9ff66",
@@ -226,7 +226,7 @@
     },
     "wdeujs26": {
         "hover": "MACEDONIA",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -235,7 +235,7 @@
     },
     "wdeujs27": {
         "hover": "MALTA",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -244,7 +244,7 @@
     },
     "wdeujs28": {
         "hover": "MOLDOVA",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -253,7 +253,7 @@
     },
     "wdeujs29": {
         "hover": "MONACO",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -262,7 +262,7 @@
     },
     "wdeujs30": {
         "hover": "MONTENEGRO",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -270,8 +270,8 @@
         "active": true
     },
     "wdeujs31": {
-        "hover": "<b><u>NETHERLANDS</u></b><br><span style='color: #999;'>*Click to open a webpage*</span>",
-        "url": "https://www.html5interactivemaps.com/",
+        "hover": "<b><u>NETHERLANDS</u></b>",
+        "url": "",
         "target": "same_window",
         "upColor": "#f1ffc8",
         "overColor": "#d9ff66",
@@ -279,8 +279,8 @@
         "active": true
     },
     "wdeujs32": {
-        "hover": "NORWAY",
-        "url": "https://www.html5interactivemaps.com/",
+        "hover": "<b><u>NORWAY</u></b><br>Norway Marathons<br><img class='mapimg' src='img/Nationals/flag_NOR.jpg'>",
+        "url": "https://worldsmarathons.com/c/marathon/norway",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -289,7 +289,7 @@
     },
     "wdeujs33": {
         "hover": "POLAND",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -297,8 +297,8 @@
         "active": true
     },
     "wdeujs34": {
-        "hover": "PORTUGAL",
-        "url": "https://www.html5interactivemaps.com/",
+        "hover": "<b><u>PORTUGAL</u></b><br>Events in Portugal<br><img class='mapimg' src='img/Nationals/flag_PRG.jpg'>",
+        "url": "https://worldsmarathons.com/c/marathon/portugal",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -307,7 +307,7 @@
     },
     "wdeujs35": {
         "hover": "ROMANIA",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -315,8 +315,8 @@
         "active": true
     },
     "wdeujs36": {
-        "hover": "RUSSIA (EUROPEAN PART)",
-        "url": "https://www.html5interactivemaps.com/",
+        "hover": "<b><u>RUSSIA (EUROPEAN PART)</u></b><br>See interesting marathons<br><img class='mapimg' src='img/Nationals/flag_RUS.jpg'>",
+        "url": "https://worldsmarathons.com/c/marathon/russia",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -325,7 +325,7 @@
     },
     "wdeujs37": {
         "hover": "SAN MARINO",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -333,8 +333,8 @@
         "active": true
     },
     "wdeujs38": {
-        "hover": "<b><u>SERBIA</u></b><br>Write any text and load images<br><img src='example.png'>",
-        "url": "https://www.html5interactivemaps.com/",
+        "hover": "<b><u>SERBIA</u></b>",
+        "url": "",
         "target": "same_window",
         "upColor": "#f1ffc8",
         "overColor": "#d9ff66",
@@ -343,7 +343,7 @@
     },
     "wdeujs39": {
         "hover": "SLOVAKIA",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -352,7 +352,7 @@
     },
     "wdeujs40": {
         "hover": "SLOVENIA",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -360,8 +360,8 @@
         "active": true
     },
     "wdeujs41": {
-        "hover": "SPAIN",
-        "url": "https://www.html5interactivemaps.com/",
+        "hover": "<b><u>SPAIN</u></b><br>Spain marathons<br><img class='mapimg' src='img/Nationals/flag_SPA.jpg'>",
+        "url": "https://worldsmarathons.com/c/marathon/spain",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -369,8 +369,8 @@
         "active": true
     },
     "wdeujs42": {
-        "hover": "<b><u>SWEDEN</u></b><br><span style='color: #999;'>*Click to open a webpage*</span>",
-        "url": "https://www.html5interactivemaps.com/",
+        "hover": "<b><u>SWEDEN</u></b><br>Sweden joyful events<br><img class='mapimg' src='img/Nationals/flag_SWE.jpg'>",
+        "url": "https://worldsmarathons.com/c/marathon/sweden",
         "target": "same_window",
         "upColor": "#f1ffc8",
         "overColor": "#d9ff66",
@@ -379,7 +379,7 @@
     },
     "wdeujs43": {
         "hover": "SWITZERLAND",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "https://worldsmarathons.com/c/marathon/switzerland",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -388,7 +388,7 @@
     },
     "wdeujs44": {
         "hover": "UKRAINE",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "https://worldsmarathons.com/c/marathon/ukraine",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -396,8 +396,8 @@
         "active": true
     },
     "wdeujs45": {
-        "hover": "UNITED KINGDOM",
-        "url": "https://www.html5interactivemaps.com/",
+        "hover": "<b><u>GREAT BRITAIN</u></b><br>Great Britannian events<br><img class='mapimg' src='img/Nationals/flag_GBR.jpg'>",
+        "url": "https://worldsmarathons.com/s/running/europe/united_kingdom",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -406,12 +406,12 @@
     },
     "wdeujs46": {
         "hover": "VATICAN CITY",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
         "downColor": "#cae9af",
-        "active": true
+        "active": false
     },
     "general": {
         "borderColor": "var(--map-border-color)",

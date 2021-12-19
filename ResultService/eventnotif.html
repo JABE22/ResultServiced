@@ -74,8 +74,10 @@
                     <div class="map" id="map"></div>
                 </div>
                 <input type="text" placeholder="City" id="locality" />
-                <input type="text" placeholder="State or Province" id="administrative_area_level_1" />
-                <input type="text" placeholder="Zip or Postal code" id="postal_code" />
+                <div class="row_flex">
+                    <input type="text" placeholder="State or Province" id="administrative_area_level_1" />
+                    <input type="text" placeholder="Zip or Postal code" id="postal_code" />
+                </div>
                 <input list="countries" type="text" placeholder="Country" id="country" />
                 <datalist id="countries"></datalist>
             </div>
@@ -84,8 +86,10 @@
             <input type="text" class="form-control" id="ename" name="eventname" placeholder="Event name">
             <div class="datetime_compo">
                 <label for="date">Date and Start time</label>
-                <input type="date" class="form-control" id="date" name="date">
-                <input type="time" class="form-control" id="time" name="time">
+                <div class="row_flex">
+                    <input type="date" class="form-control" id="date" name="date">
+                    <input type="time" class="form-control" id="time" name="time">
+                </div>
             </div>
             <select name="dists" id="dists" class="select-options">
                 <option value="0" selected disabled>Select distance</option>
@@ -126,6 +130,7 @@
         <img id="madeinfinland" alt="madedesign_finland" src="./img/mission/avainlippu_dff_nobg.png">
         <img id="urfu" src="./img/logo_urfu_nobg.png" alt="UrFU">
         <img id="jamasoft" alt="jama_logo" src="./img/logo_jamasoft1.png">
+        <img id="worldsmarathons" class="partner_logo" alt="worlds_marathons" src="img/logos/worldsmarathons.png">
     </div>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEzv4wGM64Y-Q1l-cKtP2qNR2_LnNGniE&libraries=places&callback=initMap&solution_channel=GMP_QB_addressselection_v1_cAB" async defer></script>
     <script src="js/formevent.js"></script>

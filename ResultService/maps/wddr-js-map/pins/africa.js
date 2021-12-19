@@ -4,11 +4,11 @@
             "hover": "<b><u>LAGOS</u></b><br>Write any text and load images<br><img src='flag/finland.jpg'>", //info of the popup
             "pos_X": 409, //check the X, Y coordinates guide in the documentation
             "pos_Y": 278,
-            "size": 18, //size of the pin
+            "size": 0, //size of the pin
             "outline": "#000080", //outline color of the pin
             "upColor": "#1a1aff", //color of the pin when map load
             "overColor": "#66d9ff", //color of the pin when mouse hover
-            "url": "https://www.html5interactivemaps.com/", //link to any webpage
+            "url": "", //link to any webpage
             "target": "new_window", // use "new_window", "same_window", "modal", or "none"
             "active": true //true/false to activate/deactivate this pin
         },
@@ -17,20 +17,46 @@
             "hover": "<b><u>TUNIS</u></b><br><span style='color: #bcbcbc;'>Street Address:</span><br>&nbsp;321 Example, Address 54321<br><span style='color: #bcbcbc;'>Telephone:</span><br>&nbsp;(256) 555-4321 / (256) 555-1234",
             "pos_X": 457,
             "pos_Y": 28,
-            "size": 20,
+            "size": 0,
             "outline": "#660000",
             "upColor": "#e60000",
             "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "url": "",
             "target": "same_window",
             "active": true
         },
         {
             "shape": "circle",
-            "hover": "<b><u>ABIDJAN</u></b><br><span style='color: #999;'>Click to open a modal window!</span><br><span style='color: #ff6666;'><b>Modal Window Option is Compatible<br> with Bootstrap Only.</b></span>",
+            "hover": "<b><u>MARANGU, Tanzania</u></b><br><img class='mapimg' src='img/Nationals/flag_TZN.jpg'><br><b>Kilimasai Marathon and Safari</b><br>31. July 2022<br><b>Trips:</b><br>-Marathon (42.20 km)<br>-Half Marathon (21.10 km)<br>-10 km, 1km",
+            "pos_X": 655,
+            "pos_Y": 360,
+            "size": 12,
+            "outline": "#660000",
+            "upColor": "cornsilk",
+            "overColor": "gold",
+            "url": "https://worldsmarathons.com/marathon/kilimasai-marathon",
+            "target": "same_window",
+            "active": true
+        },
+        {
+            "shape": "circle",
+            "hover": "<b><u>CAPE TOWN, South-Africa</u></b><br><img class='mapimg' src='img/Nationals/flag_SAF.jpg'><br><b>Two Oceans Marathon</b><br>16. April 2022<br><b>Trips:</b><br>-Marathon (56 km)<br>-Half Marathon (21 km)<br>-24 km, 12 km",
+            "pos_X": 520,
+            "pos_Y": 615,
+            "size": 12,
+            "outline": "#660000",
+            "upColor": "cornsilk",
+            "overColor": "gold",
+            "url": "https://worldsmarathons.com/marathon/old-mutual-two-oceans-marathon",
+            "target": "same_window",
+            "active": true
+        },
+        {
+            "shape": "circle",
+            "hover": "<b><u>ABIDJAN</u></b>",
             "pos_X": 353,
             "pos_Y": 288,
-            "size": 16,
+            "size": 0,
             "outline": "#660000",
             "upColor": "#e60000",
             "overColor": "#ffd480",
@@ -43,11 +69,11 @@
             "hover": "<b><u>CAIRO</u></b><br><span style='color: #999;'>*Click to open a webpage*</span>",
             "pos_X": 604,
             "pos_Y": 94,
-            "size": 14,
+            "size": 0,
             "outline": "#660000",
             "upColor": "#e60000",
             "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "url": "",
             "target": "same_window",
             "active": true
         },
@@ -56,11 +82,11 @@
             "hover": "JOHANNESBURG",
             "pos_X": 590,
             "pos_Y": 547,
-            "size": 14,
+            "size": 0,
             "outline": "#660000",
             "upColor": "#e60000",
             "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "url": "",
             "target": "same_window",
             "active": true
         },
@@ -69,11 +95,11 @@
             "hover": "CAPE TOWN",
             "pos_X": 517,
             "pos_Y": 617,
-            "size": 14,
+            "size": 0,
             "outline": "#660000",
             "upColor": "#e60000",
             "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "url": "",
             "target": "same_window",
             "active": true
         },
@@ -86,7 +112,7 @@
             "outline": "#660000",
             "upColor": "#e60000",
             "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "url": "",
             "target": "same_window",
             "active": true
         },
@@ -99,7 +125,7 @@
             "outline": "#660000",
             "upColor": "#e60000",
             "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "url": "",
             "target": "same_window",
             "active": true
         },
@@ -112,7 +138,7 @@
             "outline": "#660000",
             "upColor": "#e60000",
             "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "url": "",
             "target": "same_window",
             "active": true
         },
@@ -125,7 +151,7 @@
             "outline": "#660000",
             "upColor": "#e60000",
             "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "url": "",
             "target": "same_window",
             "active": true
         },
@@ -138,7 +164,7 @@
             "outline": "#660000",
             "upColor": "#e60000",
             "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "url": "",
             "target": "same_window",
             "active": true
         },
@@ -151,7 +177,7 @@
             "outline": "#660000",
             "upColor": "#e60000",
             "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "url": "",
             "target": "same_window",
             "active": true
         },
@@ -164,7 +190,7 @@
             "outline": "#660000",
             "upColor": "#e60000",
             "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "url": "",
             "target": "same_window",
             "active": true
         },
@@ -177,7 +203,7 @@
             "outline": "#660000",
             "upColor": "#e60000",
             "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "url": "",
             "target": "same_window",
             "active": true
         },
@@ -190,7 +216,7 @@
             "outline": "#660000",
             "upColor": "#e60000",
             "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "url": "",
             "target": "same_window",
             "active": true
         } // If you want to add more pin, you need to add comma ',' after }

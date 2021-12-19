@@ -1,41 +1,67 @@
 ﻿var eupins_config = {
     "pins": [{
-            "shape": "square", //either "circle" or "square"
-            "hover": "<b><u>LONDON</u></b><br>London City Run<br><img src='../../../img/flags/flag_uk.jpg' style='width: 60px'>", //info of the popup
-            "pos_X": 306, //check the X, Y coordinates guide in the documentation
-            "pos_Y": 338,
-            "size": 18, //size of the pin
+            "shape": "circle", //either "circle" or "square"
+            "hover": "<b><u>NOTTINGHAM, Great Britain</u></b><br><img class='mapimg' src='img/Nationals/flag_GBR.jpg'><br><b>Robin Hood Festival of Running</b><br>25. September 2022<br><b>Trips:</b><br>-Half Marathon (21.10 km)<br>-2.41 km", //info of the popup
+            "pos_X": 300, //check the X, Y coordinates guide in the documentation
+            "pos_Y": 320,
+            "size": 12, //size of the pin
             "outline": "#000080", //outline color of the pin
-            "upColor": "#1a1aff", //color of the pin when map load
-            "overColor": "#66d9ff", //color of the pin when mouse hover
-            "url": "https://www.html5interactivemaps.com/", //link to any webpage
-            "target": "new_window", // use "new_window", "same_window", "modal", or "none"
+            "upColor": "cornsilk", //color of the pin when map load
+            "overColor": "gold", //color of the pin when mouse hover
+            "url": "https://worldsmarathons.com/marathon/nottingham-robin-hood-marathon", //link to any webpage
+            "target": "same_window", // use "new_window", "same_window", "modal", or "none"
             "active": true //true/false to activate/deactivate this pin
         },
         {
             "shape": "circle",
-            "hover": "<b><u>PARIS</u></b><br><span style='color: #bcbcbc;'>Street Address:</span><br>&nbsp;321 Example, Address 54321<br><span style='color: #bcbcbc;'>Telephone:</span><br>&nbsp;(256) 555-4321 / (256) 555-1234",
+            "hover": "<b><u>PARIS</u></b>",
             "pos_X": 325,
             "pos_Y": 384,
-            "size": 20,
+            "size": 0,
             "outline": "#660000",
-            "upColor": "#e60000",
-            "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "upColor": "cornsilk",
+            "overColor": "gold",
+            "url": "",
             "target": "same_window",
             "active": true
         },
         {
             "shape": "circle",
-            "hover": "<b><u>BERLIN</u></b><br><span style='color: #999;'>Click to open a modal window!</span><br><span style='color: #ff6666;'><b>Modal Window Option is Compatible<br> with Bootstrap Only.</b></span>",
+            "hover": "<b><u>BERLIN</u></b>",
             "pos_X": 432,
             "pos_Y": 349,
-            "size": 16,
+            "size": 0,
             "outline": "#660000",
-            "upColor": "#e60000",
-            "overColor": "#ffd480",
+            "upColor": "cornsilk",
+            "overColor": "gold",
             "url": "#mymodal",
             "target": "modal",
+            "active": true
+        },
+        {
+            "shape": "circle",
+            "hover": "<b><u>BRÄUNLINGEN, Germany</u></b><br><img class='mapimg' src='img/Nationals/flag_GER.jpg'><br><b>Schwarzwald Marathon</b><br>9. October 2022<br><b>Trips:</b><br>-Marathon (42.20 km)<br>-Half Marathon (21.10 km)",
+            "pos_X": 385,
+            "pos_Y": 415,
+            "size": 12,
+            "outline": "#660000",
+            "upColor": "cornsilk",
+            "overColor": "gold",
+            "url": "https://worldsmarathons.com/marathon/schwarzwald-marathon",
+            "target": "same_window",
+            "active": true
+        },
+        {
+            "shape": "circle",
+            "hover": "<b><u>FÜSSEN, Germany</u></b><br><img class='mapimg' src='img/Nationals/flag_GER.jpg'><br><b>Königsschlösser Marathon</b><br>24. July 2022<br><b>Trips:</b><br>-Marathon (42 km)<br>-Half Marathon (21 km)<br>-10 km",
+            "pos_X": 410,
+            "pos_Y": 420,
+            "size": 12,
+            "outline": "#660000",
+            "upColor": "cornsilk",
+            "overColor": "gold",
+            "url": "https://worldsmarathons.com/marathon/koenig-ludwig-marathon",
+            "target": "same_window",
             "active": true
         },
         {
@@ -43,11 +69,24 @@
             "hover": "<b><u>MADRID</u></b><br><span style='color: #999;'>*Click to open a webpage*</span>",
             "pos_X": 223,
             "pos_Y": 507,
-            "size": 14,
+            "size": 0,
             "outline": "#660000",
-            "upColor": "#e60000",
-            "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "upColor": "cornsilk",
+            "overColor": "gold",
+            "url": "",
+            "target": "same_window",
+            "active": true
+        },
+        {
+            "shape": "circle",
+            "hover": "<b><u>LISBOA, Portugal</u></b><br><img class='mapimg' src='img/Nationals/flag_PRG.jpg'><br><b>EDP Lisbon Half Marathon</b><br>20. March 2022<br><b>Trips:</b><br>-Half Marathon (21 km)<br>-10 km, 7 km",
+            "pos_X": 140,
+            "pos_Y": 500,
+            "size": 12, //change the size to display this pin
+            "outline": "#660000",
+            "upColor": "cornsilk",
+            "overColor": "gold",
+            "url": "https://worldsmarathons.com/marathon/lisbon-half-marathon",
             "target": "same_window",
             "active": true
         },
@@ -56,63 +95,89 @@
             "hover": "BUCHAREST",
             "pos_X": 584,
             "pos_Y": 477,
-            "size": 14,
+            "size": 0,
             "outline": "#660000",
-            "upColor": "#e60000",
-            "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "upColor": "cornsilk",
+            "overColor": "gold",
+            "url": "",
             "target": "same_window",
             "active": true
         },
         {
             "shape": "circle",
-            "hover": "WARSAW",
-            "pos_X": 509,
-            "pos_Y": 360,
-            "size": 14,
+            "hover": "<b><u>GOTHENBURG, Sweden</u></b><br><img class='mapimg' src='img/Nationals/flag_SWE.jpg'><br><b>Skatås ryggar</b><br>4. June 2022<br><b>Trips:</b><br>-Half Marathon (21 km)<br>-14 km, 7km",
+            "pos_X": 430,
+            "pos_Y": 270,
+            "size": 12, //change the size to display this pin
             "outline": "#660000",
-            "upColor": "#e60000",
-            "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "upColor": "cornsilk",
+            "overColor": "gold",
+            "url": "https://worldsmarathons.com/marathon/skat-s-ryggar",
             "target": "same_window",
             "active": true
         },
         {
             "shape": "circle",
-            "hover": "BLANK7",
-            "pos_X": 20,
-            "pos_Y": 300,
-            "size": 0, //change the size to display this pin
+            "hover": "<b><u>HELSINKI, Finland</u></b><br><img class='mapimg' src='img/Nationals/flag_FIN.jpg'><br><b>Helsinki Half Marathon</b><br>11. June 2022<br><b>Trips:</b><br>-Half Marathon (21 km)",
+            "pos_X": 534,
+            "pos_Y": 238,
+            "size": 12, //change the size to display this pin
             "outline": "#660000",
-            "upColor": "#e60000",
-            "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "upColor": "cornsilk",
+            "overColor": "gold",
+            "url": "https://worldsmarathons.com/marathon/helsinki-half-marathon",
             "target": "same_window",
             "active": true
         },
         {
             "shape": "circle",
-            "hover": "BLANK8",
-            "pos_X": 20,
-            "pos_Y": 350,
-            "size": 0, //change the size to display this pin
+            "hover": "<b><u>ROVANIEMI, Finland</u></b><br><img class='mapimg' src='img/Nationals/flag_FIN.jpg'><br><b>Actic Marathon Finland</b><br>3. April 2022<br><b>Trips:</b><br>-Marathon (42 km)<br>-Half Marathon (21 km)<br>-10 km, 1 km",
+            "pos_X": 530,
+            "pos_Y": 145,
+            "size": 12, //change the size to display this pin
             "outline": "#660000",
-            "upColor": "#e60000",
-            "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "upColor": "cornsilk",
+            "overColor": "gold",
+            "url": "https://worldsmarathons.com/marathon/artic-marathon-finland",
             "target": "same_window",
             "active": true
         },
         {
             "shape": "circle",
-            "hover": "BLANK9",
-            "pos_X": 20,
-            "pos_Y": 400,
-            "size": 0, //change the size to display this pin
+            "hover": "<b><u>REYKJAVIK, Iceland</u></b><br><img class='mapimg' src='img/Nationals/flag_ICL.jpg'><br><b>Reykjavik Autumn Marathon</b><br>22. October 2022<br><b>Trips:</b><br>-Marathon (42.20 km)<br>-Half Marathon (21.10 km)",
+            "pos_X": 230,
+            "pos_Y": 112,
+            "size": 12, //change the size to display this pin
             "outline": "#660000",
-            "upColor": "#e60000",
-            "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "upColor": "cornsilk",
+            "overColor": "gold",
+            "url": "https://worldsmarathons.com/marathon/reykjavik-autumn-marathon2",
+            "target": "same_window",
+            "active": true
+        },
+        {
+            "shape": "circle",
+            "hover": "<b><u>VILNIUS, Lithuania</u></b><br><img class='mapimg' src='img/Nationals/flag_LTH.jpg'><br><b>Rimi Vilnius Marathon</b><br>11. September 2022<br><b>Trips:</b><br>-Marathon (42.20 km)<br>-Half Marathon (21.10 km)<br>-10 km, 5 km",
+            "pos_X": 545,
+            "pos_Y": 325,
+            "size": 12, //change the size to display this pin
+            "outline": "#660000",
+            "upColor": "cornsilk",
+            "overColor": "gold",
+            "url": "https://worldsmarathons.com/marathon/vilnius-marathon",
+            "target": "same_window",
+            "active": true
+        },
+        {
+            "shape": "circle",
+            "hover": "<b><u>MOSCOW, Russia</u></b><br><img class='mapimg' src='img/Nationals/flag_RUS.jpg'><br><b>Moscow Marathon</b><br>1. September 2022<br><b>Trips:</b><br>-Marathon (42.20 km)<br>-10 km",
+            "pos_X": 700,
+            "pos_Y": 305,
+            "size": 14, //change the size to display this pin
+            "outline": "#660000",
+            "upColor": "cornsilk",
+            "overColor": "gold",
+            "url": "https://worldsmarathons.com/marathon/moscow-marathon",
             "target": "same_window",
             "active": true
         },
@@ -123,9 +188,9 @@
             "pos_Y": 400,
             "size": 0, //change the size to display this pin
             "outline": "#660000",
-            "upColor": "#e60000",
-            "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "upColor": "cornsilk",
+            "overColor": "gold",
+            "url": "",
             "target": "same_window",
             "active": true
         },
@@ -136,9 +201,9 @@
             "pos_Y": 400,
             "size": 0, //change the size to display this pin
             "outline": "#660000",
-            "upColor": "#e60000",
-            "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "upColor": "cornsilk",
+            "overColor": "gold",
+            "url": "",
             "target": "same_window",
             "active": true
         },
@@ -149,9 +214,9 @@
             "pos_Y": 400,
             "size": 0, //change the size to display this pin
             "outline": "#660000",
-            "upColor": "#e60000",
-            "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "upColor": "cornsilk",
+            "overColor": "gold",
+            "url": "",
             "target": "same_window",
             "active": true
         },
@@ -162,9 +227,9 @@
             "pos_Y": 400,
             "size": 0, //change the size to display this pin
             "outline": "#660000",
-            "upColor": "#e60000",
-            "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "upColor": "cornsilk",
+            "overColor": "gold",
+            "url": "",
             "target": "same_window",
             "active": true
         },
@@ -175,9 +240,9 @@
             "pos_Y": 400,
             "size": 0, //change the size to display this pin
             "outline": "#660000",
-            "upColor": "#e60000",
-            "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "upColor": "cornsilk",
+            "overColor": "gold",
+            "url": "",
             "target": "same_window",
             "active": true
         },
@@ -188,9 +253,9 @@
             "pos_Y": 400,
             "size": 0, //change the size to display this pin
             "outline": "#660000",
-            "upColor": "#e60000",
-            "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "upColor": "cornsilk",
+            "overColor": "gold",
+            "url": "",
             "target": "same_window",
             "active": true
         } // If you want to add more pin, you need to add comma ',' here

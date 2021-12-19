@@ -4,7 +4,8 @@
         "country": "Taiwan",
         "ccode": "TWN",
         "city": "Taipei",
-        "dist": [42, 21]
+        "dist": [42, 21],
+        "url": "https://worldsmarathons.com/marathon/taipei-marathon"
     },
     {
         "date": "2022-01-01",
@@ -12,7 +13,8 @@
         "country": "United States of America",
         "ccode": "USA",
         "city": "Kingwood",
-        "dist": [42, 21]
+        "dist": [42, 21],
+        "url": "https://worldsmarathons.com/marathon/metal-sawing-technology-texas-marathon"
     },
     {
         "date": "2022-10-09",
@@ -20,7 +22,8 @@
         "country": "Germany",
         "ccode": "GER",
         "city": "Bräulingen",
-        "dist": [21]
+        "dist": [42, 21],
+        "url": "https://worldsmarathons.com/marathon/schwarzwald-marathon"
     },
     {
         "date": "2022-10-22",
@@ -28,7 +31,8 @@
         "country": "Iceland",
         "ccode": "ICL",
         "city": "Reykjavik",
-        "dist": [42]
+        "dist": [42.20, 21.10],
+        "url": "https://worldsmarathons.com/marathon/reykjavik-autumn-marathon2"
     },
     {
         "date": "2022-06-11",
@@ -36,7 +40,8 @@
         "country": "Finland",
         "ccode": "FIN",
         "city": "Helsinki",
-        "dist": [21]
+        "dist": [21],
+        "url": "https://worldsmarathons.com/marathon/helsinki-half-marathon"
     },
     {
         "date": "2022-09-11",
@@ -44,7 +49,8 @@
         "country": "Lithuania",
         "ccode": "LTH",
         "city": "Vilnius",
-        "dist": [42, 21, 10, 5]
+        "dist": [42.20, 21.10, 10, 5],
+        "url": "https://worldsmarathons.com/marathon/vilnius-marathon"
     },
     {
         "date": "2022-10-09",
@@ -52,7 +58,8 @@
         "country": "Nepal",
         "ccode": "NPL",
         "city": "Khangsar",
-        "dist": [42, 21, 10, 1]
+        "dist": [42, 21, 10, 1],
+        "url": "https://worldsmarathons.com/marathon/yeti-marathon-nepal"
     },
     {
         "date": "2022-01-08",
@@ -60,7 +67,8 @@
         "country": "United States of America",
         "ccode": "USA",
         "city": "Big Fork",
-        "dist": [42.20, 27.36]
+        "dist": [42.20, 27.36],
+        "url": "https://worldsmarathons.com/marathon/athens-big-fork-trail-marathon"
     },
     {
         "date": "2022-07-24",
@@ -68,7 +76,8 @@
         "country": "German",
         "ccode": "GER",
         "city": "Fussen",
-        "dist": [42, 21, 10]
+        "dist": [42, 21, 10],
+        "url": "https://worldsmarathons.com/marathon/koenig-ludwig-marathon"
     },
     {
         "date": "2022-04-03",
@@ -76,7 +85,8 @@
         "country": "Finland",
         "ccode": "FIN",
         "city": "Rovaniemi",
-        "dist": [42, 21, 10, 1]
+        "dist": [42, 21, 10, 1],
+        "url": "https://worldsmarathons.com/marathon/artic-marathon-finland"
 
     },
     {
@@ -85,7 +95,17 @@
         "country": "Tanzania",
         "ccode": "TZN",
         "city": "Marangu",
-        "dist": [42, 21, 10, 1]
+        "dist": [42, 21, 10, 1],
+        "url": "https://worldsmarathons.com/marathon/kilimasai-marathon"
+    },
+    {
+        "date": "2022-04-16",
+        "ename": "Two Oceans Marathon",
+        "country": "South-Africa",
+        "ccode": "SAF",
+        "city": "Cape Town",
+        "dist": [56, 24, 12],
+        "url": "https://worldsmarathons.com/marathon/old-mutual-two-oceans-marathon"
     },
     {
         "date": "2022-03-20",
@@ -93,7 +113,8 @@
         "country": "Portugal",
         "ccode": "PRG",
         "city": "Lisboa",
-        "dist": [21, 10, 7]
+        "dist": [21, 10, 7],
+        "url": "https://worldsmarathons.com/marathon/lisbon-half-marathon"
     },
     {
         "date": "2022-02-04",
@@ -101,6 +122,70 @@
         "country": "Israel",
         "ccode": "ISR",
         "city": "Ein Bokek",
-        "dist": [50, 21, 10, 5]
+        "dist": [50, 21, 10, 5],
+        "url": "https://worldsmarathons.com/marathon/dead-sea-marathon-israel"
+    },
+    {
+        "date": "2022-09-01",
+        "ename": "Moscow Marathon",
+        "country": "Russia",
+        "ccode": "RUS",
+        "city": "Moscow",
+        "dist": [42.20, 10],
+        "url": "https://worldsmarathons.com/marathon/moscow-marathon"
+    },
+    {
+        "date": "2022-07-04",
+        "ename": "Skåtas ryggar",
+        "country": "Sweden",
+        "ccode": "SWE",
+        "city": "Gothenburg",
+        "dist": [21, 14, 7],
+        "url": "https://worldsmarathons.com/marathon/skat-s-ryggar"
+    },
+    {
+        "date": "2022-09-25",
+        "ename": "Robin Hood Festival of Running",
+        "country": "Great Britain",
+        "ccode": "GBR",
+        "city": "Nottingham",
+        "dist": [21.10, 2.41],
+        "url": "https://worldsmarathons.com/marathon/nottingham-robin-hood-marathon"
+    },
+    {
+        "date": "2022-04-10",
+        "ename": "São Paulo International Marathon",
+        "country": "Brazil",
+        "ccode": "BRA",
+        "city": "São Paulo",
+        "dist": [42.20, 21, 5],
+        "url": "https://worldsmarathons.com/marathon/sao-paulo-international-half-marathon"
+    },
+    {
+        "date": "2022-11-06",
+        "ename": "Addu Marathon",
+        "country": "Maldives",
+        "ccode": "MLD",
+        "city": "Addu City",
+        "dist": [42, 21, 10, 5],
+        "url": "https://worldsmarathons.com/marathon/addu-marathon"
+    },
+    {
+        "date": "2022-05-15",
+        "ename": "Sydney Morning Herald Half Marathon",
+        "country": "Australia",
+        "ccode": "ARL",
+        "city": "Sydney",
+        "dist": [21.10],
+        "url": "https://worldsmarathons.com/marathon/sydney-morning-herald-half-marathon"
+    },
+    {
+        "date": "2022-01-15",
+        "ename": "Taranaki Off-Road Half Marathon",
+        "country": "New Zealand",
+        "ccode": "NZL",
+        "city": "Taranaki",
+        "dist": [21.10, 10, 5],
+        "url": "https://worldsmarathons.com/marathon/taranaki-off-road-half-marathon"
     }
 ]

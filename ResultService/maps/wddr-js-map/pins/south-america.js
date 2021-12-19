@@ -1,15 +1,15 @@
 ﻿var sapins_config = {
     "pins": [{
-            "shape": "square", //either "circle" or "square"
-            "hover": "<b><u>SÃO PAULO</u></b><br>Brazil Half Marathon<br><img src='../../../img/flags/flag_brazil.jpg' style='width: 60px'>", //info of the popup
+            "shape": "circle", //either "circle" or "square"
+            "hover": "<b><u>SAO PAULO, Brazil</u></b><br><img class='mapimg' src='img/Nationals/flag_BRA.jpg'><br><b>São Paulo International<br>Marathon</b><br><hr>10. April 2022<br><hr>-Marathon (42.20 km)<br>-Half Marathon (21 km)<br>-5 km", //info of the popup
             "pos_X": 582, //check the X, Y coordinates guide in the documentation
             "pos_Y": 346,
-            "size": 20, //size of the pin
-            "outline": "#000080", //outline color of the pin
-            "upColor": "#1a1aff", //color of the pin when map load
-            "overColor": "#66d9ff", //color of the pin when mouse hover
-            "url": "https://www.html5interactivemaps.com/", //link to any webpage
-            "target": "new_window", // use "new_window", "same_window", "modal", or "none"
+            "size": 14, //size of the pin
+            "outline": "#660000", //outline color of the pin
+            "upColor": "cornsilk", //color of the pin when map load
+            "overColor": "gold", //color of the pin when mouse hover
+            "url": "https://worldsmarathons.com/marathon/sao-paulo-international-half-marathon", //link to any webpage
+            "target": "same_window", // use "new_window", "same_window", "modal", or "none"
             "active": true //true/false to activate/deactivate this pin
         },
         {
@@ -17,11 +17,11 @@
             "hover": "<b><u>LIMA</u></b><br><span style='color: #bcbcbc;'>Street Address:</span><br>&nbsp;321 Example, Address 54321<br><span style='color: #bcbcbc;'>Telephone:</span><br>&nbsp;(256) 555-4321 / (256) 555-1234",
             "pos_X": 344,
             "pos_Y": 239,
-            "size": 22,
+            "size": 0,
             "outline": "#660000",
-            "upColor": "#e60000",
-            "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "upColor": "cornsilk",
+            "overColor": "gold",
+            "url": "",
             "target": "same_window",
             "active": true
         },
@@ -30,12 +30,12 @@
             "hover": "<b><u>BOGOTÁ</u></b><br><span style='color: #999;'>Click to open a modal window!</span><br><span style='color: #ff6666;'><b>Modal Window Option is Compatible<br> with Bootstrap Only.</b></span>",
             "pos_X": 362,
             "pos_Y": 88,
-            "size": 18,
+            "size": 0,
             "outline": "#660000",
-            "upColor": "#e60000",
-            "overColor": "#ffd480",
-            "url": "#mymodal",
-            "target": "modal",
+            "upColor": "cornsilk",
+            "overColor": "gold",
+            "url": "",
+            "target": "same_window",
             "active": true
         },
         {
@@ -43,11 +43,11 @@
             "hover": "<b><u>RIO DE JANEIRO</u></b><br><span style='color: #999;'>*Click to open a webpage*</span>",
             "pos_X": 611,
             "pos_Y": 334,
-            "size": 16,
+            "size": 0,
             "outline": "#660000",
-            "upColor": "#e60000",
-            "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "upColor": "cornsilk",
+            "overColor": "gold",
+            "url": "",
             "target": "same_window",
             "active": true
         },
@@ -56,11 +56,11 @@
             "hover": "SANTIAGO",
             "pos_X": 418,
             "pos_Y": 444,
-            "size": 16,
+            "size": 0,
             "outline": "#660000",
-            "upColor": "#e60000",
-            "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "upColor": "cornsilk",
+            "overColor": "gold",
+            "url": "",
             "target": "same_window",
             "active": true
         },
@@ -69,11 +69,11 @@
             "hover": "CARACAS",
             "pos_X": 410,
             "pos_Y": 34,
-            "size": 14,
+            "size": 0,
             "outline": "#660000",
-            "upColor": "#e60000",
-            "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "upColor": "cornsilk",
+            "overColor": "gold",
+            "url": "",
             "target": "same_window",
             "active": true
         },
@@ -82,11 +82,11 @@
             "hover": "BUENOS AIRES",
             "pos_X": 512,
             "pos_Y": 447,
-            "size": 14,
+            "size": 0,
             "outline": "#660000",
-            "upColor": "#e60000",
-            "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "upColor": "cornsilk",
+            "overColor": "gold",
+            "url": "",
             "target": "same_window",
             "active": true
         },
@@ -97,9 +97,9 @@
             "pos_Y": 350,
             "size": 0, //change the size to display this pin
             "outline": "#660000",
-            "upColor": "#e60000",
-            "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "upColor": "cornsilk",
+            "overColor": "gold",
+            "url": "",
             "target": "same_window",
             "active": true
         },
@@ -110,9 +110,9 @@
             "pos_Y": 400,
             "size": 0, //change the size to display this pin
             "outline": "#660000",
-            "upColor": "#e60000",
-            "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "upColor": "cornsilk",
+            "overColor": "gold",
+            "url": "",
             "target": "same_window",
             "active": true
         },
@@ -123,9 +123,9 @@
             "pos_Y": 400,
             "size": 0, //change the size to display this pin
             "outline": "#660000",
-            "upColor": "#e60000",
-            "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "upColor": "cornsilk",
+            "overColor": "gold",
+            "url": "",
             "target": "same_window",
             "active": true
         },
@@ -136,9 +136,9 @@
             "pos_Y": 400,
             "size": 0, //change the size to display this pin
             "outline": "#660000",
-            "upColor": "#e60000",
-            "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "upColor": "cornsilk",
+            "overColor": "gold",
+            "url": "",
             "target": "same_window",
             "active": true
         },
@@ -149,9 +149,9 @@
             "pos_Y": 400,
             "size": 0, //change the size to display this pin
             "outline": "#660000",
-            "upColor": "#e60000",
-            "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "upColor": "cornsilk",
+            "overColor": "gold",
+            "url": "",
             "target": "same_window",
             "active": true
         },
@@ -162,9 +162,9 @@
             "pos_Y": 400,
             "size": 0, //change the size to display this pin
             "outline": "#660000",
-            "upColor": "#e60000",
-            "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "upColor": "cornsilk",
+            "overColor": "gold",
+            "url": "",
             "target": "same_window",
             "active": true
         },
@@ -175,9 +175,9 @@
             "pos_Y": 400,
             "size": 0, //change the size to display this pin
             "outline": "#660000",
-            "upColor": "#e60000",
-            "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "upColor": "cornsilk",
+            "overColor": "gold",
+            "url": "",
             "target": "same_window",
             "active": true
         },
@@ -188,9 +188,9 @@
             "pos_Y": 400,
             "size": 0, //change the size to display this pin
             "outline": "#660000",
-            "upColor": "#e60000",
-            "overColor": "#ffd480",
-            "url": "https://www.html5interactivemaps.com/",
+            "upColor": "cornsilk",
+            "overColor": "gold",
+            "url": "",
             "target": "same_window",
             "active": true
         } // If you want to add more pin, you need to add comma ',' here

@@ -47,10 +47,11 @@ img {
     margin: 20px;
 }
 
-#heartbeat {
-    height: 70%;
-    transform: scaleX(-1);
-    margin-right: 40px;
+.partner_logo {
+    animation-name: opacity;
+    animation-duration: 1.5s;
+    height: 40px;
+    margin: 10px;
 }
 
 

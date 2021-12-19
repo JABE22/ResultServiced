@@ -1,7 +1,7 @@
 ﻿var wdafjsconfig = {
     "wdafjs1": {
         "hover": "ALGERIA", //info of the popup
-        "url": "https://www.html5interactivemaps.com/", //link to any webpage
+        "url": "", //link to any webpage
         "target": "same_window", // use "new_window", "same_window", "modal", or "none"
         "upColor": "#FFFFF3", //default color
         "overColor": "#ECFFB3", //highlight color
@@ -9,8 +9,8 @@
         "active": true //true/false to activate/deactivate
     },
     "wdafjs2": {
-        "hover": "<b><u>ANGOLA</u></b><br>Write any text and load images<br><img src='example.png'>",
-        "url": "https://www.html5interactivemaps.com/",
+        "hover": "<b><u>ANGOLA</u></b>",
+        "url": "",
         "target": "same_window",
         "upColor": "#f1ffc8",
         "overColor": "#d9ff66",
@@ -19,7 +19,7 @@
     },
     "wdafjs3": {
         "hover": "<b><u>BENIN</u></b><br><span style='color: #bcbcbc;'>Street Address:</span><br>&nbsp;321 Example, Address 54321<br><span style='color: #bcbcbc;'>Telephone:</span><br>&nbsp;(256) 555-4321 / (256) 555-1234",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#d7f57a",
         "overColor": "#beef2a",
@@ -27,8 +27,8 @@
         "active": true
     },
     "wdafjs4": {
-        "hover": "<b><u>BOTSWANA</u></b><br><span style='color: #999;'>*Click to open a webpage*</span>",
-        "url": "https://www.html5interactivemaps.com/",
+        "hover": "<b><u>BOTSWANA</u></b>",
+        "url": "",
         "target": "same_window",
         "upColor": "#f1ffc8",
         "overColor": "#d9ff66",
@@ -37,7 +37,7 @@
     },
     "wdafjs5": {
         "hover": "BURKINA FASO",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -46,7 +46,7 @@
     },
     "wdafjs6": {
         "hover": "BURUNDI",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#E0E2E2",
         "overColor": "#ECFFB3",
@@ -55,7 +55,7 @@
     },
     "wdafjs7": {
         "hover": "CAMEROON",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -64,7 +64,7 @@
     },
     "wdafjs8": {
         "hover": "CAPE VERDE",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -73,7 +73,7 @@
     },
     "wdafjs9": {
         "hover": "CENTRAL AFRICAN REPUBLIC",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -82,7 +82,7 @@
     },
     "wdafjs10": {
         "hover": "CHAD",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -91,7 +91,7 @@
     },
     "wdafjs11": {
         "hover": "COMOROS",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -100,7 +100,7 @@
     },
     "wdafjs12": {
         "hover": "CÔTE D’IVOIRE",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -109,7 +109,7 @@
     },
     "wdafjs13": {
         "hover": "DEMOCRATIC REPUBLIC OF THE CONGO",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#f1ffc8",
         "overColor": "#d9ff66",
@@ -118,7 +118,7 @@
     },
     "wdafjs14": {
         "hover": "DJIBOUTI",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -127,7 +127,7 @@
     },
     "wdafjs15": {
         "hover": "EGYPT",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -136,7 +136,7 @@
     },
     "wdafjs16": {
         "hover": "EQUATORIAL GUINEA",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -145,7 +145,7 @@
     },
     "wdafjs17": {
         "hover": "ERITREA",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -154,7 +154,7 @@
     },
     "wdafjs18": {
         "hover": "ETHIOPIA",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -162,8 +162,8 @@
         "active": true
     },
     "wdafjs19": {
-        "hover": "<b><u>GABON</u></b><br><span style='color: #999;'>*Click to open a webpage*</span>",
-        "url": "https://www.html5interactivemaps.com/",
+        "hover": "<b><u>GABON</u></b>",
+        "url": "",
         "target": "same_window",
         "upColor": "#f1ffc8",
         "overColor": "#d9ff66",
@@ -172,7 +172,7 @@
     },
     "wdafjs20": {
         "hover": "GAMBIA",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -181,7 +181,7 @@
     },
     "wdafjs21": {
         "hover": "GHANA",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -190,7 +190,7 @@
     },
     "wdafjs22": {
         "hover": "GUINEA",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -199,7 +199,7 @@
     },
     "wdafjs23": {
         "hover": "GUINEA-BISSAU",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -208,7 +208,7 @@
     },
     "wdafjs24": {
         "hover": "KENYA",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#E0E2E2",
         "overColor": "#ECFFB3",
@@ -216,8 +216,8 @@
         "active": false
     },
     "wdafjs25": {
-        "hover": "<b><u>LESOTHO</u></b><br>Write any text and load images<br><img src='example.png'>",
-        "url": "https://www.html5interactivemaps.com/",
+        "hover": "<b><u>LESOTHO</u></b>",
+        "url": "",
         "target": "same_window",
         "upColor": "#f1ffc8",
         "overColor": "#d9ff66",
@@ -226,7 +226,7 @@
     },
     "wdafjs26": {
         "hover": "LIBERIA",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -235,7 +235,7 @@
     },
     "wdafjs27": {
         "hover": "LIBYA",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -244,7 +244,7 @@
     },
     "wdafjs28": {
         "hover": "MADAGASCAR",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -253,7 +253,7 @@
     },
     "wdafjs29": {
         "hover": "MALAWI",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -262,7 +262,7 @@
     },
     "wdafjs30": {
         "hover": "MALI",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -270,8 +270,8 @@
         "active": true
     },
     "wdafjs31": {
-        "hover": "<b><u>MAURITANIA</u></b><br><span style='color: #999;'>*Click to open a webpage*</span>",
-        "url": "https://www.html5interactivemaps.com/",
+        "hover": "<b><u>MAURITANIA</u></b>",
+        "url": "",
         "target": "same_window",
         "upColor": "#f1ffc8",
         "overColor": "#d9ff66",
@@ -280,7 +280,7 @@
     },
     "wdafjs32": {
         "hover": "MAURITIUS",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -289,7 +289,7 @@
     },
     "wdafjs33": {
         "hover": "MOROCCO",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -298,7 +298,7 @@
     },
     "wdafjs34": {
         "hover": "MOZAMBIQUE",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -307,7 +307,7 @@
     },
     "wdafjs35": {
         "hover": "NAMIBIA",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -316,7 +316,7 @@
     },
     "wdafjs36": {
         "hover": "NIGER",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -333,8 +333,8 @@
         "active": true
     },
     "wdafjs38": {
-        "hover": "<b><u>REPUBLIC OF THE CONGO</u></b><br>Write any text and load images<br><img src='example.png'>",
-        "url": "https://www.html5interactivemaps.com/",
+        "hover": "<b><u>REPUBLIC OF THE CONGO</u></b>",
+        "url": "",
         "target": "same_window",
         "upColor": "#f1ffc8",
         "overColor": "#d9ff66",
@@ -343,7 +343,7 @@
     },
     "wdafjs39": {
         "hover": "RWANDA",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -352,7 +352,7 @@
     },
     "wdafjs40": {
         "hover": "SENEGAL",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -361,7 +361,7 @@
     },
     "wdafjs41": {
         "hover": "SEYCHELLES",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -369,8 +369,8 @@
         "active": true
     },
     "wdafjs42": {
-        "hover": "<b><u>SIERRA LEONE</u></b><br><span style='color: #999;'>*Click to open a webpage*</span>",
-        "url": "https://www.html5interactivemaps.com/",
+        "hover": "<b><u>SIERRA LEONE</u></b>",
+        "url": "",
         "target": "same_window",
         "upColor": "#f1ffc8",
         "overColor": "#d9ff66",
@@ -379,7 +379,7 @@
     },
     "wdafjs43": {
         "hover": "SOMALIA",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -388,7 +388,7 @@
     },
     "wdafjs44": {
         "hover": "SOUTH AFRICA",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -397,7 +397,7 @@
     },
     "wdafjs45": {
         "hover": "SOUTH SUDAN",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -406,7 +406,7 @@
     },
     "wdafjs46": {
         "hover": "SUDAN",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#E0E2E2",
         "overColor": "#ECFFB3",
@@ -415,7 +415,7 @@
     },
     "wdafjs47": {
         "hover": "SWAZILAND",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -424,7 +424,7 @@
     },
     "wdafjs48": {
         "hover": "SÃO TOMÉ AND PRÍNCIPE",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -433,7 +433,7 @@
     },
     "wdafjs49": {
         "hover": "TANZANIA",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -442,7 +442,7 @@
     },
     "wdafjs50": {
         "hover": "TOGO",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -451,7 +451,7 @@
     },
     "wdafjs51": {
         "hover": "TUNISIA",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -459,8 +459,8 @@
         "active": true
     },
     "wdafjs52": {
-        "hover": "<b><u>UGANDA</u></b><br>Write any text and load images<br><img src='example.png'>",
-        "url": "https://www.html5interactivemaps.com/",
+        "hover": "<b><u>UGANDA</u></b>",
+        "url": "",
         "target": "same_window",
         "upColor": "#f1ffc8",
         "overColor": "#d9ff66",
@@ -469,7 +469,7 @@
     },
     "wdafjs53": {
         "hover": "ZAMBIA",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -478,7 +478,7 @@
     },
     "wdafjs54": {
         "hover": "ZIMBABWE",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",

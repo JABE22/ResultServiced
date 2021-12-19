@@ -1,7 +1,7 @@
 ﻿var wdsajsconfig = {
     "wdsajs1": {
         "hover": "ARGENTINA", //info of the popup
-        "url": "https://www.html5interactivemaps.com/", //link to any webpage
+        "url": "", //link to any webpage
         "target": "same_window", // use "new_window", "same_window", "modal", or "none"
         "upColor": "#FFFFF3", //default color
         "overColor": "#ECFFB3", //highlight color
@@ -9,8 +9,8 @@
         "active": true //true/false to activate/deactivate
     },
     "wdsajs2": {
-        "hover": "<b><u>BOLIVIA</u></b><br>Write any text and load images<br><img src='example.png'>",
-        "url": "https://www.html5interactivemaps.com/",
+        "hover": "<b><u>BOLIVIA</u></b>",
+        "url": "",
         "target": "same_window",
         "upColor": "#f1ffc8",
         "overColor": "#d9ff66",
@@ -18,8 +18,8 @@
         "active": true
     },
     "wdsajs3": {
-        "hover": "<b><u>BRAZIL</u></b><br><span style='color: #bcbcbc;'>Street Address:</span><br>&nbsp;321 Example, Address 54321<br><span style='color: #bcbcbc;'>Telephone:</span><br>&nbsp;(256) 555-4321 / (256) 555-1234",
-        "url": "https://www.html5interactivemaps.com/",
+        "hover": "<b><u>BRAZIL</u></b>",
+        "url": "",
         "target": "same_window",
         "upColor": "#d7f57a",
         "overColor": "#beef2a",
@@ -27,8 +27,8 @@
         "active": true
     },
     "wdsajs4": {
-        "hover": "<b><u>CHILE</u></b><br><span style='color: #999;'>*Click to open a webpage*</span>",
-        "url": "https://www.html5interactivemaps.com/",
+        "hover": "<b><u>CHILE</u></b>",
+        "url": "",
         "target": "same_window",
         "upColor": "#f1ffc8",
         "overColor": "#d9ff66",
@@ -36,7 +36,7 @@
         "active": true
     },
     "wdsajs5": {
-        "hover": "<b><u>COLOMBIA</u></b><br><span style='color: #999;'>Click to open a modal window!</span><br><span style='color: #ff6666;'><b>Modal Window Option is Compatible<br> with Bootstrap Only.</b></span>",
+        "hover": "<b><u>COLOMBIA</u></b>",
         "url": "#mymodal",
         "target": "modal",
         "upColor": "#edff66",
@@ -46,7 +46,7 @@
     },
     "wdsajs6": {
         "hover": "ECUADOR",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#E0E2E2",
         "overColor": "#ECFFB3",
@@ -55,7 +55,7 @@
     },
     "wdsajs7": {
         "hover": "FALKLAND ISLANDS",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -64,7 +64,7 @@
     },
     "wdsajs8": {
         "hover": "FRENCH GUIANA",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -73,7 +73,7 @@
     },
     "wdsajs9": {
         "hover": "GUYANA",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -82,7 +82,7 @@
     },
     "wdsajs10": {
         "hover": "PARAGUAY",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -91,7 +91,7 @@
     },
     "wdsajs11": {
         "hover": "PERU",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -100,7 +100,7 @@
     },
     "wdsajs12": {
         "hover": "SURINAME",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
@@ -108,8 +108,8 @@
         "active": true
     },
     "wdsajs13": {
-        "hover": "<b><u>URUGUAY</u></b><br>Write any text and load images<br><img src='example.png'>",
-        "url": "https://www.html5interactivemaps.com/",
+        "hover": "<b><u>URUGUAY</u></b>",
+        "url": "",
         "target": "same_window",
         "upColor": "#f1ffc8",
         "overColor": "#d9ff66",
@@ -118,7 +118,7 @@
     },
     "wdsajs14": {
         "hover": "VENEZUELA",
-        "url": "https://www.html5interactivemaps.com/",
+        "url": "",
         "target": "same_window",
         "upColor": "#FFFFF3",
         "overColor": "#ECFFB3",
