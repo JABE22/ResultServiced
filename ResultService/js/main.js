@@ -191,6 +191,7 @@ function createEventRow(eventId, tableId, event) {
 
 function createEventComboBoxes(parent_element_id, events, results) {
     //var event_number = 12;
+    events.sort((a, b) => (a.date > b.date) ? -1 : 1);
 
     for (let i = 0; i < events.length; i++) {
         // Outermost frame div

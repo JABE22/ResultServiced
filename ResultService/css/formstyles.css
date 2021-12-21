@@ -107,7 +107,7 @@ datalist {
 }
 
 #search_basic {
-    border: solid 1px black;
+    box-shadow: 0px 0px 3px 2px var(--main-site-color);
     display: flex;
 }
 
