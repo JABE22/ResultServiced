@@ -87,11 +87,11 @@
     <script src="./js/responsive.js"></script>
     <script>
         (async() => {
-            const events = await getJSON('data/past_events.json');
-            const results = await fetch('data/raceresults/GB-VLM.csv')
+            const events = await getJSON('js/data/past_events.json');
+            const results = await fetch('js/data/raceresults/GB-VLM.csv')
                 .then(response => response.text())
                 .then(text => JSON.parse(csvJSON(text)));
-            await createEventComboBoxes("past_eventcontainer", events, results);
+            createEventComboBoxes("past_eventcontainer", events, results);
         })();
     </script>
 
