@@ -1,7 +1,7 @@
 ﻿var afpins_config = {
     "pins": [{
             "shape": "square", //either "circle" or "square"
-            "hover": "<b><u>LAGOS</u></b><br>Write any text and load images<br><img src='flag/finland.jpg'>", //info of the popup
+            "hover": "<b><u>LAGOS</u></b><br>Write any text and load images<br>", //info of the popup
             "pos_X": 409, //check the X, Y coordinates guide in the documentation
             "pos_Y": 278,
             "size": 0, //size of the pin
@@ -27,7 +27,7 @@
         },
         {
             "shape": "circle",
-            "hover": "<b><u>MARANGU, Tanzania</u></b><br><img class='mapimg' src='img/Nationals/flag_TZN.jpg'><br><b>Kilimasai Marathon and Safari</b><br>31. July 2022<br><b>Trips:</b><br>-Marathon (42.20 km)<br>-Half Marathon (21.10 km)<br>-10 km, 1km",
+            "hover": "<b><u>MARANGU, Tanzania</u></b><br><img class='mapimg' src='img/Nationals/flag_TZN.jpg'><br><b>Kilimasai Marathon and Safari</b><hr>31. July 2022<hr>-Marathon (42.20 km)<br>-Half Marathon (21.10 km)<br>-10 km, 1km",
             "pos_X": 655,
             "pos_Y": 360,
             "size": 12,
@@ -40,7 +40,7 @@
         },
         {
             "shape": "circle",
-            "hover": "<b><u>CAPE TOWN, South-Africa</u></b><br><img class='mapimg' src='img/Nationals/flag_SAF.jpg'><br><b>Two Oceans Marathon</b><br>16. April 2022<br><b>Trips:</b><br>-Marathon (56 km)<br>-Half Marathon (21 km)<br>-24 km, 12 km",
+            "hover": "<b><u>CAPE TOWN, South-Africa</u></b><br><img class='mapimg' src='img/Nationals/flag_SAF.jpg'><br><b>Two Oceans Marathon</b><hr>16. April 2022<hr>-Marathon (56 km)<br>-Half Marathon (21 km)<br>-24 km, 12 km",
             "pos_X": 520,
             "pos_Y": 615,
             "size": 12,

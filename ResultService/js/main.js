@@ -116,7 +116,7 @@ function createResultTable(id, results) {
         // Setting content of labels 
         // NOTICE: FOR NOW, SOMETHING WEIRD IS HAPPENING TO GENERATE FUN DATA COMPINATION
         label_1.innerText = i + 1 // results[index]['Place (Overall)'];
-        label_2.innerText = results[index]['Name'];
+        label_2.innerText = results[index]['name'];
         img_3.src = "img/Nationals/flag_" + results[index]['Nationality'] + ".jpg";
         img_3.alt = results[index]['Nationality'];
         label_4.innerText = results[i]['Finish'];

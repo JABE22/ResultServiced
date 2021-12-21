@@ -24,16 +24,6 @@ search_input.addEventListener("keypress", function(e) {
     }
 });
 
-let upevents, pevents, results;
-
-(async() => {
-    // Downloading data from the database
-    upevents = await getJSON('../data/up_events.json');
-    pevents = await getJSON('../data/past_events.json');
-    results = await fetch('../data/raceresults/GB-VLM.csv')
-        .then(response => response.text())
-        .then(text => JSON.parse(csvJSON(text)));
-})();
 
 function findResults() {
     // Every search will clear all the content from the page

@@ -1,7 +1,7 @@
 ﻿var eupins_config = {
     "pins": [{
             "shape": "circle", //either "circle" or "square"
-            "hover": "<b><u>NOTTINGHAM, Great Britain</u></b><br><img class='mapimg' src='img/Nationals/flag_GBR.jpg'><br><b>Robin Hood Festival of Running</b><br>25. September 2022<br><b>Trips:</b><br>-Half Marathon (21.10 km)<br>-2.41 km", //info of the popup
+            "hover": "<b><u>NOTTINGHAM, Great Britain</u></b><br><img class='mapimg' src='img/Nationals/flag_GBR.jpg'><br><b>Robin Hood Festival of Running</b><hr>25. September 2022<hr>-Half Marathon (21.10 km)<br>-2.41 km", //info of the popup
             "pos_X": 300, //check the X, Y coordinates guide in the documentation
             "pos_Y": 320,
             "size": 12, //size of the pin
@@ -40,7 +40,7 @@
         },
         {
             "shape": "circle",
-            "hover": "<b><u>BRÄUNLINGEN, Germany</u></b><br><img class='mapimg' src='img/Nationals/flag_GER.jpg'><br><b>Schwarzwald Marathon</b><br>9. October 2022<br><b>Trips:</b><br>-Marathon (42.20 km)<br>-Half Marathon (21.10 km)",
+            "hover": "<b><u>BRÄUNLINGEN, Germany</u></b><br><img class='mapimg' src='img/Nationals/flag_GER.jpg'><br><b>Schwarzwald Marathon</b><hr>9. October 2022<br><hr>-Marathon (42.20 km)<br>-Half Marathon (21.10 km)",
             "pos_X": 385,
             "pos_Y": 415,
             "size": 12,
@@ -53,7 +53,7 @@
         },
         {
             "shape": "circle",
-            "hover": "<b><u>FÜSSEN, Germany</u></b><br><img class='mapimg' src='img/Nationals/flag_GER.jpg'><br><b>Königsschlösser Marathon</b><br>24. July 2022<br><b>Trips:</b><br>-Marathon (42 km)<br>-Half Marathon (21 km)<br>-10 km",
+            "hover": "<b><u>FÜSSEN, Germany</u></b><br><img class='mapimg' src='img/Nationals/flag_GER.jpg'><br><b>Königsschlösser Marathon</b><hr>24. July 2022<br><hr>-Marathon (42 km)<br>-Half Marathon (21 km)<br>-10 km",
             "pos_X": 410,
             "pos_Y": 420,
             "size": 12,
@@ -79,7 +79,7 @@
         },
         {
             "shape": "circle",
-            "hover": "<b><u>LISBOA, Portugal</u></b><br><img class='mapimg' src='img/Nationals/flag_PRG.jpg'><br><b>EDP Lisbon Half Marathon</b><br>20. March 2022<br><b>Trips:</b><br>-Half Marathon (21 km)<br>-10 km, 7 km",
+            "hover": "<b><u>LISBOA, Portugal</u></b><br><img class='mapimg' src='img/Nationals/flag_PRG.jpg'><br><b>EDP Lisbon Half Marathon</b><hr>20. March 2022<hr>-Half Marathon (21 km)<br>-10 km, 7 km",
             "pos_X": 140,
             "pos_Y": 500,
             "size": 12, //change the size to display this pin
@@ -105,7 +105,7 @@
         },
         {
             "shape": "circle",
-            "hover": "<b><u>GOTHENBURG, Sweden</u></b><br><img class='mapimg' src='img/Nationals/flag_SWE.jpg'><br><b>Skatås ryggar</b><br>4. June 2022<br><b>Trips:</b><br>-Half Marathon (21 km)<br>-14 km, 7km",
+            "hover": "<b><u>GOTHENBURG, Sweden</u></b><br><img class='mapimg' src='img/Nationals/flag_SWE.jpg'><br><b>Skatås ryggar</b><hr>4. June 2022<hr>-Half Marathon (21 km)<br>-14 km, 7km",
             "pos_X": 430,
             "pos_Y": 270,
             "size": 12, //change the size to display this pin
@@ -118,7 +118,7 @@
         },
         {
             "shape": "circle",
-            "hover": "<b><u>HELSINKI, Finland</u></b><br><img class='mapimg' src='img/Nationals/flag_FIN.jpg'><br><b>Helsinki Half Marathon</b><br>11. June 2022<br><b>Trips:</b><br>-Half Marathon (21 km)",
+            "hover": "<b><u>HELSINKI, Finland</u></b><br><img class='mapimg' src='img/Nationals/flag_FIN.jpg'><br><b>Helsinki Half Marathon</b><hr>11. June 2022<hr>-Half Marathon (21 km)",
             "pos_X": 534,
             "pos_Y": 238,
             "size": 12, //change the size to display this pin
@@ -131,7 +131,7 @@
         },
         {
             "shape": "circle",
-            "hover": "<b><u>ROVANIEMI, Finland</u></b><br><img class='mapimg' src='img/Nationals/flag_FIN.jpg'><br><b>Actic Marathon Finland</b><br>3. April 2022<br><b>Trips:</b><br>-Marathon (42 km)<br>-Half Marathon (21 km)<br>-10 km, 1 km",
+            "hover": "<b><u>ROVANIEMI, Finland</u></b><br><img class='mapimg' src='img/Nationals/flag_FIN.jpg'><br><b>Actic Marathon Finland</b><hr>3. April 2022<hr>-Marathon (42 km)<br>-Half Marathon (21 km)<br>-10 km, 1 km",
             "pos_X": 530,
             "pos_Y": 145,
             "size": 12, //change the size to display this pin
@@ -144,7 +144,7 @@
         },
         {
             "shape": "circle",
-            "hover": "<b><u>REYKJAVIK, Iceland</u></b><br><img class='mapimg' src='img/Nationals/flag_ICL.jpg'><br><b>Reykjavik Autumn Marathon</b><br>22. October 2022<br><b>Trips:</b><br>-Marathon (42.20 km)<br>-Half Marathon (21.10 km)",
+            "hover": "<b><u>REYKJAVIK, Iceland</u></b><br><img class='mapimg' src='img/Nationals/flag_ICL.jpg'><br><b>Reykjavik Autumn Marathon</b><hr>22. October 2022<hr>-Marathon (42.20 km)<br>-Half Marathon (21.10 km)",
             "pos_X": 230,
             "pos_Y": 112,
             "size": 12, //change the size to display this pin
@@ -157,7 +157,7 @@
         },
         {
             "shape": "circle",
-            "hover": "<b><u>VILNIUS, Lithuania</u></b><br><img class='mapimg' src='img/Nationals/flag_LTH.jpg'><br><b>Rimi Vilnius Marathon</b><br>11. September 2022<br><b>Trips:</b><br>-Marathon (42.20 km)<br>-Half Marathon (21.10 km)<br>-10 km, 5 km",
+            "hover": "<b><u>VILNIUS, Lithuania</u></b><br><img class='mapimg' src='img/Nationals/flag_LTH.jpg'><br><b>Rimi Vilnius Marathon</b><hr>11. September 2022<hr>-Marathon (42.20 km)<br>-Half Marathon (21.10 km)<br>-10 km, 5 km",
             "pos_X": 545,
             "pos_Y": 325,
             "size": 12, //change the size to display this pin
@@ -170,7 +170,7 @@
         },
         {
             "shape": "circle",
-            "hover": "<b><u>MOSCOW, Russia</u></b><br><img class='mapimg' src='img/Nationals/flag_RUS.jpg'><br><b>Moscow Marathon</b><br>1. September 2022<br><b>Trips:</b><br>-Marathon (42.20 km)<br>-10 km",
+            "hover": "<b><u>MOSCOW, Russia</u></b><br><img class='mapimg' src='img/Nationals/flag_RUS.jpg'><br><b>Moscow Marathon</b><hr>1. September 2022<hr>-Marathon (42.20 km)<br>-10 km",
             "pos_X": 700,
             "pos_Y": 305,
             "size": 14, //change the size to display this pin
