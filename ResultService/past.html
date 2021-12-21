@@ -91,7 +91,7 @@
             const results = await fetch('data/raceresults/GB-VLM.csv')
                 .then(response => response.text())
                 .then(text => JSON.parse(csvJSON(text)));
-            createEventComboBoxes("past_eventcontainer", events, results);
+            await createEventComboBoxes("past_eventcontainer", events, results);
         })();
     </script>
 
