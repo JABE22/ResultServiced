@@ -87,8 +87,8 @@
     <script src="./js/responsive.js"></script>
     <script>
         (async() => {
-            const events = await getJSON('js/data/past_events.json');
-            const results = await fetch('js/data/raceresults/GB-VLM.csv')
+            const events = await getJSON('./js/data/past_events.json');
+            const results = await fetch('./js/data/raceresults/GB-VLM.csv')
                 .then(response => response.text())
                 .then(text => JSON.parse(csvJSON(text)));
             createEventComboBoxes("past_eventcontainer", events, results);

@@ -1,7 +1,6 @@
-const getJSON = function(url) {
-    return fetch(url).then(function(response) {
-        return response.json();
-    });
+const getJSON = async function(url) {
+    const response = await fetch(url);
+    return await response.json();
 };
 
 const toJSON = function(event_object) {
