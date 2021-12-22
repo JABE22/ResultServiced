@@ -172,8 +172,8 @@ function createEventRow(eventId, tableId, event) {
     // Setting content of labels and images
     label_1.innerText = event['date'];
     img_2.src = "img/Nationals/flag_" + event['ccode'] + ".jpg";
+    img_2.alt = event['country'];
     label_3.innerText = event['ename'];
-    img_3.alt = event['country'];
     img_4.src = "icons/chevron-double-down.svg";
     img_5.src = "icons/chevron-double-up.svg";
     // Container for accordion arrows

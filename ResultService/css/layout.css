@@ -10,7 +10,7 @@ body {
     width: 100%;
     margin: 0px;
     /* Congruent font family style for whole site */
-    font-family: Teko;
+    font-family: var(--site-font-family);
     /* var(--site-font); /* Tahoma, "Trebuchet MS", Helvetica, sans-serif; */
 }
 

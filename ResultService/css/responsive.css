@@ -74,14 +74,8 @@
 }
 
 @media screen and (max-width: 900px) {
-    .date_container {
-        display: none;
-    }
     #page_img {
         display: none;
-    }
-    .topnav {
-        width: 100%;
     }
     .about_container {
         display: flex;
@@ -124,6 +118,12 @@
 }
 
 @media screen and (max-width: 1300px) {
+    .date_container {
+        display: none;
+    }
+    .topnav {
+        width: 100%;
+    }
     .justify {
         font-size: 1.0rem;
         margin-top: 0px;

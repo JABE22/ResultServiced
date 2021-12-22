@@ -94,7 +94,7 @@ function getAthletes(json_data, filters) {
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function filter() {
-    var input, filter, tablerows;
+    var input, filter, tablerows, eventrow, elabels;
     const compos = document.getElementsByClassName('event_compo');
     const eventrows = document.getElementsByClassName('eventrow');
     const tables = document.getElementsByClassName('competitors');
@@ -108,8 +108,9 @@ function filter() {
         table_match = false;
         eventrow = eventrows[i];
         elabels = eventrow.getElementsByTagName('label');
+        country_flag = eventrow.getElementsByTagName('img')[0];
         //console.log(elabels[0], elabels[1]);
-        var edetails = elabels[0].innerText + " " + elabels[1].innerText;
+        var edetails = elabels[0].innerText + " " + elabels[1].innerText + " " + country_flag.alt;
         if (edetails.toUpperCase().indexOf(filter) > -1) {
             event_match = true;
         }
