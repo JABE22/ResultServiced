@@ -1,10 +1,9 @@
 ﻿#mapwrapper {
     font-family: Arial, Helvetica, sans-serif;
     max-width: 1920px;
-    min-width: 50%;
-    width: 1600px;
-    margin: 0 auto;
-    padding: 0 0;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px 0px;
     background-color: transparent;
     -webkit-touch-callout: none;
     -webkit-user-select: none;

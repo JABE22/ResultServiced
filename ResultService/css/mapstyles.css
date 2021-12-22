@@ -1,3 +1,5 @@
+/* Used only in MapDemos.hml */
+
 #map_world {
     position: relative;
     border-top: 1px solid black;

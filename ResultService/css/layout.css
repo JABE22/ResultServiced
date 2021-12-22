@@ -52,21 +52,7 @@ div {
 }
 
 
-/* (3) Third row of the grid */
-
-.content_header {
-    grid-column: 1 / span 3;
-    grid-row: 3;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-    padding: 10px;
-    height: auto;
-    width: 100%;
-}
+/* (2) Second row of the grid */
 
 .navcontainer {
     grid-column: 1 / span 3;
@@ -79,9 +65,24 @@ div {
     background-color: var(--site-subcolor-second);
 }
 
+
+/* (3) Third row of the grid */
+
+.content_header {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: auto;
+    width: 100%;
+}
+
 .ad {
     background: linear-gradient(rgba(255, 255, 255, 0.8) 70%, transparent 100%);
-    ;
 }
 
 
@@ -158,10 +159,11 @@ div {
     font-size: 50px;
     min-height: calc(100vh - 650px);
     height: auto;
-    width: auto;
-    padding: 40px;
-    margin-bottom: 40px;
-    background-color: rgb(22, 22, 22, 0.6);
+    width: 100%;
+    padding: calc(var(--global-padding)*4) 0px;
+    margin-bottom: var(--global-margin);
+    background-color: rgb(0, 0, 0, 0.6);
+    /* background: linear-gradient(transparent 0%, rgb(0, 0, 0, 0.6) 10%, rgb(0, 0, 0, 0.6) 90%, transparent 100%);*/
 }
 
 .eventbox {

@@ -9,14 +9,18 @@
     --site-bg-color: white;
     /* Map colors */
     --map-border-color: gold;
-    /* #0e90d2; */
+    /* Text properties */
+    --site-font: Teko;
     --main-text-color: whitesmoke;
     --button-text-color: white;
-    --container-bg-color: transparent;
-    --eventrow-bg-color: #d7e7f7;
     --textcontainer-bg-color: rgba(211, 211, 211, .8);
     --pagename-text-size: 34px;
+    /* Common containers */
+    --container-bg-color: transparent;
+    --eventrow-bg-color: #d7e7f7;
     /* Common element sizes */
     --navbar-height: 90px;
+    /* Margins and paddings */
     --global-padding: 20px;
+    --global-margin: 40px;
 }

@@ -25,7 +25,7 @@ h3 {
 
 .page_name {
     color: black;
-    font-size: 3.5vh !important;
+    font-size: 2.5rem !important;
 }
 
 .mission_text,
@@ -96,7 +96,7 @@ h3 {
 }
 
 .contact_header {
-    font-size: 4vh;
+    font-size: 2rem;
     grid-row: 1;
     grid-column: 1 / span 2;
     margin-top: 0px;
