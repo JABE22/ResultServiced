@@ -1,5 +1,5 @@
 (async() => {
-    var txt = await fetch("data/countrylist.txt")
+    var txt = await fetch("js/data/countrylist.txt")
         .then(response => response.text());
 
     const country_list = txt.split(';');
@@ -32,9 +32,6 @@ function setCountryOptions(id, countries) {
     See the License for the specific language governing permissions and
     limitations under the License.
 */
-
-
-
 
 function initMap() {
     const componentForm = [

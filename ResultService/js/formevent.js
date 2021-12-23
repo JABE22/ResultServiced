@@ -122,17 +122,91 @@ function validateForm() {
 }
 
 function validateOrganizationData(data) {
-    v_info_box.innerText = "Organization validation not implemented!";
+    var orgname = data.orgname;
+    var orgstreet = data.orgstreet;
+    var orgcity = data.orgcity;
+    var orgstate = data.orgstate;
+    var orgpcode = data.orgpcode;
+    var orgcountry = data.orgcountry;
+    // Event data validation
+    if (!validateOrgName(orgname)) {
+        if (orgname.className.indexOf(' invalid') === -1) {
+            orgname.className += " invalid";
+        }
+        v_info_box.innerText = "Check organization name, please!";
+        return false;
+    }
+    if (!validateAddress(orgstreet)) {
+        if (orgstreet.className.indexOf(' invalid') === -1) {
+            orgstreet.className += " invalid";
+        }
+        v_info_box.innerText = "Check organization address, please!";
+        return false;
+    }
+    if (!validateCity(orgcity)) {
+        if (orgcity.className.indexOf(' invalid') === -1) {
+            orgcity.className += " invalid";
+        }
+        v_info_box.innerText = "Check organization city, please!";
+        return false;
+    }
+    if (!validateState(orgstate)) {
+        if (orgstate.className.indexOf(' invalid') === -1) {
+            orgstate.className += " invalid";
+        }
+        v_info_box.innerText = "Check organization state, please!";
+        return false;
+    }
+    if (!validatePostCode(orgpcode)) {
+        if (orgpcode.className.indexOf(' invalid') === -1) {
+            orgpcode.className += " invalid";
+        }
+        v_info_box.innerText = "Check organization post code, please!";
+        return false;
+    }
+    if (!validateCountry(orgcountry)) {
+        if (orgcountry.className.indexOf(' invalid') === -1) {
+            orgcountry.className += " invalid";
+        }
+        v_info_box.innerText = "Check organization country, please!";
+        return false;
+    }
+
     return true;
 }
 
 function validateEventData(data) {
-    // Person data validation
-    if (!validateEventName(data.ename)) {
-        if (data.ename.className.indexOf(' invalid') === -1) {
-            data.ename.className += " invalid";
+    var ename = data.ename;
+    var edate = data.edate;
+    var etime = data.etime;
+    var edist = data.edist;
+    // Event data validation
+    if (!validateEventName(ename)) {
+        if (ename.className.indexOf(' invalid') === -1) {
+            ename.className += " invalid";
         }
         v_info_box.innerText = "Check event name, please!";
+        return false;
+    }
+    if (!validateDate(edate)) {
+        if (edate.className.indexOf(' invalid') === -1) {
+            edate.className += " invalid";
+        }
+        v_info_box.innerText = "Check event date, please!";
+        return false;
+    }
+    if (!validateTime(etime)) {
+        if (etime.className.indexOf(' invalid') === -1) {
+            etime.className += " invalid";
+        }
+        v_info_box.innerText = "Check event time, please!";
+        return false;
+    }
+    if (!validateDist(edist)) {
+        if (edist.className.indexOf(' invalid') === -1) {
+            edist.className += " invalid";
+        }
+        v_info_box.innerText = "Check event distance, please!";
         return false;
     }
 
@@ -189,6 +263,11 @@ function validateName(input) {
     return ((input.value.match(name)));
 }
 
+function validateOrgName(input) {
+    var name = /^[.0-9a-zA-Z\s,'-]{5,30}$/ // Marathoner's club
+    return ((input.value.match(name)));
+}
+
 function validateEmail(input) {
     var email = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     return ((input.value.match(email)));
@@ -204,14 +283,39 @@ function validateLName(input) {
     return ((input.value.match(lname)));
 }
 
-function validatePhone(input) {
-    const phone_nmb = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im; // 991-945-9647
-    return ((input.value.match(phone_nmb)));
+function validatePhone(input) { // +79919459647, +7 991 945 9647, +7-(991)-945-9647, +358458723633, 0458723622
+    const phone_nmb_rus = /^([+]{1}[0-9][-\s*. ]?)?[(]?[0-9]{3}[)]?[-\s*.]?[0-9]{3}[-\s*.]?[0-9]{4}$/im;
+    const phone_nmb_fin = /^[+]{1}[0-9]{3}[-\s]*[0-9\s]{9}|[0-9]{10}$/im;
+    return (input.value.match(phone_nmb_rus) || input.value.match(phone_nmb_fin));
 }
 
 function validateAddress(input) {
-    const dest = /^[a-zA-Z]{1,30} [0-9]{1,3}[a-zA-Z]$/ // Koukkurannankatu 63B,  
+    // [a-zA-Z]{1,30} [0-9]{1,3}[a-zA-Z]    // Koukkurannankatu 6B
+    const addr_nmb_first = /^[0-9]{0,5} [a-zA-Z\s,.'-]{5,30}$/ //70 Komsomolskaya Str., 70
+    const addr_nmb_after = /^[a-zA-Z\s,.'-]{5,30} [0-9]{0,5}$/
+    return (input.value.match(addr_nmb_first) || input.value.match(addr_nmb_after));
+}
+
+function validateCity(input) {
+    const dest = /^[a-zA-Z]{1,30}$/ // Jekaterinburg
     return (input.value.match(dest));
+}
+
+function validatePostCode(input) {
+    const dest = /^[0-9]{5,10}$/ // 620078
+    return (input.value.match(dest));
+}
+
+function validateState(input) {
+    const dest = /^[a-zA-Z\s'-]{1,30}$/ // Sverdlovskaya Oblast
+    return (input.value.match(dest));
+}
+
+function validateCountry(input) {
+    const country_option = document.querySelector("#" + 'countries' + " option[value='" + input.value + "']");
+    return (country_option != null) ? (country_option.value.length > 0) : false;
+    // const dest = /^[a-zA-Z\s-]{1,30}$/ // Russia
+    // return (input.value.match(dest));
 }
 
 function validateDate(input) {
@@ -227,9 +331,9 @@ function validateTime(input) {
     return (input.value.match(time));
 }
 
-function validateQuantity(input) {
-    const nmb = parseInt(input.value);
-    return (!isNaN(nmb) && nmb > 0 && nmb < 100);
+function validateDist(input) {
+    const dist = parseInt(input.value);
+    return (dist == 0) ? false : true;
 }
 
 function validateSubject(input) {
