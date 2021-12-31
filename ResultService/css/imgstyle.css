@@ -40,6 +40,10 @@ img {
     justify-self: center;
 }
 
+#pexels {
+    height: 60px;
+}
+
 .page_logo {
     animation-name: opacity;
     animation-duration: 1.5s;
