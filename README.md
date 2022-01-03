@@ -24,6 +24,12 @@ Project is implememnted using basic HTML, CSS and JavaScript.
 
 Website is read-only type and users has no ability to save anything
 
+### Usability
+
+Website is fully responsive and optimized for all the most common screen resolutions
+- Display width support 400px - 1920px (at least)
+- PC displays, notebooks, tablets, mobile phones, etc.
+
 ### Pages
 
 - Home page         (running motivation)
