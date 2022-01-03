@@ -1,3 +1,5 @@
+/* SITE DATETIME SETTINGS */
+
 // request a weekday along with a long date
 let options1 = {
     weekday: 'short',
@@ -16,11 +18,12 @@ let options2 = {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
-    timeZone: 'CET',
+    timeZone: 'EET',
     timeZoneName: 'short'
 };
 
 setInterval(function() {
-    var date = new Date(); // → "Donnerstag, 20. Dezember 2012"
-    document.getElementById("date").innerHTML = date.toLocaleString('de-DE', options2);
+    var date = new Date();
+    // Format → "Monday, January 3, 2022, 6:32:50 PM GMT+2" (with options2)
+    document.getElementById("date").innerHTML = date.toLocaleString('en-US', options2);
 }, 1000);

@@ -1,4 +1,10 @@
-/* NAVBAR DEVICE OPTIMIZING */
+/* RESPONSIVE SOLUTION
+    - Content scaling for several screen sizes 
+    - 650px, 750px, 900px, 1000px, 1300px supported
+*/
+
+
+/* Content display modifications when screen width less than 650 pixels */
 
 @media screen and (max-width: 650px) {
     .topnav a:not(.active) {
@@ -37,7 +43,7 @@
 }
 
 
-/* HOME PAGE TEXT DEVICE OPTIMIZING */
+/* Content display modifications when screen width less than 750 pixels */
 
 @media screen and (max-width: 750px) {
     .fading .motivate {
@@ -72,6 +78,9 @@
         width: 100%;
     }
 }
+
+
+/* Content display modifications when screen width less than 900 pixels */
 
 @media screen and (max-width: 900px) {
     #page_img {
@@ -111,11 +120,17 @@
     }
 }
 
+
+/* Content display modifications when screen width less than 1000 pixels */
+
 @media screen and (max-width: 1000px) {
     .row_flex {
         flex-direction: column;
     }
 }
+
+
+/* Content display modifications when screen width less than 1300 pixels */
 
 @media screen and (max-width: 1300px) {
     .date_container {

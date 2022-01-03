@@ -1,15 +1,27 @@
+/* JAVASCRIPT FOR EVENT SEARCH 
+ * - search.html
+ * - Data import
+ * - Eventlisteners for elements
+ * - Search organizing
+ * - REQUIRES FUNCTIONS FROM data.js (getUpEvents, getPastEvents)
+ */
+
 // Setting eventlisteners for these elements
 var button = document.getElementById("filtermenu_button");
-var filters_container = document.getElementById("search_filters");
 var search_input = document.getElementById("search_input");
+// Place for filter options
+var filters_container = document.getElementById("search_filters");
 
+// Event listener settings for filter menu button (event=CLICK)
 button.addEventListener("click", function(event) {
     event.preventDefault();
+    // Hide or Show the filter menu using class property
     if (filters_container.className === 'hide') {
         filters_container.className = 'show_flex';
     } else {
         filters_container.className = 'hide';
     }
+    // Print class info of menu container to console 
     console.log("Filters class = " + filters_container.className);
 });
 
@@ -17,23 +29,29 @@ button.addEventListener("click", function(event) {
 search_input.addEventListener("keypress", function(e) {
     // Number 13 is the "Enter" key on the keyboard
     if (e.key === 'Enter') {
-        // Cancel the default action, if needed
+        // Cancel the default action
         e.preventDefault();
-        // Do the action
+        // Find results
         findResults();
     }
 });
 
+// Imports database files for searching 
 let upevents, pevents, results;
-
-(async() => {
+(async() => { // Data must be read asynchronously
     // Downloading data from the database
     upevents = await getJSON('js/data/up_events.json');
     pevents = await getJSON('js/data/past_events.json');
     results = await getJSON('js/data/raceresults/GB-VLM.json');
 })();
 
-
+/**
+ * Search results which corresponds to search criterias.
+ * Reads inputs from the page (search word and filter options) and
+ * finds results from the database.
+ * This method is used to organize search. It uses separate functions 
+ * to find actual results.
+ */
 function findResults() {
     // Every search will clear all the content from the page
     // So, before adding new content, we need to remove old content
@@ -75,6 +93,7 @@ function findResults() {
     } else {
         econt.style.display = "none";
     }
+
     if (filters.pevents) {
         // Filtering past events
         filtered_pevents = getPastEvents(pevents, filters);
@@ -85,7 +104,7 @@ function findResults() {
     } else {
         pcont.style.display = "none";
     }
-    /*
+    /* Athlete functionlaity not available at the moment
     if (filters.results) {
         // Filtering athletes
         filtered_athletes = getAthletes(results, filters);
@@ -99,7 +118,7 @@ function findResults() {
     */
 }
 
-/*
+/* CONTAINERS FOR SEARCH RESULT TYPES
 <div id="area_upevents"></div>
 <div id="area_pevents"></div>
 <div id="area_athletes"></div>

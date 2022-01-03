@@ -1,18 +1,23 @@
+/* EVENT NOTIFICATION FORM JAVASCRIPT 
+ * - Event listeners for form inputs
+ * - Form validation 
+ */
+// Allows redirection to third party sites etc.
 document.cookie = "SameSite=None; Secure";
 
-// SETTING EVENT LISTENERS for form elements
+// SETTING EVENT LISTENERS for 'input' elements (event=FOCUS)
 var input_components = document.getElementsByTagName('input');
 var googlemap = document.getElementsByClassName('map-container')[0];
 
 for (i = 0; i < input_components.length; i++) {
     var input = input_components[i];
     if (i > 0 && i < 6) {
-        input.addEventListener('focus', (e) => {
+        input.addEventListener('focus', function(e) {
             e.preventDefault();
             removeWarnings();
             googlemap.style.display = "flex";
         });
-    } else if (i > 0) {
+    } else if (i > 0 || i == 0) {
         input.addEventListener('focus', function(e) {
             e.preventDefault();
             removeWarnings();
@@ -21,19 +26,22 @@ for (i = 0; i < input_components.length; i++) {
     }
 }
 
-
-// SETTING FORM SUBMIT BUTTON EVENT LISTENER
+// SETTING FORM SUBMIT BUTTON EVENT LISTENER (event=SUBMIT)
 document.getElementById('addevent_form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    if (validateForm()) {
+    e.preventDefault(); // To prevent some strange behaviour
+    if (validateForm()) { // Form validation when user tries to submit form
         setSuccessInfo();
+        // Three seconds after successfully submitted form eventnotif.html page will be reloaded
         setTimeout(() => { location.href = "eventnotif.html" }, 3000);
-    } else {
+    } else { // If validation fails, hiding submit button and showing validation fault info
         document.getElementById('submit_event').style.display = 'none';
         document.getElementById('validation_info').style.display = 'block';
     }
 });
 
+/**
+ * Successful form submitting info text with green background 
+ */
 function setSuccessInfo() {
     document.getElementById('submit_event').style.display = 'none';
     form_valid_info = document.getElementById('validation_info');
@@ -43,19 +51,14 @@ function setSuccessInfo() {
     form_valid_info.style.display = 'block';
 }
 
-// SETTING EVENT LISTENERS for form elements
-var inputs = document.getElementsByTagName('input');
-for (i = 0; i < inputs.length; i++) {
-    input = inputs[i];
-    input.addEventListener('focus', function(e) {
-        e.preventDefault();
-        removeWarnings();
-    });
-}
-
+/**
+ * Removes warning indicators from input elements (class=form-control)
+ * Technically, removes only class name "invalid" if it exist.
+ * Sets submit button visible and removes validation info box
+ */
 function removeWarnings() {
-    document.getElementById('validation_info').style.display = "none";
-    document.getElementById('submit_event').style.display = "block";
+    document.getElementById('validation_info').style.display = "none"; // Hide validation info
+    document.getElementById('submit_event').style.display = "block"; // Show submit button
     var input_components = document.getElementsByClassName('form-control');
     for (i = 0; i < input_components.length; i++) {
         input = input_components[i];
@@ -66,6 +69,13 @@ function removeWarnings() {
     }
 }
 
+/**
+ * Validates form inputs. Takes input (input, select, textarea, etc..) elements from page 
+ * and uses separate functions for actual validation. 
+ * Case specific and suits only for certain form (Event notification form)
+ * 
+ * @returns Validation status (passed=TRUE, fault=FALSE)
+ */
 function validateForm() {
     // This function deals with validation of the form fields
     var input_fields, valid = true;
@@ -103,11 +113,9 @@ function validateForm() {
         addinfo: input_textarea
     };
 
-    // Additional info (For event, person and organization)
-
-
+    // Prints input field values into console
     console.log([orgdata, edata, pdata]);
-
+    // Validate input content in three groups (in order)
     valid = validateOrganizationData(orgdata);
     if (valid) {
         valid = validateEventData(edata);
@@ -115,13 +123,19 @@ function validateForm() {
     if (valid) {
         valid = validatePersonData(pdata);
     }
-
+    // Print validation status to console
     console.log("Form validation status: " + valid);
-    return valid;
-    // return the valid status
+    return valid; // return the valid status
 }
 
+/**
+ * Validates organization e.g., Marathoner's club data.
+ * 
+ * @param {*} data Organization data to validate (object with inputs)
+ * @returns Validation status (passed=TRUE, fault=FALSE)
+ */
 function validateOrganizationData(data) {
+    // Data input fields
     var orgname = data.orgname;
     var orgstreet = data.orgstreet;
     var orgcity = data.orgcity;
@@ -175,7 +189,14 @@ function validateOrganizationData(data) {
     return true;
 }
 
+/**
+ * Validates event specific data.
+ * 
+ * @param {*} data Details about event to validate (object with inputs)
+ * @returns Validation status (passed=TRUE, fault=FALSE)
+ */
 function validateEventData(data) {
+    // Data input fields
     var ename = data.ename;
     var edate = data.edate;
     var etime = data.etime;
@@ -213,8 +234,14 @@ function validateEventData(data) {
     return true;
 }
 
+/**
+ * Validates person data.
+ * 
+ * @param {*} data Object with person data to validate (object with inputs)
+ * @returns Validation status (passed=TRUE, fault=FALSE)
+ */
 function validatePersonData(data) {
-    // Person data validation
+    // Person data validation, returns false when invalid input occurred
     if (!validateFName(data.pfname)) {
         if (data.pfname.className.indexOf(' invalid') === -1) {
             data.pfname.className += " invalid";
@@ -257,7 +284,7 @@ function validatePersonData(data) {
     return true;
 }
 
-// INPUT VALIDATION FUNCTIONS
+// INPUT VALIDATION FUNCTIONS (Pattern matching)
 function validateName(input) {
     var name = /^[a-zA-Z]+ [a-zA-Z]+$/
     return ((input.value.match(name)));
@@ -274,12 +301,12 @@ function validateEmail(input) {
 }
 
 function validateFName(input) {
-    var fname = /^[a-zA-Z]{3,25}$/
+    var fname = /^[a-zA-Z]{3,25}$/ // Jarno
     return ((input.value.match(fname)));
 }
 
 function validateLName(input) {
-    var lname = /^[a-zA-Z]{3,25}$/ // Jarno Matarmaa
+    var lname = /^[a-zA-Z]{3,25}$/ // Matarmaa
     return ((input.value.match(lname)));
 }
 
@@ -291,7 +318,7 @@ function validatePhone(input) { // +79919459647, +7 991 945 9647, +7-(991)-945-9
 
 function validateAddress(input) {
     // [a-zA-Z]{1,30} [0-9]{1,3}[a-zA-Z]    // Koukkurannankatu 6B
-    const addr_nmb_first = /^[0-9]{0,5} [a-zA-Z\s,.'-]{5,30}$/ //70 Komsomolskaya Str., 70
+    const addr_nmb_first = /^[0-9]{0,5} [a-zA-Z\s,.'-]{5,30}$/ // 70 Komsomolskaya Str., 70
     const addr_nmb_after = /^[a-zA-Z\s,.'-]{5,30} [0-9]{0,5}$/
     return (input.value.match(addr_nmb_first) || input.value.match(addr_nmb_after));
 }

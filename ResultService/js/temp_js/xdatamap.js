@@ -1,5 +1,7 @@
-// DATAMAP
+/* DATAMAP */
+// Excluded from project evaluation, therefore not commented
 // This file contains some test maps using DataMap components
+
 // USA map
 const map_usa = new Datamap({
     element: document.getElementById('map_usa'),

@@ -1,14 +1,36 @@
+/* DATA PROCESSING FUNCTIONS 
+ * - Functions to read data files (JSON, TXT, CSV)
+ * - Functions for data filtering
+ */
+
+/**
+ * Reads data asynchronously from the given path and returns it as a JSON object.
+ * 
+ * @param {*} url Path to data file
+ * @returns JSON file
+ */
 const getJSON = async function(url) {
     const response = await fetch(url);
     return await response.json();
 };
 
+/**
+ * Writes object into JSON file. 
+ * Not implemented since project is type of "read only". 
+ * 
+ * @param {*} event_object event details as an object
+ */
 const toJSON = function(event_object) {
     console.log("Sending into JSON file...");
 };
 
 
-//var csv is the CSV file with headers
+/**
+ * Converts csv text data format into json.
+ * 
+ * @param {*} csv CSV file with headers
+ * @returns Data as stringified JSON
+ */
 function csvJSON(csv) {
     // Interesting splitting in the end of the each row in the file
     var lines = csv.split("\r\n");
@@ -23,27 +45,36 @@ function csvJSON(csv) {
         }
         result.push(obj);
     }
-    //return result; //JavaScript object
-    return JSON.stringify(result); //JSON
+    return JSON.stringify(result); // Stringified JSON, JavaScript object
 }
 
-var textFile = null;
+/**
+ * Creates text file from a string format data given as parameter.
+ * Not used since project is type of "read only". 
+ * 
+ * @param {*} text Data to write into txt file
+ * @returns URL for created new txt file
+ */
 const makeTextFile = (text) => {
     var data = new Blob([text], { type: 'text/plain' });
-
+    var textFile = null;
     // If we are replacing a previously generated file we need to
     // manually revoke the object URL to avoid memory leaks.
     if (textFile !== null) {
         window.URL.revokeObjectURL(textFile);
     }
-
     textFile = window.URL.createObjectURL(data);
-
     // returns a URL you can use as a href
     return textFile;
 };
 
-
+/**
+ * Filtering method for upcoming events. Filters data using filter options given as parameters.
+ * 
+ * @param {*} json_data Data to filter in json format
+ * @param {*} filters Filter options as javascript object
+ * @returns Filtered data, matched objects in a list
+ */
 function getUpEvents(json_data, filters) {
     var matches = [];
     matches = json_data.filter(function(el) {
@@ -69,6 +100,13 @@ function getUpEvents(json_data, filters) {
     */
 }
 
+/**
+ * Filtering method for past events. Filters data using filter options given as parameters.
+ * 
+ * @param {*} json_data Data to filter in json format
+ * @param {*} filters Filter options as javascript object
+ * @returns Filtered data, matched objects in a list
+ */
 function getPastEvents(json_data, filters) {
     var matches = [];
     matches = json_data.filter(function(el) {
@@ -77,7 +115,7 @@ function getPastEvents(json_data, filters) {
         var datematch = fmatch && tmatch;
         var txtmatch = el.ename.toUpperCase().indexOf(filters.text.toUpperCase()) > -1 ||
             el.country.toUpperCase().indexOf(filters.text.toUpperCase()) > -1 ||
-            el.ecode.toUpperCase().indexOf(filters.text.toUpperCase()) > -1 || // This is the only difference compared to upcoming events selection
+            el.ecode.toUpperCase().indexOf(filters.text.toUpperCase()) > -1 || // This is the only difference compared to upcoming event filtering
             el.ccode.toUpperCase().indexOf(filters.text.toUpperCase()) > -1 ||
             el.city.toUpperCase().indexOf(filters.text.toUpperCase()) > -1 ||
             el.dist.map(String).includes(filters.text.toUpperCase());
@@ -87,12 +125,20 @@ function getPastEvents(json_data, filters) {
     return matches;
 }
 
-function getAthletes(json_data, filters) {
+/**
+ * Filtering method for past events. Filters data using filter options given as parameters.
+ * Not implemented since athlete property is not used in the project.
+ * 
+ * @param {*} json_data Data to filter in json format
+ * @param {*} filters Filter options as javascript object
+ */
+function getAthletes(json_data, filters) {}
 
-}
-
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
+/**
+ * When the user clicks on the button, toggle between hiding and showing the dropdown content.
+ * Do not return anything. Changes only the css display property value of past event accordion 
+ * items based on text input written in filter text input field on the page "Past events".
+ */
 function filter() {
     var input, filter, tablerows, eventrow, elabels;
     const compos = document.getElementsByClassName('event_compo');

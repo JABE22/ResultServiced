@@ -59,7 +59,7 @@ img {
 }
 
 
-/* PAST EVENT PAGE */
+/* PAST EVENT PAGE images and components */
 
 .upcom_eventbox_infobackg {
     /* border: solid black; */
@@ -109,7 +109,7 @@ img {
 }
 
 
-/* CONTACT PAGE */
+/* CONTACT PAGE images and components*/
 
 .contact_details img {
     width: 150px;
@@ -139,6 +139,9 @@ img {
     background-size: contain;
     background-position-x: right;
 }
+
+
+/* Div backgrounds with specific opacity */
 
 .opacity_filter {
     display: flex;

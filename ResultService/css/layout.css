@@ -1,3 +1,17 @@
+/* MAIN STYLES INCLUDED
+    - Body template and styles
+    - Outermost container styles for all template rows 1-6
+    - Main div element styles for all components
+    - Event box styles
+
+    NOT INCLUDED!!
+    - Text element styles
+    - Form element styles (inputs, buttons, etc.)
+    - Image styles
+    - Animations, keyframes
+    - Responsive solutions (media screen)
+*/
+
 body {
     display: grid;
     grid-template: auto auto auto auto auto auto / 20% 60% 20%;
@@ -19,7 +33,7 @@ body.about {
 }
 
 
-/* MAKE BORDERS VISIBLE IN ALL MAIN CONTAINERS */
+/* Border visibility in all main containers - For developing and designing */
 
 .main_container {
     border: none;
@@ -30,7 +44,7 @@ div {
 }
 
 
-/* (1) First row of Grid for header and site branding logo */
+/* (1) First row of the Grid for site name and logo etc. */
 
 .header {
     grid-column: 1 / span 3;
@@ -52,7 +66,7 @@ div {
 }
 
 
-/* (2) Second row of the grid */
+/* (2) Second row of the Grid */
 
 .navcontainer {
     grid-column: 1 / span 3;
@@ -86,7 +100,7 @@ div {
 }
 
 
-/* (4) Fourth row of the grid */
+/* (4) Fourth row of the grid - Main container styles for all pages */
 
 .homecontainer {
     grid-column: 1 / span 3;
@@ -166,29 +180,6 @@ div {
     /* background: linear-gradient(transparent 0%, rgb(0, 0, 0, 0.6) 10%, rgb(0, 0, 0, 0.6) 90%, transparent 100%);*/
 }
 
-.eventbox {
-    border-radius: 5px;
-    width: 440px;
-    height: 300px;
-    overflow: hidden;
-    background-image: url("../img/flags/flag_group_a_fin.jpg");
-    background-size: cover;
-    box-shadow: 0px 0px 3px black;
-    padding: 0px;
-}
-
-.eventbox:hover {
-    cursor: pointer;
-    /* background-image: none; */
-    background-color: rgba(255, 255, 255, .7);
-}
-
-.searchbox {
-    border-radius: 0px;
-    background-color: #d7e7f7;
-    padding: 20px;
-}
-
 
 /* CONTACT FORM container */
 
@@ -266,7 +257,27 @@ div {
 }
 
 
-/* Past event components */
+/* COMPONENT STYLES - Upcoming Event components, boxes etc. */
+
+.eventbox {
+    border-radius: 5px;
+    width: 440px;
+    height: 300px;
+    overflow: hidden;
+    background-image: url("../img/flags/flag_group_a_fin.jpg");
+    background-size: cover;
+    box-shadow: 0px 0px 3px black;
+    padding: 0px;
+}
+
+.eventbox:hover {
+    cursor: pointer;
+    /* background-image: none; */
+    background-color: rgba(255, 255, 255, .7);
+}
+
+
+/* COMPONENT STYLES: Past Event components */
 
 .event_compo {
     width: 100%;
@@ -355,8 +366,8 @@ div {
 }
 
 
-/* PAST EVENT row 
- * Header row "Event name" tag for past events */
+/* OTHER COMPONENTS: Past Event row 
+   - Header row "Event name" tag for past events */
 
 .event {
     width: auto;
@@ -382,7 +393,7 @@ div {
 }
 
 
-/* COMPETITOR row */
+/* Competitor row */
 
 .place {
     margin-left: 10px;

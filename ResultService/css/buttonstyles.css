@@ -1,3 +1,8 @@
+/* This file contains style properties for button elements 
+    - Please, note that some button styels may be defined in 
+      formstyles.css
+*/
+
 #search_button {
     /* Not used. Replaced by serach icon inside input element */
     border: none;

@@ -1,3 +1,10 @@
+/* DATALIST element content constructor functionality for FORMS */
+
+/**
+ * Reads data asynchronously from the text file which contains all the countries
+ * and sets options for datalist element using separate function.
+ * Presupposes delimiter ";" between countries.
+ */
 (async() => {
     var txt = await fetch("js/data/countrylist.txt")
         .then(response => response.text());
@@ -7,6 +14,12 @@
     setCountryOptions("countries", country_list);
 })();
 
+/**
+ * Construct datalist options for the element ID given as parameter.
+ * 
+ * @param {*} id Element ID on the page
+ * @param {*} countries List of string elements (country names in this specific project case, but could be whatever)
+ */
 function setCountryOptions(id, countries) {
     var datalist = document.getElementById(id);
 
@@ -32,7 +45,9 @@ function setCountryOptions(id, countries) {
     See the License for the specific language governing permissions and
     limitations under the License.
 */
-
+/**
+ * Google function for map functionality related to place autocomplete property in "Notification" page.
+ */
 function initMap() {
     const componentForm = [
         'location',

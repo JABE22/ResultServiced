@@ -1,3 +1,8 @@
+/* This file contains style properties for all type of elements used in Forms
+    - May contain also some container elements used in forms 
+      e.g., form validation feedback text container
+*/
+
 input[type=text]:not(.date_period, #search_input),
 input[type=email],
 input[type=tel],

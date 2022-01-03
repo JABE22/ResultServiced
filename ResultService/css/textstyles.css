@@ -1,9 +1,20 @@
+/* TEXT STYLES - Containers and elements */
+
+
+/* Site font */
+
 @font-face {
     font-family: Teko;
     src: url('../fonts/Teko/Teko-Regular.woff');
     font-weight: 700;
     font-style: normal;
 }
+
+
+/* Styles for text components of all site pages 
+   - Clear text elements
+     e.g., h1, h2, h3, p, label, etc.
+   - Div elements which has only text content */
 
 h1 {
     font-size: 4.5rem;

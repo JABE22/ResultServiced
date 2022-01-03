@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Project styles -->
     <link rel="stylesheet" type="text/css" href="css/layout.css">
     <link rel="stylesheet" type="text/css" href="css/globalvariables.css">
     <link rel="stylesheet" type="text/css" href="css/imgstyle.css">
@@ -15,13 +16,12 @@
     <link rel="stylesheet" type="text/css" href="css/formstyles.css">
     <link rel="stylesheet" type="text/css" href="css/navstyles.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
-    <!-- This for responsive navbar -->
+    <!-- This is for responsive navbar -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 
 <body class="sp">
-
+    <!-- Global site header: 1. Grid row elements -->
     <div class="header main_container">
         <a class="site_brand" href="home.html">
             <img class="page_logo zoom_big" alt="page_logo" src="./img/pngegg.png">
@@ -37,8 +37,7 @@
         </div>
     </div>
 
-    </div>
-
+    <!-- Navbar: 2. Grid row elements -->
     <div class="navcontainer main_container sp">
         <div class="topnav" id="respnav">
             <a href="home.html" class="active">Home</a>
@@ -49,17 +48,18 @@
             <a href="contact.html">Contact</a>
             <a href="map.html">Map</a>
             <a href="eventnotif.html" class="admin_menu">Notification</a>
-            <!-- <a href="maps/tests/mapdemo.html">MapDemo</a> -->
+            <!-- Responsive navbar settings -->
             <a href="javascript:void(0);" class="icon" onclick="setresponsive()">
                 <i class="fa fa-bars"></i>
             </a>
         </div>
+        <!-- Date -->
         <div class="date_container">
             <p id="date"></p>
         </div>
     </div>
 
-
+    <!-- Page header: 3. Grid row elements - Place for page name and details -->
     <div class="content_header main_container ad">
         <div class="homeslogan">
             <h2 id="welcome1">I don't run to win races.</h2>
@@ -72,6 +72,7 @@
         </div>
     </div>
 
+    <!-- Page content: 4. Grid row elements - Responsive image gallery -->
     <div class="homecontainer main_container">
         <img class="gallery zoom_big" src="./img/runphotos/RunningMotivation/vertical/back1.jfif">
         <img class="gallery zoom_big" src="./img/runphotos/RunningMotivation/vertical/g1_believe2.jfif">
@@ -81,10 +82,12 @@
         <img class="gallery zoom_big" src="./img/runphotos/RunningMotivation/vertical/g1_getgive.jfif">
     </div>
 
+    <!-- Reserve container: 5. Grid row elements -->
     <div class="vara main_container sp">
         <p>Image source <a class="btn btn-primary" href="https://www.pexels.com/" role="button" style="color:goldenrod">Pexels &raquo;</a></p>
     </div>
 
+    <!-- Footer with partner logos: 6. Grid row elements -->
     <div class="default_footer main_container">
         <img id="madeinfinland" alt="madedesign_finland" src="./img/mission/avainlippu_dff_nobg.png">
         <img id="urfu" src="./img/logo_urfu_nobg.png" alt="UrFU">
@@ -93,6 +96,7 @@
         <img id="pexels" class="partner_logo" alt="pexels" src="img/logos/pexels-logo.png">
     </div>
 
+    <!-- JavaScript file imports - JS files which are page content sensitive -->
     <script src="./js/time.js"></script>
     <script src="./js/responsive.js"></script>
 

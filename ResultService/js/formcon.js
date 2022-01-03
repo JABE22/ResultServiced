@@ -1,26 +1,37 @@
+/* CONTACT FORM JAVASCRIPT 
+ * - Event listeners for form inputs
+ * - Form validation 
+ */
+// Allows redirection to third party sites etc.
 document.cookie = "SameSite=None; Secure";
-// SETTING EVENT LISTENERS for form elements
+
+// SETTING EVENT LISTENERS for form INPUT elements (event=FOCUS)
 var input_components = document.getElementsByClassName('form-control');
 for (i = 0; i < input_components.length; i++) {
     input = input_components[i];
     input.addEventListener('focus', function(e) {
-        e.preventDefault();
-        removeWarnings();
+        e.preventDefault(); // To prevent some strange behaviour
+        removeWarnings(); // Removes warning/fault indicators when focused
     });
 }
 
-// SETTING FORM SUBMIT BUTTON EVENT LISTENER
+
+// SETTING EVENT LISTENER for form SUBMIT BUTTON (event=SUBMIT)
 document.getElementById('contact_form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    if (validateForm()) {
+    e.preventDefault(); // To prevent some strange behaviour
+    if (validateForm()) { // Form validation when user tries to submit form
         setSuccessInfo();
+        // Three seconds after successfully submitted form contact.html page will be reloaded
         setTimeout(() => { location.href = "contact.html" }, 3000);
-    } else {
+    } else { // If validation fails, hiding submit button and showing validation fault info
         document.getElementById('submit_contact').style.display = 'none';
         document.getElementById('validation_info').style.display = 'block';
     }
 });
 
+/**
+ * Successful form submitting info text with green background 
+ */
 function setSuccessInfo() {
     document.getElementById('submit_contact').style.display = 'none';
     form_valid_info = document.getElementById('validation_info');
@@ -30,16 +41,10 @@ function setSuccessInfo() {
     form_valid_info.style.display = 'block';
 }
 
-// SETTING EVENT LISTENERS for form elements
-var inputs = document.getElementsByTagName('input');
-for (i = 0; i < inputs.length; i++) {
-    input = inputs[i];
-    input.addEventListener('focus', function(e) {
-        e.preventDefault();
-        removeWarnings();
-    });
-}
-
+/**
+ * Removes warning indicators from input elements (class=form-control)
+ * Technically, removes only class name "invalid" if it exist.
+ */
 function removeWarnings() {
     document.getElementById('validation_info').style.display = "none";
     document.getElementById('submit_contact').style.display = "block";
@@ -53,6 +58,12 @@ function removeWarnings() {
     }
 }
 
+/**
+ * Validates form by calling specific validation functions. 
+ * Starts form input validation from top and proceeds in order to downward.
+ * 
+ * @returns Status of validation (passed=TRUE, fault=FALSE)
+ */
 function validateForm() {
     // This function deals with validation of the form fields
     var input_fields, valid = true;
@@ -70,7 +81,7 @@ function validateForm() {
 
     console.log([name.value, email.value, subject.value, message.value])
 
-
+    // Validation functions, returns false when invalid input detected.
     if (!validateName(name)) {
         if (name.className.indexOf(' invalid') === -1) {
             name.className += " invalid";
@@ -102,12 +113,12 @@ function validateForm() {
         v_info_box.innerText = "Message shorter than three words!";
         return false;
     }
-
+    // Prints validation status to console
     console.log("Form validation status: " + valid);
-    return valid; // return the valid status
+    return valid; // Returns the valid status
 }
 
-// INPUT VALIDATION FUNCTIONS
+// INPUT VALIDATION FUNCTIONS (Pattern matching)
 function validateName(input) {
     var name = /^[a-zA-Z]+ [a-zA-Z]+$/
     if ((input.value.match(name))) {

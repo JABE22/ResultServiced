@@ -3,9 +3,9 @@
 
 <head>
     <title>RS - Contact</title>
-
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Project styles -->
     <link rel="stylesheet" type="text/css" href="css/layout.css">
     <link rel="stylesheet" type="text/css" href="css/globalvariables.css">
     <link rel="stylesheet" type="text/css" href="css/imgstyle.css">
@@ -15,12 +15,12 @@
     <link rel="stylesheet" type="text/css" href="css/formstyles.css">
     <link rel="stylesheet" type="text/css" href="css/navstyles.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
-    <!-- This for responsive navbar -->
+    <!-- This is for responsive navbar -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body class="sp">
-
+    <!-- Global site header: 1. Grid row elements -->
     <div class="header main_container">
         <a class="site_brand" href="home.html">
             <img class="page_logo zoom_big" alt="page_logo" src="./img/pngegg.png">
@@ -34,7 +34,8 @@
             </div>
         </div>
     </div>
-    <!---->
+
+    <!-- Navbar: 2. Grid row elements -->
     <div class="navcontainer main_container sp">
         <div class="topnav" id="respnav">
             <a href="home.html">Home</a>
@@ -45,21 +46,25 @@
             <a href="contact.html" class="active">Contact</a>
             <a href="map.html">Map</a>
             <a href="eventnotif.html" class="admin_menu">Notification</a>
-            <!-- <a href="maps/tests/mapdemo.html">MapDemo</a> -->
+            <!-- Responsive navbar settings -->
             <a href="javascript:void(0);" class="icon" onclick="setresponsive()">
                 <i class="fa fa-bars"></i>
             </a>
         </div>
+        <!-- Date -->
         <div class="date_container">
             <p id="date"></p>
         </div>
     </div>
 
+    <!-- Page header: 3. Grid row elements - Place for page name and details -->
     <div class="content_header main_container">
         <h2 class="page_name">-Contact us-</h2>
     </div>
 
+    <!-- Page content: 4. Grid row elements - Place for contact form and contact details -->
     <div class="form_container main_container sp">
+        <!-- Contact form -->
         <form id="contact_form" class="sp">
             <label for="your_name">Your Name</label>
             <input type="text" class="form-control" id="your_name" placeholder="Firstname Lastname">
@@ -83,6 +88,7 @@
                 <div id="validation_info"></div>
             </div>
         </form>
+        <!-- Contact details -->
         <div class="contact_details">
             <img src="img/pngegg.png" alt="pngegg">
             <nobr>
@@ -94,8 +100,10 @@
         </div>
     </div>
 
+    <!-- Reserve container: 5. Grid row elements -->
     <div class="vara main_container sp"></div>
 
+    <!-- Footer with partner logos: 6. Grid row elements -->
     <div class="default_footer main_container">
         <img id="madeinfinland" alt="madedesign_finland" src="./img/mission/avainlippu_dff_nobg.png">
         <img id="urfu" src="./img/logo_urfu_nobg.png" alt="UrFU">
@@ -103,6 +111,7 @@
         <img id="worldsmarathons" class="partner_logo" alt="worlds_marathons" src="img/logos/worldsmarathons.png">
     </div>
 
+    <!-- JavaScript file imports - Page content sensitive files -->
     <script src="js/formcon.js"></script>
     <script src="./js/time.js"></script>
     <script src="./js/responsive.js"></script>

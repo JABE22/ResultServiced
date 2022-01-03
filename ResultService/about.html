@@ -3,24 +3,24 @@
 
 <head>
     <title>RS - About</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Project styles -->
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/globalvariables.css">
+    <link rel="stylesheet" type="text/css" href="css/imgstyle.css">
+    <link rel="stylesheet" type="text/css" href="css/textstyles.css">
+    <link rel="stylesheet" type="text/css" href="css/buttonstyles.css">
+    <link rel="stylesheet" type="text/css" href="css/animations.css">
+    <link rel="stylesheet" type="text/css" href="css/formstyles.css">
+    <link rel="stylesheet" type="text/css" href="css/navstyles.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <!-- This is for responsive navbar -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<meta name="description" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="css/layout.css">
-<link rel="stylesheet" type="text/css" href="css/globalvariables.css">
-<link rel="stylesheet" type="text/css" href="css/imgstyle.css">
-<link rel="stylesheet" type="text/css" href="css/textstyles.css">
-<link rel="stylesheet" type="text/css" href="css/buttonstyles.css">
-<link rel="stylesheet" type="text/css" href="css/animations.css">
-<link rel="stylesheet" type="text/css" href="css/formstyles.css">
-<link rel="stylesheet" type="text/css" href="css/navstyles.css">
-<link rel="stylesheet" type="text/css" href="css/responsive.css">
-<!-- This for responsive navbar -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 <body class="sp">
-
+    <!-- Global site header: 1. Grid row elements -->
     <div class="header main_container">
         <a class="site_brand" href="home.html">
             <img class="page_logo zoom_big" alt="page_logo" src="./img/pngegg.png">
@@ -35,6 +35,7 @@
         </div>
     </div>
 
+    <!-- Navbar: 2. Grid row elements -->
     <div class="navcontainer main_container sp">
         <div class="topnav" id="respnav">
             <a href="home.html">Home</a>
@@ -45,20 +46,23 @@
             <a href="contact.html">Contact</a>
             <a href="map.html">Map</a>
             <a href="eventnotif.html" class="admin_menu">Notification</a>
-            <!-- <a href="maps/tests/mapdemo.html">MapDemo</a> -->
+            <!-- Responsive navbar settings -->
             <a href="javascript:void(0);" class="icon" onclick="setresponsive()">
                 <i class="fa fa-bars"></i>
             </a>
         </div>
+        <!-- Date -->
         <div class="date_container">
             <p id="date"></p>
         </div>
     </div>
 
+    <!-- Page header: 3. Grid row elements - Place for page name and details -->
     <div class="content_header main_container">
         <h2 class="page_name">-About us-</h2>
     </div>
 
+    <!-- Page content: 4. Grid row elements - Place for actual page content -->
     <div class="about_container">
         <div class="mission_container main_container sp">
             <img id="aboutgirl" src="./img/runphotos/girl_front.jfif" alt="stretch-girl-1">
@@ -71,6 +75,7 @@
             </div>
         </div>
         <div class="vision_container main_container sp">
+            <!-- Visible in small screens -->
             <img id="aboutgirl2_mobile" src="./img/runphotos/girl_side.png" alt="stretch-girl-2">
             <div class="vision_text">
                 <h3 id="vision_h3">Vision</h3>
@@ -80,12 +85,16 @@
                     be impressed, even if you have not the greatest passion for data. Let's do it!!
                 </p>
             </div>
+            <!-- Hidden in small screens -->
             <img id="aboutgirl2" src="./img/runphotos/girl_side.png" alt="stretch-girl-2">
         </div>
     </div>
     </div>
+
+    <!-- Reserve container: 5. Grid row elements -->
     <div class="vara main_container sp"></div>
 
+    <!-- Footer with partner logos: 6. Grid row elements -->
     <div class="default_footer main_container">
         <img id="madeinfinland" alt="madedesign_finland" src="./img/mission/avainlippu_dff_nobg.png">
         <img id="urfu" src="./img/logo_urfu_nobg.png" alt="UrFU">
@@ -93,6 +102,7 @@
         <img id="worldsmarathons" class="partner_logo" alt="worlds_marathons" src="img/logos/worldsmarathons.png">
     </div>
 
+    <!-- JavaScript file imports - Page content sensitive files -->
     <script src="./js/time.js"></script>
     <script src="./js/responsive.js"></script>
 

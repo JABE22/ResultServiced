@@ -1,7 +1,4 @@
-/* NAV styles */
-
-
-/* (2) Second row of Grid for forms and navigation buttons */
+/* NAVIGATION BAR styles: Everything under "topnav" class, nothing else */
 
 .topnav {
     overflow: hidden;
