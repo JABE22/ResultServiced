@@ -1,5 +1,5 @@
 # jabe22.github.io
-## Result Service web page
+## Result Service web page (Front-end DEMO)
 
 **Published in:** https://jabe22.github.io/ResultService/home.html
 
