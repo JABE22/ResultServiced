@@ -2,6 +2,7 @@
 ## Result Service web page
 
 **Published in:** https://jabe22.github.io/ResultService/home.html
+
 **Back-end project (with integrated front-end) available here:**  https://github.com/JABE22/Run4Fun
 
 This project is implemented as a course work of Web Technologies in Business, at Ural Federal University, 2021
